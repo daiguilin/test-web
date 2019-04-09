@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+        <title>Log in</title>
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="./img/fundko_icon.png"
+        />
+        <link href="./css/bootstrap.min.css" rel="stylesheet" />
+        <link href="./css/agency.css" rel="stylesheet" />
+        <link href="./css/custom_2.css" rel="stylesheet" />
+        <link href="./css/landing.css" rel="stylesheet" />
+
+        <script src="./js/jquery.js"></script>
+        <!-- Custom Fonts -->
+        <link
+            href="./css/font-awesome.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+
+        <link rel="stylesheet" type="text/css" href="./css/loaders.min.css" />
+
+        <script>
+            $(document).ready(function() {
+                $(".reg").click(function(event) {
+                    event.preventDefault();
+                    var link = this;
+                    $.smoothScroll({
+                        scrollTarget: link.hash,
+                        afterScroll: function(options) {
+                            $(options.scrollTarget)
+                                .find("input")[0]
+                                .focus();
+                        }
+                    });
+                });
+
+                $(".faq-link").click(function(event) {
+                    event.preventDefault();
+                    var link = this;
+                    $.smoothScroll({
+                        scrollTarget: link.hash
+                    });
+                });
+            });
+        </script>
+
+        <link href="./css/landing-index4(1).css" rel="stylesheet" />
+        <link href="./css/new-invest.css" rel="stylesheet" />
+        <link href="./css/new-login.css" rel="stylesheet" />
+        <link href="./css/mobile.css" rel="stylesheet" />
+        <link rel="canonical" href="" />
+
+        <style>
+            #messages ul li {
+                color: #425e78 !important;
+                font-size: 2.1rem !important;
+                font-family: "Equip-light" !important;
+                margin-bottom: 5px;
+            }
+        </style>
+    </head>
+
+    <body class="with-new-header">
+        <div id="page-top" class="index">
+            <style>
+                .loginn a {
+                    color: #185fa4 !important;
+                }
+                .signup_modal_header button {
+                    margin-top: -9px !important;
+                    font-size: 20px;
+                }
+                .loginn-label {
+                    font-family: "Equip-light";
+                    font-weight: 600;
+                    color: #425e78;
+                }
+            </style>
+
+            <div class="">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header page-scroll">
+                            <button
+                                type="button"
+                                class="navbar-toggle"
+                                data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1"
+                                id="hideshow"
+                                onclick="hidebutton()"
+                            >
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar black-icon"></span>
+                                <span class="icon-bar black-icon"></span>
+                                <span class="icon-bar black-icon"></span>
+                            </button>
+                            <a class="" href="">
+                                <img
+                                    style=""
+                                    class="fundx-logo fundx-logo-mobile"
+                                    src="./img/logo5.png"
+                                />
+                            </a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div
+                            class="collapse navbar-collapse"
+                            id="bs-example-navbar-collapse-1"
+                        >
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="hidden active">
+                                    <a href="login#page-top"></a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="">BORROW</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="">INVEST</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="">NEWS</a>
+                                </li>
+                                <li>
+                                    <a class="page-scroll" href="">FAQ</a>
+                                </li>
+                                <!-- <li>
+                  <a class="page-scroll" href="/partners-page">PARTNERS</a>
+                </li> -->
+                                <li>
+                                    <a
+                                        class="page-scroll"
+                                        href="https://fundko.com/register"
+                                        data-toggle=""
+                                        >REGISTER</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="page-scroll"
+                                        href="https://fundko.com/login#"
+                                        data-toggle="modal"
+                                        data-target="#modalSignUp"
+                                        >SIGN IN</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </div>
+            <!-- MODAL Severity-->
+            <form action="https://fundko.com/login" method="POST">
+                <div
+                    class="modal fade signupModal"
+                    id="modalSignUp"
+                    role="dialog"
+                    style="border-radius:10px;"
+                >
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content signup_modal_content">
+                            <div class="modal-header signup_modal_header">
+                                <h4 class="modal-title text-center">
+                                    Welcome to FundKo
+                                    <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                    >
+                                        <i
+                                            class="fa fa-close pull-right"
+                                            area-hidden="true"
+                                        ></i>
+                                    </button>
+                                </h4>
+                            </div>
+                            <div class="modal-body" style="padding-top:20px;">
+                                <p style="text-align:center;">
+                                    Sign in to your account.
+                                </p>
+                                <br />
+                                <div class="form-group form-profile col-md-12">
+                                    <div class="col-md-4">
+                                        <label
+                                            class="label-profile loginn-label"
+                                            >Email Address</label
+                                        >
+                                    </div>
+                                    <div class="col-md-8 form-profile">
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            required="required"
+                                            class="form-control"
+                                            placeholder="Email Address"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="form-group form-profile col-md-12">
+                                    <div class="col-md-4">
+                                        <label
+                                            class="label-profile loginn-label"
+                                            >Password
+                                        </label>
+                                    </div>
+                                    <div class="col-md-8 form-profile">
+                                        <input
+                                            type="password"
+                                            name="password"
+                                            class="form-control"
+                                            placeholder="Password"
+                                            value=""
+                                        />
+                                    </div>
+                                </div>
+                                <div class="form-group b">
+                                    <div
+                                        class="col-xs-12 col-md-12 text-center"
+                                        style="padding-top: 10px; padding-left: 15px; margin-bottom:20px;"
+                                    >
+                                        <!-- <input type="checkbox" value style="height: auto; margin-bottom: 5px;"> Stay signed in. -->
+                                        <!--                   <br> -->
+                                        <a
+                                            data-toggle="modal"
+                                            role="button"
+                                            href="https://fundko.com/forgot"
+                                            style="color: #185fa4"
+                                            class="modal-link"
+                                            >Forgot Password?</a
+                                        >
+                                        <!-- <span><small>Not a FundX member?</small></span><br> --><span>
+                                            |
+                                        </span>
+                                        <a
+                                            data-toggle="modal"
+                                            role="button"
+                                            href="https://fundko.com/register"
+                                            style="color: #185fa4"
+                                            class="modal-link"
+                                            >Create New Account.</a
+                                        >
+                                        <span> | </span>
+                                        <a
+                                            data-toggle="modal"
+                                            role="button"
+                                            href="https://fundko.com/email-verification"
+                                            style="color: #185fa4"
+                                            class="modal-link"
+                                            >Resend Email Verification.</a
+                                        >
+                                    </div>
+                                    <div
+                                        class="col-xs-12 col-md-offset-4 col-md-4"
+                                    >
+                                        <button
+                                            id="btnSignUp"
+                                            type="submit"
+                                            style="width:100%"
+                                            class="btn btn-default text-center "
+                                        >
+                                            LOG IN
+                                        </button>
+                                    </div>
+                                    <button class="whitebtn2" disabled="">
+                                        .
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <header>
+            <section
+                id="banner"
+                style="padding-bottom: 0; padding-top:4em !important; padding-bottom:0em !important;"
+            >
+                <div class="login-bg1">
+                    <div class="container">
+                        <div
+                            class="slide-bottom col-md-7 col-sm-10 col-sm-offset-1 col-md-offset-2 register-content-background section-heading text-center bgPaddingReg mobilePaddingLeft mobilePaddingRight"
+                        >
+                            <form
+                                class="login-form form"
+                                method="post"
+                                action="https://fundko.com/login"
+                            >
+                                <div class="register-form mobilePadding">
+                                    <h3
+                                        style="margin-bottom: 10px; color: #185fa4"
+                                    >
+                                        Welcome to FundKo
+                                    </h3>
+                                    <hr />
+                                    <p class="text-center">
+                                        Sign in to your account.
+                                    </p>
+                                    <div id="signInFailed"></div>
+                                    <div class="form-group">
+                                        <label
+                                            class="control-label col-md-3 col-md-offset-1 col-sm-3 col-xs-12 text-left mobilePadding"
+                                            style="margin-top:.5em"
+                                            for="email"
+                                            >Email Address</label
+                                        >
+                                        <div
+                                            class="col-md-7 col-sm-8 col-xs-12 mobilePadding"
+                                        >
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                name="email"
+                                                required="required"
+                                                class="form-control col-md-7 col-xs-12"
+                                                placeholder="Email Address"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label
+                                            class="control-label col-md-3 col-md-offset-1 col-sm-3 col-xs-12 text-left mobilePadding"
+                                            style="margin-top:.5em"
+                                            for="password"
+                                            >Password</label
+                                        >
+                                        <div
+                                            class="col-md-7 col-sm-8 col-xs-12 mobilePadding"
+                                        >
+                                            <input
+                                                type="password"
+                                                id="password"
+                                                name="password"
+                                                required="required"
+                                                class="form-control col-md-7 col-xs-12"
+                                                placeholder="Password"
+                                            />
+                                        </div>
+                                    </div>
+                                    <br />
+
+                                    <div
+                                        class="col-md-12 br loginn text-center"
+                                        style="margin-bottom:20px;"
+                                    >
+                                        <a
+                                            data-toggle="modal"
+                                            role="button"
+                                            href="https://fundko.com/forgot"
+                                            style="color: #22B3E0;"
+                                            class="modal-link forgotTxtReg"
+                                            >Forgot Password?</a
+                                        >
+                                        <!-- <span><small>Not a FundX member?</small></span><br> --><span>
+                                            |
+                                        </span>
+                                        <a
+                                            data-toggle="modal"
+                                            role="button"
+                                            href="https://fundko.com/register"
+                                            style="color: #22B3E0"
+                                            class="modal-link"
+                                            >Create New Account.</a
+                                        >
+                                        <span> | </span>
+                                        <a
+                                            data-toggle="modal"
+                                            role="button"
+                                            href="https://fundko.com/email-verification"
+                                            style="color: #185fa4"
+                                            class="modal-link"
+                                            >Resend Email Verification.</a
+                                        >
+                                    </div>
+                                    <div class="form-group">
+                                        <div
+                                            class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12 mobilePadding"
+                                        >
+                                            <button
+                                                id="btnRegister"
+                                                type="submit"
+                                                class="btn btn-default btn-xl text-center"
+                                            >
+                                                Log In
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <style>
+            .newsletter-btn:hover,
+            .newsletter-btn:focus,
+            .newsletter-btn:disabled {
+                background-color: #293f70 !important;
+                color: #fff;
+                border: 0;
+            }
+        </style>
+
+        <section id="footer">
+            <div class="container">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div
+                        class="col-md-2 col-md-offset-1 col-sm-4 col-xs-4 text-left"
+                        id="footer-menu"
+                    >
+                        <h5 class="footer-header text-left">Quick links</h5>
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li>
+                                <a class="menu" href="">Home</a>
+                            </li>
+                            <li>
+                                <a class="menu" href="">News</a>
+                            </li>
+                            <li>
+                                <a class="menu" href="">Register</a>
+                            </li>
+                            <li>
+                                <a class="menu" href="">FAQ</a>
+                            </li>
+                            <li>
+                                <a class="menu" href="">About Us</a>
+                            </li>
+                            <li>
+                                <a class="menu" href="">Contact Us</a>
+                            </li>
+                            <li>
+                                <a class="menu" href="">Privacy Policy</a>
+                            </li>
+                        </ul>
+                        <script>
+                            $(document).ready(function() {
+                                var pgurl = window.location.href.substr(
+                                    window.location.href.lastIndexOf("/")
+                                );
+                                console.log(pgurl);
+                                $("a.menu").each(function() {
+                                    if (
+                                        $(this).attr("href") == pgurl ||
+                                        $(this).attr("href") == ""
+                                    )
+                                        $(this).addClass("active");
+                                });
+                            });
+                        </script>
+                    </div>
+                    <div
+                        class="col-md-6 col-sm-8 col-xs-8 text-center margin-bottom1 newsletter"
+                    >
+                        <h5 class="footer-header">address</h5>
+                        <p class="">
+                            Fintechnology Inc., 3rd Floor Guevent Building,
+                            <br />
+                            #52 D.M. Guevara St. corner Calbayog St.,
+                            Mandaluyong City, Philippines
+                            <br /><br />
+                        </p>
+                        <h5 class="footer-header">Contact No.</h5>
+                        <p class="">
+                            534-9185 (local 58) <br />
+                            <!-- <br>Enter your email below.</p>
+            <form action="" class="subscribe">
+              <div class="input-group newsletter-input-group hidden-xs hidden-sm">
+                <input type="email" name="email" class="form-control newsletter-input" placeholder="Email address" required>
+                <span class="input-group-btn">
+                  <button class="btn btn-default newsletter-btn btn-subscribe"> Subscribe </button>
+                </span>
+              </div>
+            </form> -->
+                        </p>
+                    </div>
+
+                    <form action="https://fundko.com/login" class="subscribe">
+                        <div
+                            class="input-group newsletter-input-group col-xs-12 hidden-lg hidden-md"
+                            style="width: 100% !important;"
+                        >
+                            <input
+                                type="email"
+                                name="email"
+                                class="form-control newsletter-input"
+                                placeholder="Email address"
+                                required=""
+                            />
+                            <span class="input-group-btn">
+                                <button
+                                    class="btn btn-default newsletter-btn btn-subscribe"
+                                    style="padding: 10px 5px 10px 5px;"
+                                >
+                                    Subscribe
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+
+                    <div class="col-md-3 col-sm-12 col-xs-12 text-center">
+                        <h5 class="footer-header">social links</h5>
+                        <!--  <p class="about">FundKo is a subsidiary of Guevent Investments Corporation (GIDC). GIDC is a company that has over 50 years of business
+            in the microlending industry through Radio Wealth Finance. It continues to grow its operations.
+          </p> -->
+                        <div class="row text-center social-links">
+                            <div
+                                class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12"
+                            >
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <a
+                                        target="_blank"
+                                        href="https://www.facebook.com/fundko"
+                                        ><i
+                                            class="fa fa-facebook"
+                                            aria-hidden="true"
+                                        ></i
+                                    ></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <a
+                                        target="_blank"
+                                        href="https://twitter.com/fundkoph"
+                                        ><i
+                                            class="fa fa-twitter"
+                                            aria-hidden="true"
+                                        ></i
+                                    ></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4">
+                                    <a
+                                        target="_blank"
+                                        href="https://www.instagram.com/fundko/"
+                                        ><i
+                                            class="fa fa-instagram"
+                                            aria-hidden="true"
+                                        ></i
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var $subscribeForm = $(".subscribe");
+
+                $subscribeForm.submit(function(e) {
+                    console.log($(this).serialize());
+                    console.log("formspee");
+                    e.preventDefault();
+                    var $submit = $(".btn-subscribe");
+                    var defaultSubmitText = $submit.html();
+
+                    $.ajax({
+                        url: "//formspree.io/cu.michaels@gmail.com",
+                        method: "POST",
+                        data: $(this).serialize(),
+                        dataType: "json",
+                        beforeSend: function() {
+                            //$subscribeForm.append('<div class="alert alert--loading">Sending message…</div>');
+                            $submit
+                                .attr("disabled", true)
+                                .text("Sending message…");
+                        },
+                        success: function(data) {
+                            //$subscribeForm.append('<div class="alert alert--success">Message sent!</div>');
+                            $submit.text("Message sent!");
+                            setTimeout(function() {
+                                //$('.alert--success').remove();
+                                $submit
+                                    .attr("disabled", false)
+                                    .html(defaultSubmitText);
+                            }, 5000);
+                        },
+                        error: function(err) {
+                            //$subscribeForm.find('.alert--loading').hide();
+                            //$subscribeForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+                            $submit.text("Ops, there was an error.");
+                            setTimeout(function() {
+                                //$('.alert--error').remove();
+                                $submit
+                                    .attr("disabled", false)
+                                    .html(defaultSubmitText);
+                            }, 5000);
+                        }
+                    });
+                });
+            });
+        </script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="./js/bootstrap.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="./js/jquery.easing.min.js"></script>
+
+        <div
+            style="width:0px; height:0px; display:none; visibility:hidden;"
+            id="batBeacon0.13502083503462736"
+        >
+            <!-- <img
+                style="width:0px; height:0px; display:none; visibility:hidden;"
+                id="batBeacon0.35968089820662685"
+                width="0"
+                height="0"
+                alt=""
+                src="./login_files/0"
+            /> -->
+        </div>
+
+        <!-- Contact Form JavaScript -->
+        <!-- <script src="javascripts/jqBootstrapValidation.js"></script>
+<script src="javascripts/contact_me.js"></script> -->
+
+        <!-- Custom Theme JavaScript -->
+
+        <script>
+            $("#btnRegister").click(function() {
+                var email = $("#email").val();
+                localStorage.setItem("tempEmail", email);
+            });
+            var errMsg = $("#signInFailed").text();
+            if (errMsg.includes("Incorrect email or password")) {
+                var failedEmail = localStorage.getItem("tempEmail");
+                dataLayer.push({
+                    category: "Sign In",
+                    action: "click",
+                    label: "failed",
+                    "email address": failedEmail,
+                    event: "event GA failed"
+                });
+            } else if (
+                errMsg.includes(
+                    "Exceeded number of attempts, your account is now locked. It will be unlocked in 2 hours"
+                )
+            ) {
+                var failedEmail = localStorage.getItem("tempEmail");
+                dataLayer.push({
+                    category: "Sign In",
+                    action: "click",
+                    label: "failed",
+                    "email address": failedEmail,
+                    event: "event GA failed"
+                });
+            }
+        </script>
+    </body>
+</html>

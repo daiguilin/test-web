@@ -1,0 +1,96 @@
+[class*=uk-animation-]
+{
+	-webkit-animation-duration: .5s;
+	animation-duration: .5s;
+	-webkit-animation-timing-function: ease-out;
+	animation-timing-function: ease-out;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+[data-uk-scrollspy*=uk-animation-]
+{
+	opacity: 0;
+}
+
+.uk-animation-fade
+{
+	-webkit-animation-name: uk-fade;
+	animation-name: uk-fade;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+
+@-webkit-keyframes uk-fade
+{
+	0%
+	{
+		opacity: 0;
+	}
+
+	100%
+	{
+		opacity: 1;
+	}
+}
+
+@keyframes uk-fade
+{
+	0%
+	{
+		opacity: 0;
+	}
+
+	100%
+	{
+		opacity: 1;
+	}
+}
+/*
+
+/*
+ * Fade with scale
+ */
+.uk-animation-scale-up {
+  -webkit-animation-name: uk-fade-scale-02;
+  animation-name: uk-fade-scale-02;
+}
+.uk-animation-scale-down {
+  -webkit-animation-name: uk-fade-scale-18;
+  animation-name: uk-fade-scale-18;
+}
+/*
+ * Fade with slide
+ */
+.uk-animation-slide-top {
+  -webkit-animation-name: uk-fade-top;
+  animation-name: uk-fade-top;
+}
+.uk-animation-slide-bottom {
+  -webkit-animation-name: uk-fade-bottom;
+  animation-name: uk-fade-bottom;
+}
+.uk-animation-slide-left {
+  -webkit-animation-name: uk-fade-left;
+  animation-name: uk-fade-left;
+}
+.uk-animation-slide-right {
+  -webkit-animation-name: uk-fade-right;
+  animation-name: uk-fade-right;
+}
+/*
+ * Scale
+ */
+.uk-animation-scale {
+  -webkit-animation-name: uk-scale-12;
+  animation-name: uk-scale-12;
+}
+/*
+ * Shake
+ */
+.uk-animation-shake {
+  -webkit-animation-name: uk-shake;
+  animation-name: uk-shake;
+}

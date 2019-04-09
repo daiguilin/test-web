@@ -1,0 +1,369 @@
+#wrapper {
+  width:100%;
+  margin:0 auto;
+}
+#faq {
+  width:95%;
+  margin:0 auto;
+}
+#header {
+  padding:10px 20px;
+}
+#main {
+  overflow:hidden;
+  /*background-color: black*/
+
+}
+.sidebar {
+  float:left;
+  width:300px;
+  padding:0;
+}
+.sidebar .widget {
+  width:350px;
+  padding:10px 15px;
+  /*border-bottom:1px solid #ccc;*/
+}
+#article {
+  width:75%;
+  padding:0 20px;
+  float:left;
+}
+
+.faq-basics-header,
+.faq-mechanics-header,
+.faq-underwriting-header,
+.faq-deliquencies-header,
+.faq-returns-header,
+.faq-legitimacy-header,
+.faq-update-header,
+.faq-requirement-header,
+.faq-fees-header  {
+    color: #0096c4;
+    width: 320px;
+    /*color: white;*/
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    z-index: 0;
+    font-weight: 600;
+    border-bottom: 1px solid #f4f4f4;
+    letter-spacing: 1px;
+}
+
+.faq-basics-dropdown,
+.faq-mechanics-dropdown,
+.faq-underwriting-dropdown,
+.faq-deliquencies-dropdown,
+.faq-returns-dropdown,
+.faq-legitimacy-dropdown,
+.faq-update-dropdown,
+.faq-requirement-dropdown,
+.faq-fees-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.faq-basics-content,
+.faq-mechanics-content,
+.faq-underwriting-content,
+.faq-deliquencies-content,
+.faq-returns-content,
+.faq-legitimacy-content,
+.faq-update-content,
+.faq-fees-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 90%;
+    left: 100%;
+    top: 0;
+}
+
+.faq-requirement-content{
+  display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 800px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 90%;
+    left: 100%;
+    top: 0;
+    column-count: 2;
+    padding-bottom: 20px !important;
+
+}
+
+.faq-basics-content a,
+.faq-mechanics-content a,
+.faq-underwriting-content a,
+.faq-deliquencies-content a,
+.faq-returns-content a,
+.faq-legitimacy-content a,
+.faq-update-content a,
+.faq-requirement-content a,
+.faq-fees-content a  {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.faq-basics-content a:hover,
+.faq-mechanics-content a:hover,
+.faq-underwriting-content a:hover,
+.faq-deliquencies-content a:hover,
+.faq-returns-content a:hover,
+.faq-legitimacy-content a:hover,
+.faq-update-content a:hover,
+.faq-requirement-content a:hover,
+.faq-fees-content a:hover {
+  background-color: #f1f1f1
+}
+
+.faq-basics-dropdown:hover .faq-basics-content,
+.faq-mechanics-dropdown:hover .faq-mechanics-content,
+.faq-underwriting-dropdown:hover .faq-underwriting-content,
+.faq-deliquencies-dropdown:hover .faq-deliquencies-content,
+.faq-returns-dropdown:hover .faq-returns-content,
+.faq-legitimacy-dropdown:hover .faq-legitimacy-content,
+.faq-update-dropdown:hover .faq-update-content,
+.faq-requirement-dropdown:hover .faq-requirement-content,
+.faq-fees-dropdown:hover .faq-fees-content {
+    display: inline-block;
+}
+
+.faq-basics-dropdown:hover .faq-basics-header,
+.faq-mechanics-dropdown:hover .faq-mechanics-header,
+.faq-underwriting-dropdown:hover .faq-underwriting-header,
+.faq-deliquencies-dropdown:hover .faq-deliquencies-header,
+.faq-returns-dropdown:hover .faq-returns-header,
+.faq-legitimacy-dropdown:hover .faq-legitimacy-header,
+.faq-update-dropdown:hover .faq-update-header,
+.faq-requirement-dropdown:hover .faq-requirement-header,
+.faq-fees-dropdown:hover .faq-fees-header {
+    background-color: #0082AB;
+    color: #fff;
+}
+
+
+.panel-primary > .panel-heading {
+
+    background-color: #3e76a9;
+    border-color: #3e76a9;
+}
+
+
+.panel-style{
+  width:94%;
+  margin-left: 12px;
+}
+
+.center-div{
+  text-align: center;
+}
+
+
+@media only screen and (min-width:320px) and (max-width: 480px) {
+  #article {
+    width:100% !important;
+  }
+.panel-style{
+  width:100%;
+  margin-left: 0px;
+}
+ .borrower-start{
+    padding-top: 1350px;
+  }
+}
+
+/*--- ---*/
+.first{
+   background-color: #f9f9f9;
+}
+#title{
+  padding-top:60px;
+}
+#head-title{
+  color:white;
+  font-weight:bold;
+  text-align:center;
+  font-size:60px;
+}
+#head-title1{
+  color:white;
+  font-weight:bold;
+  font-size:20px;
+  margin-top:-10px;
+}
+#txt2{
+  padding-left:500px;
+  margin-top:-25px;
+}
+
+#txt3{
+  padding-right:550px;
+  margin-top:-25px;
+}
+
+#line{
+  color:white;
+  font-weight: bold;
+  text-align:center;
+  padding-top:30px;
+  padding-bottom:5px;
+}
+
+#head-text{
+  color:white;
+  font-weight: normal;
+  text-align:center;
+  padding-top:35px;
+  padding-bottom:60px;
+}
+
+#img-fundko{
+  border-radius:14px;
+  margin-top:-35px;
+  margin-left:-130px;
+  width:225px;
+}
+
+.button{
+  height:138px;
+}
+#btn-signuptoyourcompany{
+  background-color: #006bb3;
+  color:white;
+  font-weight: bold;
+  border-radius: 25px;
+  padding-left:50px;
+  padding-right:50px;
+  padding-bottom:35px;
+  border: 5px solid white;
+  margin-top:10px;
+}
+
+#second-title{
+  padding-top: 50px;
+  color:#006bb3;
+  font-weight:bold;
+  text-align:center;
+  font-size:45px;
+}
+
+.floating-box {
+    display: inline-block;
+    width:340px;
+    height: 75px;
+    margin: 10px;
+    padding-top: 30px;
+}
+
+.wrapper{
+  width: 1100px;
+  margin: 0 auto;
+}
+
+#icon1{
+  font-size:70px;
+  padding-top: 40px;
+  padding-bottom: 55px;
+  text-align: center;
+
+}
+
+.text{
+  text-align: center;
+}
+.text-body{
+  font-size:16px;
+}
+#third-title{
+  padding-top: 150px;
+  color:#006bb3;
+  font-weight:bold;
+  text-align:left;
+  font-size:40px;
+  padding-bottom: 50px;
+}
+
+#benefitList{
+  margin-left:-20px;;
+}
+
+#btn-signuptoyourcompany2{
+  background-color: #3385ff;
+  color:white;
+  font-weight: bold;
+  border-radius: 25px;
+  padding-left:50px;
+  padding-right:50px;
+  padding-bottom:35px;
+  border: 5px solid #0047b3;
+  margin-top:50px;
+}
+
+#btn-applysalaryloan{
+  background-color: #3385ff;
+  color:white;
+  font-weight: bold;
+  border-radius: 25px;
+  padding-left:50px;
+  padding-right:50px;
+  padding-bottom:35px;
+  border: 5px solid #0047b3;
+  margin-top:50px;
+}
+
+#img-accredited{
+  border-radius:14px;
+  margin-top:60px;
+  margin-left:70px;
+  margin-bottom:20px;
+  width:90%;
+}
+
+#btn-signuptoyourcompany3{
+  background-color: #3385ff;
+  color:white;
+  font-weight: bold;
+  border-radius: 25px;
+  padding-left:50px;
+  padding-right:50px;
+  padding-bottom:35px;
+  border: 5px solid #0047b3;
+  margin-top:50px;
+}
+
+#bottom{
+  background-color: #3385ff;
+  margin-too: 50px;
+
+}
+#head-title6{
+  color:white;
+  font-weight:bold;
+  text-align:center;
+  font-size:40px;
+}
+#input{
+  padding-bottom: 5px;
+}
+
+.bottom{
+  margin-top:50px;
+}
+
+#txt-with{
+  color:white;
+  font-weight:bold;
+  font-size:18px;
+  margin-top:-30px;
+  margin-right:80px;
+}

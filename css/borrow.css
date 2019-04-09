@@ -1,0 +1,141 @@
+.borrowBanner {
+	/*background-image: url("https://s3-ap-southeast-1.amazonaws.com/fundko-assets/img/jborrower/borrower_01_fixed.jpg");*/
+    background-image: url("https://s3-ap-southeast-1.amazonaws.com/fundko-assets/borrower_01_fixed.jpg");
+	margin-top: 0;
+    background-position: 50% 95%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4em;
+    min-height: 100vmin;
+    border-bottom: #ababab solid 1px;
+}
+
+@media screen and (max-device-width: 480px){
+    .borrowBanner {
+        background-image: url("https://s3-ap-southeast-1.amazonaws.com/fundko-assets/borrower_022.jpg") !important;
+        /*background-image: url("https://s3-ap-southeast-1.amazonaws.com/fundko-assets/img/jborrower/") !important;*/
+    }
+
+}
+
+
+.chalkboard{
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	z-index:0;
+	background-repeat: repeat;
+	background:url(https://raw.github.com/mmoustafa/Chalkboard/master/img/bg.png);
+}
+
+
+/* c48600 */
+.chalk-hr hr {
+ border-top: 5px solid #c48600;
+}
+
+.footer-header {
+	color: #fff;
+}
+
+.titlehead {
+	color: #476dc2 !important;
+}
+
+.feature-writeup p {
+	color: #8a8a8a;
+	line-height: 1.8em;
+}
+
+.chalk-img {
+	padding: 40px;
+}
+
+.btn-xl {
+	background-color: #476dc2 !important;
+}
+
+.bgOutputMobile {
+	background-color: #476dc2 !important;
+}
+
+.chalk-head {
+	text-decoration: none !important;
+	color: #c48600 !important;
+}
+
+
+.primary {
+  background-color: #476dc2;
+}
+
+.contrast {
+  background-color: #555;
+}
+
+#testimonials2 h2 {
+	font-size: 3.5em;
+}
+
+.colorBG {
+	background-color: #fff !important;
+}
+
+.testi-text {
+    margin-top: -10px;
+    padding: 1em;
+    color: #f4f4f4;
+    height: 180px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.register-bg {
+    background-image: url("https://s3-ap-southeast-1.amazonaws.com/fundko-assets/borrower_06.jpg");
+    /*background-image: url(https://s3-ap-southeast-1.amazonaws.com/fundko-assets/img/jborrower/borrower_06.jpg);*/
+    background-size: cover;
+    padding-top: 10vh;
+    min-height: 80vh;
+    border-bottom: #898989 solid 1px;
+}
+
+.register-content-background {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    border: 2px solid #ccc;
+
+}
+
+
+
+.register-form h3 {
+  color: #5f91ff;
+
+}
+
+.register-form {
+	color: #f4f4f4;
+    font-family: "Equip-light";
+}
+
+.terms {
+  color: #5f91ff;
+}
+
+.terms:hover {
+  color: #5f91ff !important;
+}
+
+.btn-chalk {
+	padding: 20px 90px;
+}
+
+.feature-writeup li {
+ color: #8a8a8a !important;
+}
+
+.newsletter-btn {
+    background-color: #31b0d5;
+}

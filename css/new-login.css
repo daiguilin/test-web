@@ -1,0 +1,63 @@
+.landing-reg-bg1{
+  background-color: #fafbfc ;
+  background-size: cover;
+  padding: 5em 0 !important;
+  border-bottom: #898989 solid 1px;
+}
+
+.login-bg1{
+  background-color: #fafbfc ;
+  background-size: cover;
+  padding-top: 10vh;
+  min-height: 100vh;
+  border-bottom: #898989 solid 1px;
+}
+
+
+.register-form{
+  color: black;
+  font-family: "Equip-light";
+}
+
+.register-content-background{
+    border : 1px solid #e4edf5;
+    border-radius: 5px;
+    background-color: #fff;
+    min-height: 30px;
+
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.04);
+    margin-bottom: 10px;
+}
+
+.register-form p, label {
+    font-family: 'Equip-light';
+    font-weight: 600;
+    color: #425e78;
+}
+
+.register-form .form-group input {
+    height: 40px;
+    border: 1px solid #999 !important;
+    color: #425e78 !important;
+    font-weight: 400;
+}
+#btnRegister{
+  background-color: #185fa4;
+}
+
+.loginn a{
+  color : #185fa4 !important;
+}
+.slide-bottom{margin-left: 19%}
+
+.signup_modal_header button{
+  margin-top: -9px !important;
+  font-size: 20px;
+}
+
+#messages .error li {
+  color: #d9534f !important;
+  font-family: 'Equip-Light' !important;
+  font-size: 18px !important;
+  margin-bottom: 0px !important;
+}

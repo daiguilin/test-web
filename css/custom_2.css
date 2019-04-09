@@ -1,0 +1,261 @@
+@import url(https://fonts.googleapis.com/css?family=Open Sans:400,500);
+
+section { padding: 50px 0 !important; }
+section#crowdfunding { min-height: 80vh; border-bottom: #898989 solid 1px;}
+section#crowdfunding .crowdfunding-content {padding: 0 22vmin 0; }
+section#crowdfunding .fa { font-size: 18.7vmin; }
+section#testimonial { border-bottom: #898989 solid 1px; }
+section#testimonial .section-heading { letter-spacing: 1px; }
+section#testimonial .row { padding: 30px 0; }
+section#testimonial .left-testimonial { border-right: 1px solid #898989; height: 35vh;}
+section#testimonial .img-container:before { content: ' '; display: inline-block; vertical-align: middle; min-height: 35vh; }
+section#testimonial .img-container { vertical-align: middle; display: inline-block; }
+section#testimonial img { border-radius: 50%; min-height: 120px; min-width: 120px; max-height: 120px; max-width: 120px; display: block; margin-left: auto; margin-right: auto; }
+section#testimonial .testimonial-content-left { padding-left: 20px; }
+section#testimonial .testimonial-content-right { padding-left: 30px; }
+section#testimonial .testimonial-title { text-transform: uppercase; text-align: left; font-size: 3.74vmin; }
+section#testimonial p { font-size: 18px; text-align: left; line-height: 1.3; }
+section#testimonial .testimonial-author { font-style: italic; font-size: 14px; color: #555; }
+section#risktable { min-height: 90vh; border-bottom: #898989 solid 1px; background-color: #222; color: #fff; padding: 50px 60px; }
+section#risktable .row { padding: 30px 0; }
+section#risktable .section-heading { letter-spacing: 1px; }
+section#risktable .section-subheading { margin-bottom: 0; }
+section#risktable img { width: 100%; }
+section#risktable .author-note { font-size: 15px; text-align: center; padding: 10px; }
+/*section#about-team .img-container:before { content: ' '; display: inline-block; vertical-align: middle; min-height: 35vh; }*/
+section#about-team .img-container { vertical-align: middle; display: inline-block; }
+section#about-team img { border-radius: 50%; min-height: 120px; min-width: 120px; max-height: 120px; max-width: 120px; display: block; margin-left: auto; margin-right: auto }
+section#about-team .member-name { font-size: 1.1em; font-weight: 600; text-align: center; margin: 8px 0 2px;}
+section#about-team .position { text-align: center;}
+
+.intro-text h1 { letter-spacing: 5px; font-weight: 400; text-transform: none; padding: 0 15px; font-size: 7vmin; color: #eee;}
+.intro-text { text-align: left; }
+/*.invest-points ul li { font-size: 5vmin; line-height: 6vmin; color: #eee;}
+.investMoney {color: #fff; background-color: #555555; border: 2px #898989 solid; text-transform: uppercase; font-weight: 500; border-radius: 3px; font-size: 18px; padding: 10px 40px; width: 100%; height: 51px; margin-top: 20px; }*/
+
+.fundx-logo{ height: 35px; margin-top: 16px; margin-bottom: 13px !important; }
+
+footer { background-color: #222222; color: #fff; padding: 50px}
+footer li { font-size: 18px; font-family: "Open Sans"; line-height: 1.5; }
+footer p { font-size: 16px; padding: 0 60px; }
+/*footer .fa { font-size: 16px; color: #fff; }*/
+.social-links { padding-top: 30px; }
+.social-links a i{
+	font-size: 20px;
+    align-self:center;
+	color: #fff;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    margin: 0 auto;
+}
+.social-links a{
+  text-align:center;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	/*margin-right: 7px; /*space between*/
+    display: flex;
+    align-items: flex-start;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+}
+
+.b div{
+  padding: 2px;
+}
+.b div span a{
+  padding-left: 3px;
+}
+
+.modal-content{
+  /*background-color: #f4f4f4;*/
+	/*padding: 0 30px 0;
+  border-color: #fff;*/
+  /*opacity: 0.9;*/
+	border-radius: 2px;
+}
+
+.modal-body{
+  /*margin-top: 20px;*/
+	padding: 30px;
+}
+
+.signupModal .container{
+  width: 600px;
+}
+
+.modal-dialog{
+  margin-top: 170px;
+}
+.modal-header{
+  /*background-color: #22B3E0;*/
+  /*color: #fff;*/
+}
+
+.modal-body .form-group input, button{
+  height: 42px;
+  font-size: 15px;
+  border-color: #555;
+}
+
+#btnSignUp{
+  border-color: #7EB6FF;
+	background-color: #0096C4;
+	color: #fff;
+}
+#btnSignUp:hover{
+   background-color: #31b7e0;
+   color: #fff;
+}
+
+@media (max-width: @screen-xs-min) {
+  .signupModal { width: @modal-sm; }
+}
+/*.modal-backdrop {background: none;}*/
+
+
+.register-bg{
+	background-image: url("../img/investor-image.jpg");
+	background-size: cover;
+	padding-top: 10vh;
+	min-height: 100vh;
+	border-bottom: #898989 solid 1px;
+}
+
+.login-bg{
+	background-image: url("https://s3-ap-southeast-1.amazonaws.com/fundko-assets/img/mode_preference.jpg");
+	background-size: cover;
+	padding-top: 10vh;
+	min-height: 100vh;
+	border-bottom: #898989 solid 1px;
+}
+
+.content-background{
+	background: #f4f4f4;
+ 	filter: alpha(opacity=75.0);
+ 	-moz-opacity: 0.75;
+ 	opacity: 0.75;
+ 	border-radius: 2px;
+}
+.register-form .form-group{
+	padding: 20px;
+}
+.register-form .form-group input{
+	height: 40px;
+	border: 1px solid black;
+	color: black;
+	font-weight: 600;
+}
+
+.terms{
+	color: blue;
+}
+.terms:hover{
+	color: blue !important;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.register-form{
+	color: black;
+	font-family: "Open Sans";
+}
+
+#btnRegister{
+	background-color: #333;
+	color: #fff;
+	border: 1px solid black;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	/*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+	font-weight: 500;
+	font-size: 17px;
+}
+#btnRegister:hover{
+	background-color: black;
+}
+
+footer li a {
+	color:#fff;
+}
+
+footer li a.active {
+	color: #22B3E0;
+}
+
+footer li a:hover {
+	color: #22B3E0;
+	text-decoration: none;
+}
+
+.fa-spin {
+    -webkit-transform-origin: 50% calc(50% - .5px);
+    transform-origin: 50% calc(50% - .5px);
+}
+
+.page404 {
+	padding-top: 200px;
+}
+
+.page404 img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.emailFooter {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.txtp{
+	font-size: 16px;
+
+section#banner {
+  position: relative !important;
+  padding-top: 80px !important;
+}
+
+section#crowdfunding {
+  padding-top: 18vmin !important;
+  padding-bottom: 10vmin !important;
+}
+
+section#testimonial {
+  padding-top: 120px !important;
+}
+
+section#risktable {
+  padding-top: 100px !important;
+}
+
+section.page5 {
+  padding-top: 120px !important;
+}
+
+.prefooter-links i {
+  font-size: 7em;
+  margin-bottom: 10px;
+  color: #0096c4;
+}
+
+/*.investMoney {
+  background-color: #0096c4;
+border: 2px #7EB6FF solid;
+}
+
+.investMoney:hover {
+  background-color: #31b7e0;
+  border: 2px #7EB6FF solid;
+}*/
+
+.crowdfunding-icon i {
+  color: #0096c4;
+}
+
+.modal-header .close {
+  margin-top: -9px !important;
+}

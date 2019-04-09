@@ -1,0 +1,179 @@
+@import 'https://fonts.googleapis.com/css?family=Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i';
+@import 'https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i';
+/*new class*/
+.hearWhat{
+  font-size: 2em !important;
+  color: #476dc2;
+}
+
+.testimonialName{
+  font-family: 'PT Serif', sans-serif;
+  font-size: 20px !important;
+  color : #476dc2;
+}
+
+.testBody{
+  font-size: 1.1em !important;
+}
+
+.hr-quote {
+    position: relative;
+}
+
+.hr-quote::after {
+    position: absolute;
+    content: '“';
+    font-family: Georgia,"Times New Roman";
+    right: calc(50% - 5px);
+    top: calc(50% - 22px);
+    color: #e21f2f;
+    font-size: 47px;
+    width: 10px;
+    height: 10px;
+}
+
+section .investBanner li{
+  font-family: 'PT Serif', serif !important;
+}
+section .landingj li{
+  font-family: 'PT Serif', serif !important;
+}
+
+.primaryBG {
+  background-color: #476dc2;
+}
+
+.feature-img {
+  padding: 2em;
+
+}
+
+.feature-writeup h1 {
+  color: #fff;
+}
+
+.feature-writeup p {
+  color: #eee;
+}
+
+#investBannerHead{
+  font-family: 'Josefin Slab', serif;
+  text-transform: uppercase;
+  color: #fff !important;
+  font-weight: inherit;
+  margin-bottom: 0px !important;
+}
+
+#bannerUL{
+  /*padding-left: 0px !important;*/
+  margin-bottom: 0px !important;
+}
+
+.investBannerFoot{
+  display: inline-table;
+  background: rgba(0, 0, 0, .5);
+  width : 100%;
+  height: 140px !important;
+  padding-top: 20px !important;
+}
+.investBannerFoot ul{
+  display: inline-flex;
+}
+.investBannerFoot .imageIcon{
+  padding-left: 30px;
+}
+
+.banner-check{
+  border-radius: 25px;
+  border: 3px solid;
+  padding: 5px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.investBanner-heading h1 {
+  font-size: 6rem;
+}
+
+section#invest-banner li {
+  margin-bottom: 20px;
+  font-size: 2.6rem;
+  font-weight: 300;
+  color: #fff !important;
+  font-family: 'PT Serif', serif !important;
+  line-height: 1.6;
+}
+section#banner li {
+  margin-bottom: 20px;
+  font-size: 2.6rem;
+  font-weight: 300;
+  color: #fff !important;
+  font-family: 'PT Serif', serif !important;
+  line-height: 1.6;
+}
+
+.investBtnMoney {
+  margin-top: 2rem;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  border-radius: 2px;
+  font-size: 1.3em;
+  font-weight: 300;
+  font-family: 'Josefin Slab', serif;
+  padding: 15px;
+  text-align: center;
+  /*padding-left: 15%;*/
+}
+
+.investBtnMoney:hover, .investBtnMoney:focus{
+  background-color: rgba(255, 255, 255, 0.2);
+  color : #fff !important;
+}
+
+.investBtnMoney .fa-angle-right{
+  padding-left: 12px;
+  font-size: 23px;
+}
+
+/*.investBannerBtn span{
+  float: left;
+  position: relative;
+  left: 20%;
+}
+.investBannerBtn i{
+  float: right;
+  position: relative;
+  right: 20%;
+}*/
+
+.investBanner-heading {
+  /*padding: 7em 0;*/
+  padding-top: 7em;
+  padding-bottom: 20px !important;
+  margin-left: 4%;
+
+}
+
+/*media query*/
+@media only screen and (min-width:320px) and (max-width: 480px) {
+  .investBanner-heading h1 {
+    font-size: 4rem;
+  }
+
+}
+
+/* end of new class*/
+.investBanner {
+    background-image: url("https://s3-ap-southeast-1.amazonaws.com/fundko-assets/invest-banner.jpg");
+    /*background: url("../img/invest-page/invest-banner.jpg");*/
+    /*background-image: url("../img/landing_BG_aug_34.png"); 46.3em*/
+    margin-top: 0;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 4em;
+    min-height: 100vmin;
+    border-bottom: #ababab solid 1px;
+}
