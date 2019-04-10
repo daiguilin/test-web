@@ -36,143 +36,12 @@
             rel="stylesheet"
             type="text/css"
         />
-        <!-- <link href='https://fonts.googleapis.com/css?family=Raleway:400,500' rel='stylesheet' type='text/css'> -->
-        <!-- <link href="./invest_files/css" rel="stylesheet" type="text/css" /> -->
-
-        <!--<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'> -->
-        <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" /> -->
-
         <!-- loaders -->
         <link rel="stylesheet" type="text/css" href="./css/loaders.min.css" />
-
-        <!-- Google Tag Manager -->
-        <script>
-            (function(w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({
-                    "gtm.start": new Date().getTime(),
-                    event: "gtm.js"
-                });
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s),
-                    dl = l != "dataLayer" ? "&l=" + l : "";
-                j.async = true;
-                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, "script", "dataLayer", "GTM-TBVF654");
-        </script>
-        <!-- End Google Tag Manager -->
-
-        <script>
-            (function(i, s, o, g, r, a, m) {
-                i["GoogleAnalyticsObject"] = r;
-                (i[r] =
-                    i[r] ||
-                    function() {
-                        (i[r].q = i[r].q || []).push(arguments);
-                    }),
-                    (i[r].l = 1 * new Date());
-                (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m);
-            })(
-                window,
-                document,
-                "script",
-                "https://www.google-analytics.com/analytics.js",
-                "ga"
-            );
-
-            ga("create", "UA-84823716-1", "auto");
-            ga("send", "pageview");
-        </script>
-
-        <!-- Facebook Pixel Code -->
-        <!-- <script>
-  !function(f, b, e, v, n, t, s);
-{
-  if (f.fbq) return;
-  n = f.fbq = function() {
-    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-  };
-  if (!f._fbq) f._fbq = n;
-  n.push = n;
-  n.loaded = !0;
-  n.version = "2.0";
-  n.queue = [];
-  t = b.createElement(e);
-  t.async = !0;
-  t.src = v;
-  s = b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t, s);
-}
-window, document, "script", "https://connect.facebook.net/en_US/fbevents.js";
-
-fbq("init", "1153456781358704");
-fbq("track", "PageView");
-</script>
-<noscript>
-  <img height="1" width="1"
-  src="https://www.facebook.com/tr?id=1153456781358704&ev=PageView
-  &noscript=1"/>
-</noscript> -->
-        <!-- End Facebook Pixel Code -->
-
-        <!-- <script src="https://s3-ap-southeast-1.amazonaws.com/fundko-assets/javascripts/smoothscroll.js"></script> -->
-        <script>
-            $(document).ready(function() {
-                $(".reg").click(function(event) {
-                    event.preventDefault();
-                    var link = this;
-                    $.smoothScroll({
-                        scrollTarget: link.hash,
-                        afterScroll: function(options) {
-                            $(options.scrollTarget)
-                                .find("input")[0]
-                                .focus();
-                        }
-                    });
-                });
-
-                $(".faq-link").click(function(event) {
-                    event.preventDefault();
-                    var link = this;
-                    $.smoothScroll({
-                        scrollTarget: link.hash
-                    });
-                });
-            });
-        </script>
-
-        <!-- <link href="/stylesheets/uikit.scrollspy.css" rel="stylesheet"> -->
-        <!-- <link href="/stylesheets/uikit.css" rel="stylesheet"> -->
-        <!-- <link href="./invest_files/css(1)" rel="stylesheet" />
-        <link href="./invest_files/css(2)" rel="stylesheet" />
-        <link href="./invest_files/css(3)" rel="stylesheet" /> -->
+        <link href="/css/uikit.scrollspy.css" rel="stylesheet">
+        <link href="/css/uikit.css" rel="stylesheet">
         <link href="./css/landing-index4.css" rel="stylesheet" />
-        <!-- <script src="/javascripts/uikit.js"></script> -->
         <link href="./css/new-invest.css" rel="stylesheet" />
-
-        <meta
-            name="description"
-            content="Invest in Loans through FundKo by funding portions of available loans on the marketplace. Stable Investment, Diversified portfolio and Get monthly returns. Start Investing Now!"
-        />
-        <meta property="og:url" content="https://fundko.com/invest" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Invest in Loans Through FundKo" />
-        <meta
-            property="og:description"
-            content="Invest in Loans through FundKo by funding portions of available loans on the marketplace. Stable Investment, Diversified portfolio and Get monthly returns. Start Investing Now!"
-        />
-        <meta
-            property="og:image"
-            content="https://s3-ap-southeast-1.amazonaws.com/fundko-assets/img/FundKo_Website_SEOAssets_KV_1200x628.jpg"
-        />
-        <link rel="canonical" href="https://fundko.com/invest" />
-        <!-- <link href="/stylesheets/mobile.css" rel="stylesheet"> -->
     </head>
 
     <body class="with-new-header">
@@ -193,17 +62,6 @@ fbq("track", "PageView");
             </style>
 
             <div class="">
-                <!-- Google Tag Manager (noscript) -->
-                <noscript>
-                    <!-- <iframe
-                        src="https://www.googletagmanager.com/ns.html?id=GTM-TBVF654"
-                        height="0"
-                        width="0"
-                        style="display:none;visibility:hidden"
-                    ></iframe -->
-                    >
-                </noscript>
-                <!-- End Google Tag Manager (noscript) -->
                 <nav class="navbar navbar-default navbar-fixed-top">
                     <div class="container">
                         <!-- Brand and toggle get grouped for better mobile display -->
@@ -406,11 +264,7 @@ fbq("track", "PageView");
                                         .
                                     </button>
                                 </div>
-                                <!-- <div class="signup-form-fields">
-                <input type="email" name="email" class="form-control" placeholder="Email" value="">
-                <input type="password" name="password" class="form-control" placeholder="Password" value="">
-                <button id="btnSignUp" type="submit" class="btn btn-default text-center col-xs-12">Sign Up</button>
-              </div> -->
+      
                             </div>
                         </div>
                     </div>
@@ -2562,71 +2416,13 @@ fbq("track", "PageView");
                 });
             });
         </script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <!-- <iframe
-            height="0"
-            width="0"
-            style="display: none; visibility: hidden;"
-            src="./iframe/activityi.html"
-        ></iframe> -->
         <script src="./js/bootstrap.min.js"></script>
-        <script type="text/javascript" id="">
-            !(function(b, e, f, g, a, c, d) {
-                b.fbq ||
-                    ((a = b.fbq = function() {
-                        a.callMethod
-                            ? a.callMethod.apply(a, arguments)
-                            : a.queue.push(arguments);
-                    }),
-                    b._fbq || (b._fbq = a),
-                    (a.push = a),
-                    (a.loaded = !0),
-                    (a.version = "2.0"),
-                    (a.queue = []),
-                    (c = e.createElement(f)),
-                    (c.async = !0),
-                    (c.src = g),
-                    (d = e.getElementsByTagName(f)[0]),
-                    d.parentNode.insertBefore(c, d));
-            })(
-                window,
-                document,
-                "script",
-                "https://connect.facebook.net/en_US/fbevents.js"
-            );
-            fbq("init", "1153456781358704", {
-                em: "undefined",
-                ph: "undefined",
-                ln: "undefined",
-                fn: "undefined"
-            });
-            fbq("track", "PageView");
-        </script>
-        <div
-            style="width:0px; height:0px; display:none; visibility:hidden;"
-            id="batBeacon0.3745295084411391"
-        >
-            <!-- <img
-                style="width:0px; height:0px; display:none; visibility:hidden;"
-                id="batBeacon0.22834428904234438"
-                width="0"
-                height="0"
-                alt=""
-                src="./invest_files/0"
-            /> -->
-        </div>
-
         <!-- Plugin JavaScript -->
         <script src="./js/jquery.easing.min.js"></script>
         <script src="./js/classie.js"></script>
         <script src="./js/matchmedia.js"></script>
         <script src="./js/fadethis.js"></script>
         <script src="./js/cbpAnimatedHeader.js"></script>
-
-        <!-- Contact Form JavaScript -->
-        <!-- <script src="javascripts/jqBootstrapValidation.js"></script>
-<script src="javascripts/contact_me.js"></script> -->
 
         <!-- Custom Theme JavaScript -->
         <script src="./js/agency.js"></script>

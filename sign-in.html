@@ -4,11 +4,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
         <title>Log in</title>
-        <link
-            rel="shortcut icon"
-            type="image/png"
-            href="./img/fundko_icon.png"
-        />
         <link href="./css/bootstrap.min.css" rel="stylesheet" />
         <link href="./css/agency.css" rel="stylesheet" />
         <link href="./css/custom_2.css" rel="stylesheet" />
@@ -24,36 +19,10 @@
 
         <link rel="stylesheet" type="text/css" href="./css/loaders.min.css" />
 
-        <script>
-            $(document).ready(function() {
-                $(".reg").click(function(event) {
-                    event.preventDefault();
-                    var link = this;
-                    $.smoothScroll({
-                        scrollTarget: link.hash,
-                        afterScroll: function(options) {
-                            $(options.scrollTarget)
-                                .find("input")[0]
-                                .focus();
-                        }
-                    });
-                });
-
-                $(".faq-link").click(function(event) {
-                    event.preventDefault();
-                    var link = this;
-                    $.smoothScroll({
-                        scrollTarget: link.hash
-                    });
-                });
-            });
-        </script>
-
         <link href="./css/landing-index4(1).css" rel="stylesheet" />
         <link href="./css/new-invest.css" rel="stylesheet" />
         <link href="./css/new-login.css" rel="stylesheet" />
         <link href="./css/mobile.css" rel="stylesheet" />
-        <link rel="canonical" href="" />
 
         <style>
             #messages ul li {

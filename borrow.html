@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/agency.css" rel="stylesheet">
+  <link href="./css/custom_2.css" rel="stylesheet">
+  <link href="./css/landing.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <script src="./js/jquery.min.js"></script>
+  <!-- loaders -->
+  <link rel="stylesheet" type="text/css" href="./css/loaders.min.css">
+
+  <link rel="stylesheet" type="text/css" href="./css/borrow.css">
+  <link rel="stylesheet" type="text/css" href="./css/borrow2.css">
+  <link rel="stylesheet" type="text/css" href="./css/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/slick-theme.min.css">
+</head>
+
+<body class="with-new-header">
+
+  <div id="page-top" class="index index4">
+    <style>
+      .loginn a {
+        color: #185fa4 !important;
+      }
+
+      .signup_modal_header button {
+        margin-top: -9px !important;
+        font-size: 20px;
+      }
+
+      .loginn-label {
+        font-family: 'Equip-light';
+        font-weight: 600;
+        color: #425e78;
+      }
+    </style>
+
+    <div class="">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" id="hideshow" onclick="hidebutton()">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar black-icon"></span>
+              <span class="icon-bar black-icon"></span>
+              <span class="icon-bar black-icon"></span>
+            </button>
+            <a class="" href="">
+              <img style="" class="fundx-logo fundx-logo-mobile" src="./img/logo5.png">
+            </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="hidden">
+                <a href="#page-top"></a>
+              </li>
+              <li>
+                <a class="page-scroll" href="">BORROW</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="">INVEST</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="">NEWS</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="">FAQ</a>
+              </li>
+              <!-- <li>
+                  <a class="page-scroll" href="/partners-page">PARTNERS</a>
+                </li> -->
+              <li>
+                <a class="page-scroll" href="" data-toggle="">REGISTER</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="" data-toggle="modal"
+                  data-target="#modalSignUp">SIGN IN</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+    </div>
+    <!-- MODAL Severity-->
+    <form action="https://fundko.com/login" method="POST">
+      <div class="modal fade signupModal" id="modalSignUp" role="dialog" style="border-radius:10px;">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content signup_modal_content">
+            <div class="modal-header signup_modal_header">
+              <h4 class="modal-title text-center">Welcome to FundKo
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <i class="fa fa-close pull-right" area-hidden="true"></i>
+                </button>
+              </h4>
+            </div>
+            <div class="modal-body" style="padding-top:20px;">
+              <p style="text-align:center;">Sign in to your account.</p>
+              <br>
+              <div class="form-group form-profile col-md-12">
+                <div class="col-md-4">
+                  <label class="label-profile loginn-label">Email Address</label>
+                </div>
+                <div class="col-md-8 form-profile">
+                  <input type="email" name="email" required="required" class="form-control" placeholder="Email Address">
+                </div>
+              </div>
+              <div class="form-group form-profile col-md-12">
+                <div class="col-md-4">
+                  <label class="label-profile loginn-label">Password </label>
+                </div>
+                <div class="col-md-8 form-profile">
+                  <input type="password" name="password" class="form-control" placeholder="Password" value="">
+                </div>
+              </div>
+              <div class="form-group b">
+                <div class="col-xs-12 col-md-12 text-center"
+                  style="padding-top: 10px; padding-left: 15px; margin-bottom:20px;">
+                  <!-- <input type="checkbox" value style="height: auto; margin-bottom: 5px;"> Stay signed in. -->
+                  <!--                   <br> -->
+                  <a data-toggle="modal" role="button" href="https://fundko.com/forgot" style="color: #185fa4"
+                    class="modal-link">Forgot Password?</a>
+                  <!-- <span><small>Not a FundX member?</small></span><br> --><span> | </span>
+                  <a data-toggle="modal" role="button" href="https://fundko.com/register" style="color: #185fa4"
+                    class="modal-link">Create New Account.</a>
+                  <span> | </span>
+                  <a data-toggle="modal" role="button" href="https://fundko.com/email-verification"
+                    style="color: #185fa4" class="modal-link">Resend Email Verification.</a>
+                </div>
+                <div class="col-xs-12 col-md-offset-4 col-md-4">
+                  <button id="btnSignUp" type="submit" style="width:100%" class="btn btn-default text-center ">LOG
+                    IN</button>
+                </div>
+                <button class="whitebtn2" disabled="">.</button>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </form>
+  </div>
+
+
+
+  <div id="LoanCalculatorNew">
+    <div data-reactroot="">
+      <div>
+        <header>
+          <!-- react-empty: 4 -->
+          <section class="content-section background-header"
+            style="background-image: url(&quot;./img/borrow_landing_1.png&quot;);">
+            <div class="medium-container">
+              <div class="small-66 col-md-6 col-md-offset-1 custom-banner-text hidden-xs hidden-sm">
+                <h1 id="header" style="color: rgb(0, 46, 86);">Personal Loan</h1>
+                <h3 id="sub-header" style="color: rgb(0, 37, 70); text-align: left; padding-right: 30%;">Pursue your
+                  passion &amp; achieve your life goals with our personal loans</h3>
+                <ul id="list">
+                  <li style="color: rgb(66, 66, 66); text-align: left; padding-right: 40%;">Online application</li>
+                  <li style="color: rgb(66, 66, 66); text-align: left; padding-right: 40%;">Borrow between P20,000 -
+                    P200,000</li>
+                  <li style="color: rgb(66, 66, 66); text-align: left; padding-right: 40%;">Flexible payment terms</li>
+                  <li style="color: rgb(66, 66, 66); text-align: left; padding-right: 40%;">As low as 1.25% interest per
+                    month</li>
+                  <li style="color: rgb(66, 66, 66); text-align: left; padding-right: 40%;">No collateral</li>
+                  <li style="color: rgb(66, 66, 66); text-align: left; padding-right: 40%;">Perfect for funding your
+                    home renovations, business ideas, and other projects</li>
+                </ul><a href="#requiredDocuments" class="btn btn-success pull-left">Check
+                  Requirements</a>
+              </div>
+              <div class="small-33 col-md-5">
+                <div class="calculatorContainer">
+                  <h3 class="calculatorHeader">How much can I loan?</h3>
+                  <div>
+                    <div class="loanApplicationSection loanCenterSectionContent">
+                      <h5 class="loanStepSectionHeader text-center">Loan Type</h5>
+                      <div>
+                        <div class="loanTypeItems selectedType"><label id="btnPersonalLoanType"><input type="radio"
+                              class="loanTypeRadio" value="Personal Loan"><img
+                              src="./img/app_fundko_personal.png">
+                            <h6 class="text-center loanTypeText">Personal</h6>
+                          </label></div>
+                        <div class="loanTypeItems"><label id="btnBusinessLoanType"><input type="radio"
+                              class="loanTypeRadio" value="Business"><img
+                              src="./img/281d5e34f4129e910bc73181ede64e5b.png">
+                            <h6 class="text-center loanTypeText">Business</h6>
+                          </label></div>
+                        <div class="loanTypeItems"><label id="btnBizLoanType"><input type="radio" class="loanTypeRadio"
+                              value="Biz Loan"><img src="./img/281d5e34f4129e910bc73181ede64e5b.png">
+                            <h6 class="text-center loanTypeText">Biz</h6>
+                          </label></div>
+                      </div>
+                    </div>
+                    <div class="loanApplicationSection">
+                      <h5 class="loanStepSectionHeader loanSliderHeader text-center">Loan Amount</h5>
+                      <div class="loanApplicationSlider">
+                        <div class="rc-slider">
+                          <div
+                            style="left: 100%; position: absolute; transform: translate(-50%, -50%); cursor: pointer; padding: 5px; border: 1px solid rgb(171, 226, 251); border-radius: 3px; background: rgb(255, 255, 255); font-size: 10px; text-align: center; margin-top: 2px; width: 100px; z-index: 3;">
+                            <!-- react-text: 59 -->₱ 200,000.00
+                            <!-- /react-text -->
+                            <!-- react-text: 60 -->
+                            <!-- /react-text -->
+                          </div>
+                          <div class="rc-slider-track" style="visibility: visible; left: 0%; width: 100%;"></div>
+                          <div class="rc-slider-step"><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 0%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 2.63158%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 5.26316%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 7.89474%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 10.5263%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 13.1579%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 15.7895%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 18.4211%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 21.0526%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 23.6842%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 26.3158%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 28.9474%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 31.5789%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 34.2105%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 36.8421%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 39.4737%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 42.1053%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 44.7368%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 47.3684%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 50%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 52.6316%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 55.2632%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 57.8947%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 60.5263%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 63.1579%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 65.7895%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 68.4211%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 71.0526%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 73.6842%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 76.3158%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 78.9474%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 81.5789%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 84.2105%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 86.8421%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 89.4737%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 92.1053%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 94.7368%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 97.3684%;"></span><span class="rc-slider-dot rc-slider-dot-active"
+                              style="left: 100%;"></span></div>
+                          <div class="rc-slider-mark"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="loanApplicationSection">
+                      <h5 class="loanStepSectionHeader loanSliderHeader text-center" style="margin-bottom: 0.5em;">
+                        Monthly Income</h5>
+                      <div class="">
+                        <h2 class="text-center" style="margin-top: 0px; color: rgb(255, 255, 255);">₱ 151,111.11</h2>
+                      </div>
+                    </div>
+                    <div class="loanApplicationSection">
+                      <h5 class="loanStepSectionHeader text-center">Term</h5><select
+                        class="form-control loanApplicationTermDropdown">
+                        <option class="text-center" value="Personal Loan (12 months)">12 months</option>
+                        <option class="text-center" value="Personal Loan (9 months)">9 months</option>
+                        <option class="text-center" value="Personal Loan (6 months)">6 months</option>
+                        <option class="text-center" value="Personal Loan (3 months)">3 months</option>
+                      </select>
+                    </div>
+                    <div class="loanApplicationSection monthlyPaymentSection">
+                      <h5 class="loanStepSectionHeader loanSliderHeader calculatorHeader text-center"
+                        style="margin-bottom: 0.5em;">Monthly Payments</h5>
+                      <h1 class="text-center">₱ 22,666.67</h1>
+                    </div><a class="btn btn-warning calculatorApplyNowBtn">Apply Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </header>
+        <section class="row" id="requiredDocuments">
+          <section class="row" id="requiredDocuments">
+            <div class="col-md-8 col-md-offset-2">
+              <h2 class="text-center"
+                style="margin-top: 0px; margin-bottom: 1.5em; font-weight: bold; color: rgb(0, 96, 157);">REQUIREMENTS
+              </h2>
+              <div class="col-md-4"><img src="./img/FundKo_PersonalLoan_LandingPage_IDwithBG.png"
+                  style="width: 100%; margin: auto;"></div>
+              <div class="col-md-4"><img src="./img/FundKo_PersonalLoan_LandingPage_PayslipswithBG.png"
+                  style="width: 100%; margin: auto;"></div>
+              <div class="col-md-4"><img src="./img/FundKo_PersonalLoan_LandingPage_ProofOfBillingwithBG.png"
+                  style="width: 100%; margin: auto;"></div>
+              <h4 class="text-center col-md-12" style="color: rgb(0, 96, 157); margin-top: 1.5em;">*other documents may
+                be requested</h4><a class="btn btn-warning calculatorApplyNowBtn">Apply Now</a>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+  </div>
+  <main>
+
+
+    <section class="after-header-content text-center alternate-background">
+      <div class="container">
+        <div class="">
+          <div class="col-md-4">
+            <div class="col-md-4 hidden-sm hidden-xs">
+              <img class="img-responsive" src="./img/1.png" alt="">
+            </div>
+            <div class="col-xs-4 col-xs-offset-4 hidden-md hidden-lg">
+              <img class="img-responsive" src="./img/1.png" alt="">
+            </div>
+            <div class="col-md-8 col-xs-12">
+              <h3>Apply Online</h3>
+              <h4>
+                Fill out the application form &amp; submit your documents online
+              </h4>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="col-md-4 hidden-sm hidden-xs">
+              <img class="img-responsive" src="./img/2.png" alt="">
+            </div>
+            <div class="col-xs-4 col-xs-offset-4 hidden-md hidden-lg">
+              <img class="img-responsive" src="./img/2.png" alt="">
+            </div>
+            <div class="col-md-8 col-xs-12">
+              <h3>Lenders Fund Your Loan</h3>
+              <h4>
+                Get your funds quicker with the help of the FundKommunity. 100% guaranteed funding
+              </h4>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="col-md-4 hidden-sm hidden-xs">
+              <img class="img-responsive" src="./img/3.png" alt="">
+            </div>
+            <div class="col-xs-4 col-xs-offset-4 hidden-md hidden-lg">
+              <img class="img-responsive" src="./img/3.png" alt="">
+            </div>
+            <div class="col-md-8 col-xs-12">
+              <h3>Get Your Funds</h3>
+              <h4>
+                We will contact you as soon as your loan is fully funded
+              </h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="content-section text-center fundko-advantage">
+      <div class="">
+        <div class="container">
+          <div class="col-md-6 vimeoIframe">
+          </div>
+          <div class="col-md-6">
+            <h1><img src="./img/logo5.png" class="logo"> ADVANTAGE:</h1>
+            <ul>
+              <li>
+                Get better rates
+              </li>
+              <li>
+                Apply anytime. Anywhere.
+              </li>
+              <li>
+                Fast Approval
+              </li>
+              <li>
+                100% Secure and confidential
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+    <section class="content-section text-center noPadding about-fundko">
+      <div class="">
+        <div class="container">
+          <div class="small-33 col-md-4">
+            <h2>Why FundKo?</h2>
+            <p>
+              By going direct to peers, the borrower can enjoy better rates, while lenders earn higher
+              than bank deposit rates. One gets a feeling of 'community' because it is people helping
+              other people. Fundko takes care of credit and background checks, document verification,
+              loan agreements preparation, and monthly collections and repayments management.
+            </p>
+          </div>
+
+          <div class="small-33 col-md-4">
+            <h2>About FundKo</h2>
+            <p>
+              FundKo is a crowdlending site that matches people who need funds with other people who
+              have excesss cash . FundKo is a subsidiary of Guevent Investments Development Corporation
+              (GIDC) - a company that has over 50 years of experience in financing, tranportation, and
+              real estate in the Philippines. We are proudly Filipino.
+            </p>
+          </div>
+
+          <div class="small-33 col-md-4">
+            <h2>Building Futures Together</h2>
+            <p>
+              We verify you and the documents that you submit, originate your loan and provide you with
+              your loan schedule. Your loan is posted on the FundKo marketplace where multiple lenders
+              will invest in your loan. Once fully funded, FundKo will release the loan proceeds to you.
+              Every month, FundKo will collect your repayment and makes sure it gets to your lenders on
+              time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section text-center apply-now">
+      <div class="">
+        <div class="medium-container">
+          <h3>Start your hassle-free application process today!</h3>
+          <a href="" class="btn btn-warning"> APPLY NOW </a>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="content-section  alternate-background loan-consultation">
+      <div>
+        <div class="container">
+          <div
+            class="col-md-8 col-sm-10 col-sm-offset-1 col-md-offset-2 content-background section-heading text-center">
+            <form class="login-form form">
+              <div class="register-form">
+                <h3>Let our loan consultant take care of your financial requirements</h3>
+                <div class="form-group">
+                  <label class="control-label col-md-3 col-md-offset-1 col-sm-3 col-xs-12 text-left mobilePadding"
+                    style="margin-top:.5em" for="fullName">Full Name</label>
+                  <div class="col-md-7 col-sm-8 col-xs-12 mobilePadding">
+                    <input type="text" id="nameConsultation" name="fullName" required=""
+                      class="form-control col-md-7 col-xs-12" placeholder="Full Name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-md-3 col-md-offset-1 col-sm-3 col-xs-12 text-left mobilePadding"
+                    style="margin-top:.5em" for="email">Email Address</label>
+                  <div class="col-md-7 col-sm-8 col-xs-12 mobilePadding">
+                    <input type="email" id="emailConsultation" name="email" required=""
+                      class="form-control col-md-7 col-xs-12" placeholder="Email Address">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-md-10 col-md-offset-1">
+                    <button id="btnConsultation" class="btn btn-info text-center hidden-xs hidden-sm">Get a FREE loan
+                      consultation today</button>
+                    <button id="btnConsultation" class="btn btn-info text-center hidden-md hidden-lg">Schedule
+                      Now</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <style>
+      .newsletter-btn:hover,
+      .newsletter-btn:focus,
+      .newsletter-btn:disabled {
+        background-color: #293f70 !important;
+        color: #fff;
+        border: 0;
+      }
+    </style>
+
+    <section id="footer">
+      <div class="container">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-4 text-left" id="footer-menu">
+            <h5 class="footer-header text-left">Quick links</h5>
+            <ul style="list-style-type: none; padding: 0;">
+              <li><a class="menu" href="">Home</a></li>
+              <li><a class="menu" href="">News</a></li>
+              <li><a class="menu" href="">Register</a></li>
+              <li><a class="menu" href="">FAQ</a></li>
+              <li><a class="menu" href="">About Us</a></li>
+              <li><a class="menu" href="">Contact Us</a></li>
+              <li><a class="menu" href="">Privacy Policy</a></li>
+            </ul>
+            <script>
+              $(document).ready(function () {
+                var pgurl = window.location.href.substr(
+                  window.location.href.lastIndexOf("/")
+                );
+                console.log(pgurl);
+                $("a.menu").each(function () {
+                  if ($(this).attr("href") == pgurl || $(this).attr("href") == "")
+                    $(this).addClass("active");
+                });
+              });
+            </script>
+          </div>
+          <div class="col-md-6 col-sm-8 col-xs-8 text-center margin-bottom1 newsletter">
+            <h5 class="footer-header">address</h5>
+            <p class="">Fintechnology Inc., 3rd Floor Guevent Building, <br>
+              #52 D.M. Guevara St. corner Calbayog St., Mandaluyong City, Philippines
+              <br><br>
+            </p>
+            <h5 class="footer-header">Contact No.</h5>
+            <p class="">534-9185 (local 58) <br>
+
+            </p>
+          </div>
+
+          <form action="" class="subscribe">
+            <div class="input-group newsletter-input-group col-xs-12 hidden-lg hidden-md"
+              style="width: 100% !important;">
+              <input type="email" name="email" class="form-control newsletter-input" placeholder="Email address"
+                required="">
+              <span class="input-group-btn">
+                <button class="btn btn-default newsletter-btn btn-subscribe" style="padding: 10px 5px 10px 5px;">
+                  Subscribe </button>
+              </span>
+            </div>
+          </form>
+
+          <div class="col-md-3 col-sm-12 col-xs-12 text-center">
+            <h5 class="footer-header">social links</h5>
+            <!--  <p class="about">FundKo is a subsidiary of Guevent Investments Corporation (GIDC). GIDC is a company that has over 50 years of business
+            in the microlending industry through Radio Wealth Finance. It continues to grow its operations.
+          </p> -->
+            <div class="row text-center social-links">
+              <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <a target="_blank" href=""><i class="fa fa-facebook"
+                      aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <a target="_blank" href=""><i class="fa fa-twitter"
+                      aria-hidden="true"></i></a>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <a target="_blank" href=""><i class="fa fa-instagram"
+                      aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var $subscribeForm = $(".subscribe");
+
+        $subscribeForm.submit(function (e) {
+          console.log($(this).serialize());
+          console.log("formspee");
+          e.preventDefault();
+          var $submit = $(".btn-subscribe");
+          var defaultSubmitText = $submit.html();
+
+          $.ajax({
+            url: "//formspree.io/cu.michaels@gmail.com",
+            method: "POST",
+            data: $(this).serialize(),
+            dataType: "json",
+            beforeSend: function () {
+              //$subscribeForm.append('<div class="alert alert--loading">Sending message…</div>');
+              $submit.attr("disabled", true).text("Sending message…");
+            },
+            success: function (data) {
+              //$subscribeForm.append('<div class="alert alert--success">Message sent!</div>');
+              $submit.text("Message sent!");
+              setTimeout(function () {
+                //$('.alert--success').remove();
+                $submit.attr("disabled", false).html(defaultSubmitText);
+              }, 5000);
+            },
+            error: function (err) {
+              //$subscribeForm.find('.alert--loading').hide();
+              //$subscribeForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+              $submit.text("Ops, there was an error.");
+              setTimeout(function () {
+                //$('.alert--error').remove();
+                $submit.attr("disabled", false).html(defaultSubmitText);
+              }, 5000);
+            }
+          });
+        });
+      });
+    </script>
+
+  </main>
+
+  <!-- Bootstrap Core JavaScript -->
+
+  <script src="./js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="./js/jquery.easing.min.js"></script>
+  <script src="./js/classie.js"></script>
+  <script src="./js/matchmedia.js"></script>
+  <script src="./js/fadethis.js"></script>
+  <script src="./js/cbpAnimatedHeader.js"></script>
+
+  <script src="./js/agency.js"></script>
+  <script>
+    if (matchMedia("only screen and (max-width: 480px)").matches) {
+      // smartphone/iphone... maybe run some small-screen related dom scripting?
+    } else {
+      $(window).fadeThis({
+        reverse: false
+      });
+    }
+
+    $("#btnConsultation").click(function (e) {
+      var url = "../sendConsultationEmail";
+      var email = $("#emailConsultation").val();
+      var fullName = $("#nameConsultation").val();
+      var obj = {
+        email: email,
+        fullName: fullName
+      };
+      if (email.length != 0 && fullName.length != 0) {
+        e.preventDefault();
+        $.ajax({
+          url: url,
+          dataType: "json",
+          type: "post",
+          contentType: "application/json",
+          data: JSON.stringify(obj),
+          success: function (data, textStatus, jQxhr) {
+            alert(
+              "Email request sent! Please wait for our email response. Thank you!"
+            );
+          }
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
