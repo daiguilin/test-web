@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Contact Us | FundKo</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/agency.css" rel="stylesheet">
+  <link href="./css/custom_2.css" rel="stylesheet">
+  <link href="./css/landing.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="./css/dhana.css" rel="stylesheet" type="text/css">
+  dhana
+  <!-- loaders -->
+  <link rel="stylesheet" type="text/css" href="./css/loaders.min.css">
+  <style>
+    .newsletter-btn:hover,
+    .newsletter-btn:focus,
+    .newsletter-btn:disabled {
+      background-color: #293f70 !important;
+      color: #fff;
+      border: 0;
+    }
+  </style>
+  <style>
+    .form-group .label {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 5px;
+      font-weight: 700;
+      opacity: 100;
+      font-size: 1em;
+      padding-left: 0;
+    }
+
+    h4 {
+      color: #23b3e0;
+      margin-bottom: 2px;
+    }
+
+    .customInput {
+      width: 50%;
+      height: 30px;
+      border: 1px solid #23b3e0 !important;
+      border-radius: 5px;
+    }
+
+    .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: rgba(42, 45, 50, .9) !important;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+      top: 47%;
+      left: 5%;
+    }
+
+    .emailForm .tooltiptext::after {
+      content: " ";
+      position: absolute;
+      bottom: 100%;
+      /* At the top of the tooltip */
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent rgba(42, 45, 50, .9) transparent;
+    }
+  </style>
+</head>
+
+<body class="with-new-header">
+  <div id="page-top" class="index">
+    <style>
+      .loginn a {
+        color: #185fa4 !important;
+      }
+
+      .signup_modal_header button {
+        margin-top: -9px !important;
+        font-size: 20px;
+      }
+
+      .loginn-label {
+        font-family: 'Equip-light';
+        font-weight: 600;
+        color: #425e78;
+      }
+    </style>
+
+    <div class="">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" id="hideshow" onclick="hidebutton()">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar black-icon"></span>
+              <span class="icon-bar black-icon"></span>
+              <span class="icon-bar black-icon"></span>
+            </button>
+            <a class="" href="">
+              <img style="" class="fundx-logo fundx-logo-mobile" src="./img/logo5.png">
+            </a>
+
+            <!-- <a class="navbar-brand page-scroll" href="#page-top"></a> -->
+
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="hidden active">
+                <a href="#page-top"></a>
+              </li>
+              <li>
+                <a class="page-scroll" href="">BORROW</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="">INVEST</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="">NEWS</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="">FAQ</a>
+              </li>
+              <!-- <li>
+                  <a class="page-scroll" href="/partners-page">PARTNERS</a>
+                </li> -->
+              <li>
+                <a class="page-scroll" href="" data-toggle="">REGISTER</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="#" data-toggle="modal" data-target="#modalSignUp">SIGN IN</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+    </div>
+    <!-- MODAL Severity-->
+    <form action="" method="POST">
+      <div class="modal fade signupModal" id="modalSignUp" role="dialog" style="border-radius:10px;">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content signup_modal_content">
+            <div class="modal-header signup_modal_header">
+              <h4 class="modal-title text-center">Welcome to FundKo
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <i class="fa fa-close pull-right" area-hidden="true"></i>
+                </button>
+              </h4>
+            </div>
+            <div class="modal-body" style="padding-top:20px;">
+              <p style="text-align:center;">Sign in to your account.</p>
+              <br>
+              <div class="form-group form-profile col-md-12">
+                <div class="col-md-4">
+                  <label class="label-profile loginn-label">Email Address</label>
+                </div>
+                <div class="col-md-8 form-profile">
+                  <input type="email" name="email" required="required" class="form-control" placeholder="Email Address">
+                </div>
+              </div>
+              <div class="form-group form-profile col-md-12">
+                <div class="col-md-4">
+                  <label class="label-profile loginn-label">Password </label>
+                </div>
+                <div class="col-md-8 form-profile">
+                  <input type="password" name="password" class="form-control" placeholder="Password" value="">
+                </div>
+              </div>
+              <div class="form-group b">
+                <div class="col-xs-12 col-md-12 text-center"
+                  style="padding-top: 10px; padding-left: 15px; margin-bottom:20px;">
+                  <!-- <input type="checkbox" value style="height: auto; margin-bottom: 5px;"> Stay signed in. -->
+                  <!--                   <br> -->
+                  <a data-toggle="modal" role="button" href="" style="color: #185fa4" class="modal-link">Forgot
+                    Password?</a>
+                  <!-- <span><small>Not a FundX member?</small></span><br> --><span> | </span>
+                  <a data-toggle="modal" role="button" href="" style="color: #185fa4" class="modal-link">Create New
+                    Account.</a>
+                  <span> | </span>
+                  <a data-toggle="modal" role="button" href="" style="color: #185fa4" class="modal-link">Resend Email
+                    Verification.</a>
+                </div>
+                <div class="col-xs-12 col-md-offset-4 col-md-4">
+                  <button id="btnSignUp" type="submit" style="width:100%" class="btn btn-default text-center ">LOG
+                    IN</button>
+                </div>
+                <button class="whitebtn2" disabled="">.</button>
+              </div>
+              <!-- <div class="signup-form-fields">
+                <input type="email" name="email" class="form-control" placeholder="Email" value="">
+                <input type="password" name="password" class="form-control" placeholder="Password" value="">
+                <button id="btnSignUp" type="submit" class="btn btn-default text-center col-xs-12">Sign Up</button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </form>
+  </div>
+  <div class="addTopPad" style="padding-top:90px">
+    <div class="container" style="min-height: 500px; max-height: 1500px">
+      <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+        <div class="col-md-8">
+          <h3 style="color: #23b3e0">Contact Us</h3>
+          <hr>
+          <div id="googleMap"
+            style="width:570px;height:250px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 14px">
+          </div>
+          <h4><i class="fa fa-home" aria-hidden="true"></i> Address</h4>
+          <div style="margin-left: 1.7em">
+            <!-- <h5>FundKo</h5> -->
+            <p>FundKo
+              <br>3rd Floor Guevent Building <br> #52 D.M. Guevara St. corner Calbayog St. <br> Mandaluyong City,
+              Philippines</p>
+          </div>
+          <h4><i class="fa fa-phone" aria-hidden="true"></i> Phone:</h4>
+          <div style="margin-left: 1.7em">
+            <p>(02) 534-9185 (local 58)</p>
+          </div>
+        </div>
+        <div class="col-md-4" style="background-color: #23b3e0; padding-bottom: 10px">
+          <h3 style="color: white">Send us an email</h3>
+          <hr style="color:white">
+
+          <form id="contact-form" action="" method="post">
+            <div class="form-group">
+              <label for="name" class="label" style="color:white">Your Name</label>
+              <input id="name" class="form-control" style="padding:.2em .5em" type="text" name="name" required="">
+            </div>
+            <div class="form-group emailForm">
+              <label for="email" class="label" style="color:white">Your E-mail Address</label>
+              <input id="email" class="form-control" style="padding:.2em .5em" type="email" name="email"
+                onblur="tooltipMSG()" required="">
+              <span class="tooltiptext">Please check your Email</span>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="label" style="color:white">Subject</label>
+              <input id="subject" class="form-control" style="padding:.2em .5em" type="text" name="subject" required="">
+            </div>
+            <div class="form-group">
+              <label for="message" class="label" style="color:white">Message</label>
+              <!-- <input id="message" class="form-control" style="padding:.2em .5em" type="text" name="message"> -->
+              <textarea rows="5" cols="50" id="message" class="form-control" style="padding:.2em .5em" name="message"
+                required=""></textarea>
+            </div>
+            <button class="formbutton btn pull-right" style="color: #23b3e0; background-color: #fff;"><i
+                class="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr style="margin-bottom: 0;">
+  <section id="footer">
+    <div class="container">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-4 text-left" id="footer-menu">
+          <h5 class="footer-header text-left">Quick links</h5>
+          <ul style="list-style-type: none; padding: 0;">
+            <li><a class="menu" href="">Home</a></li>
+            <li><a class="menu" href="">News</a></li>
+            <li><a class="menu" href="">Register</a></li>
+            <li><a class="menu" href="">FAQ</a></li>
+            <li><a class="menu" href="">About Us</a></li>
+            <li><a class="menu active" href="">Contact Us</a></li>
+            <li><a class="menu" href="">Privacy Policy</a></li>
+          </ul>
+          <script src="./js/jquery.min.js"></script>
+        </div>
+        <div class="col-md-6 col-sm-8 col-xs-8 text-center margin-bottom1 newsletter">
+          <h5 class="footer-header">address</h5>
+          <p class="">Fintechnology Inc., 3rd Floor Guevent Building, <br>
+            #52 D.M. Guevara St. corner Calbayog St., Mandaluyong City, Philippines
+            <br><br>
+          </p>
+          <h5 class="footer-header">Contact No.</h5>
+          <p class="">534-9185 (local 58) <br>
+            <!-- <br>Enter your email below.</p>
+            <form action="" class="subscribe">
+              <div class="input-group newsletter-input-group hidden-xs hidden-sm">
+                <input type="email" name="email" class="form-control newsletter-input" placeholder="Email address" required>
+                <span class="input-group-btn">
+                  <button class="btn btn-default newsletter-btn btn-subscribe"> Subscribe </button>
+                </span>
+              </div>
+            </form> -->
+
+          </p>
+        </div>
+
+        <form action="https://fundko.com/contact-us" class="subscribe">
+          <div class="input-group newsletter-input-group col-xs-12 hidden-lg hidden-md" style="width: 100% !important;">
+            <input type="email" name="email" class="form-control newsletter-input" placeholder="Email address"
+              required="">
+            <span class="input-group-btn">
+              <button class="btn btn-default newsletter-btn btn-subscribe" style="padding: 10px 5px 10px 5px;">
+                Subscribe </button>
+            </span>
+          </div>
+        </form>
+
+        <div class="col-md-3 col-sm-12 col-xs-12 text-center">
+          <h5 class="footer-header">social links</h5>
+          <!--  <p class="about">FundKo is a subsidiary of Guevent Investments Corporation (GIDC). GIDC is a company that has over 50 years of business
+            in the microlending industry through Radio Wealth Finance. It continues to grow its operations.
+          </p> -->
+          <div class="row text-center social-links">
+            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <a target="_blank" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <a target="_blank" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <a target="_blank" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var $subscribeForm = $(".subscribe");
+
+      $subscribeForm.submit(function (e) {
+        console.log($(this).serialize());
+        console.log("formspee");
+        e.preventDefault();
+        var $submit = $(".btn-subscribe");
+        var defaultSubmitText = $submit.html();
+
+        $.ajax({
+          url: "//formspree.io/cu.michaels@gmail.com",
+          method: "POST",
+          data: $(this).serialize(),
+          dataType: "json",
+          beforeSend: function () {
+            //$subscribeForm.append('<div class="alert alert--loading">Sending message…</div>');
+            $submit.attr("disabled", true).text("Sending message…");
+          },
+          success: function (data) {
+            //$subscribeForm.append('<div class="alert alert--success">Message sent!</div>');
+            $submit.text("Message sent!");
+            setTimeout(function () {
+              //$('.alert--success').remove();
+              $submit.attr("disabled", false).html(defaultSubmitText);
+            }, 5000);
+          },
+          error: function (err) {
+            //$subscribeForm.find('.alert--loading').hide();
+            //$subscribeForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+            $submit.text("Ops, there was an error.");
+            setTimeout(function () {
+              //$('.alert--error').remove();
+              $submit.attr("disabled", false).html(defaultSubmitText);
+            }, 5000);
+          }
+        });
+      });
+    });
+  </script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="./js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="./js/jquery.easing.min.js"></script>
+  <script src="./js/classie.js"></script>
+  <script src="./js/matchmedia.js"></script>
+  <script src="./js/fadethis.js"></script>
+  <script src="./js/cbpAnimatedHeader.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="./js/agency.js"></script>
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var $contactForm = $("#contact-form");
+
+      $contactForm.submit(function (e) {
+        function validateEmail(email) {
+          console.log("validate email", email);
+          var regValidate = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return regValidate.test(email);
+        }
+
+        var email = $("#email").val();
+        var isEmail = validateEmail(email);
+        e.preventDefault();
+
+        if (isEmail) {
+          var $submit = $(".formbutton");
+          var defaultSubmitText = $submit.html();
+
+          $.ajax({
+            url: "//formspree.io/tanch@fundko.com",
+            method: "POST",
+            data: $(this).serialize(),
+            dataType: "json",
+            beforeSend: function () {
+              //$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+              $submit.attr("disabled", true).text("Sending message…");
+            },
+            success: function (data) {
+              //$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+              $submit.text("Message sent!");
+              $("input").val("");
+              $("textarea").val("");
+              setTimeout(function () {
+                //$('.alert--success').remove();
+                $submit.attr("disabled", false).html(defaultSubmitText);
+              }, 5000);
+            },
+            error: function (err) {
+              //$contactForm.find('.alert--loading').hide();
+              //$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+              $submit.text("Ops, there was an error.");
+              setTimeout(function () {
+                //$('.alert--error').remove();
+                $submit.attr("disabled", false).html(defaultSubmitText);
+              }, 5000);
+            }
+          });
+        } else {
+          $("#email").focus();
+          $(".tooltiptext").attr("style", "visibility : visible");
+          // alert('Please check your Email');
+        }
+      });
+    });
+
+    function tooltipMSG() {
+      $(".tooltiptext").attr("style", "visibility : hidden");
+    }
+  </script>
+</body>
+
+</html>

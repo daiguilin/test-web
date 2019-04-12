@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <title>Privacy Policy</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/agency.css" rel="stylesheet">
+  <link href="./css/custom_2.css" rel="stylesheet">
+  <link href="./css/landing.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <script src="./js/jquery.min.js"></script>
+  <!-- loaders -->
+  <link rel="stylesheet" type="text/css" href="./css/loaders.min.css">
+  <style>
+    .loginn a {
+      color: #185fa4 !important;
+    }
+
+    .signup_modal_header button {
+      margin-top: -9px !important;
+      font-size: 20px;
+    }
+
+    .loginn-label {
+      font-family: 'Equip-light';
+      font-weight: 600;
+      color: #425e78;
+    }
+  </style>
+</head>
+
+<body class="with-new-header">
+  <div id="page-top" class="index">
+    <div class="">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" id="hideshow">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar black-icon"></span>
+              <span class="icon-bar black-icon"></span>
+              <span class="icon-bar black-icon"></span>
+            </button>
+            <a class="" href="https://fundko.com/">
+              <img style="" class="fundx-logo fundx-logo-mobile" src="./img/logo5.png">
+            </a>
+
+            <!-- <a class="navbar-brand page-scroll" href="#page-top"></a> -->
+
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="hidden">
+                <a href="#page-top"></a>
+              </li>
+              <li>
+                <a class="page-scroll" href="">BORROW</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="">INVEST</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="">NEWS</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="">FAQ</a>
+              </li>
+              <!-- <li>
+                  <a class="page-scroll" href="/partners-page">PARTNERS</a>
+                </li> -->
+              <li>
+                <a class="page-scroll" href="" data-toggle="">REGISTER</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="#" data-toggle="modal" data-target="#modalSignUp">SIGN IN</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+    </div>
+    <!-- MODAL Severity-->
+    <form action="" method="POST">
+      <div class="modal fade signupModal" id="modalSignUp" role="dialog" style="border-radius:10px;">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content signup_modal_content">
+            <div class="modal-header signup_modal_header">
+              <h4 class="modal-title text-center">Welcome to FundKo
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <i class="fa fa-close pull-right" area-hidden="true"></i>
+                </button>
+              </h4>
+            </div>
+            <div class="modal-body" style="padding-top:20px;">
+              <p style="text-align:center;">Sign in to your account.</p>
+              <br>
+              <div class="form-group form-profile col-md-12">
+                <div class="col-md-4">
+                  <label class="label-profile loginn-label">Email Address</label>
+                </div>
+                <div class="col-md-8 form-profile">
+                  <input type="email" name="email" required="required" class="form-control" placeholder="Email Address">
+                </div>
+              </div>
+              <div class="form-group form-profile col-md-12">
+                <div class="col-md-4">
+                  <label class="label-profile loginn-label">Password </label>
+                </div>
+                <div class="col-md-8 form-profile">
+                  <input type="password" name="password" class="form-control" placeholder="Password" value="">
+                </div>
+              </div>
+              <div class="form-group b">
+                <div class="col-xs-12 col-md-12 text-center"
+                  style="padding-top: 10px; padding-left: 15px; margin-bottom:20px;">
+                  <!-- <input type="checkbox" value style="height: auto; margin-bottom: 5px;"> Stay signed in. -->
+                  <!--                   <br> -->
+                  <a data-toggle="modal" role="button" href="" style="color: #185fa4" class="modal-link">Forgot
+                    Password?</a>
+                  <!-- <span><small>Not a FundX member?</small></span><br> --><span> | </span>
+                  <a data-toggle="modal" role="button" href="" style="color: #185fa4" class="modal-link">Create New
+                    Account.</a>
+                  <span> | </span>
+                  <a data-toggle="modal" role="button" href="" style="color: #185fa4" class="modal-link">Resend Email
+                    Verification.</a>
+                </div>
+                <div class="col-xs-12 col-md-offset-4 col-md-4">
+                  <button id="btnSignUp" type="submit" style="width:100%" class="btn btn-default text-center ">LOG
+                    IN</button>
+                </div>
+                <button class="whitebtn2" disabled="">.</button>
+              </div>
+              <!-- <div class="signup-form-fields">
+                <input type="email" name="email" class="form-control" placeholder="Email" value="">
+                <input type="password" name="password" class="form-control" placeholder="Password" value="">
+                <button id="btnSignUp" type="submit" class="btn btn-default text-center col-xs-12">Sign Up</button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </form>
+  </div>
+
+
+  <div id="wrapper">
+    <section class="" style="position: relative !important; margin: 2em">
+      <div class="container">
+        <h1>Privacy Policy</h1>
+        <hr>
+        <p>This privacy policy has been compiled to better serve those who are concerned with how their 'Personally
+          Identifiable Information' is being used online. Personal Information, as defined in Republic Act 10173,
+          otherwise known as the Data Privacy Act of 2012, is “any information whether recorded in a material form or
+          not, from which the identity of an individual is apparent or can be reasonably and directly ascertained by the
+          entity holding the information, or when put together with other information would directly and certainly
+          identify an individual.” Please read our privacy policy carefully to get a clear understanding of how we
+          collect, use, protect or otherwise handle your Personal Information in accordance with our website.</p>
+        <br>
+        <p class="bold"><span class="underline">Declaration of Purpose</span>: The Personal Information to be collected
+          from people who visit our blog, website or app, will be used specifically and only for the following
+          legitimate purpose/s: to process your loan application; to send client updates regarding products and
+          services; to store as part of our Know Your Client data base; and to aid our credit investigation procedures.
+        </p>
+        <br>
+        <p class="bold">What Personal Information do we collect from the people that visit our blog, website or app, for
+          the purpose specified above?</p>
+        <br>
+        <p>When ordering from or upon registering on our site, you may be asked to enter your name, email address,
+          mailing address, phone number, bank account details as permissible under the law, basic credit information for
+          your loan applications, and other details, as may be necessary and appropriate to carry out the purposes of
+          the website or app as mentioned in our Declaration of Purpose, and to further improve the end-user experience.
+        </p>
+        <br>
+        <p class="bold">When and how do we collect your information?</p>
+        <br>
+        <p>We collect information from you when:</p>
+        <br>
+        <div class="margin-left-10">
+          <p>1. You register on our website or app; </p>
+          <p>2. You enter information on our site or app; </p>
+          <p>3. You use our site or app for certain activities, such as making a purchase, signing up for our
+            newsletter, responding to a survey or marketing communication, surfing, or using certain other site
+            features.</p>
+        </div>
+        <br>
+        <p>We also collect information through the use of Cookies, as discussed below.</p>
+        <br>
+        <p class="bold">How do we use your information?</p>
+        <br>
+        <p>The Personal Information will be used specifically and only pursuant to the Declaration of Purpose above. In
+          relation to, and as necessary, for said declared purpose, Personal Information collected will be used to:</p>
+        <div class="margin-left-10">
+          <ul>
+            <li>Personalize your experience and to allow us to deliver the type of content and product offerings in
+              which you are most interested;</li>
+            <li>Improve our website and app in order to better serve you;</li>
+            <li>Quickly process your transactions; and</li>
+            <li>Send periodic emails regarding your order or other products and services.</li>
+          </ul>
+        </div>
+        <br>
+        <p class="bold">How do we protect your information?</p>
+        <br>
+        <p>We ensure the security of your Personal Identifiable Information incompliance with the Data Privacy Act.
+          Specifically, we protect your information through the following measures:</p>
+        <div class="margin-left-10">
+          <ul>
+            <li>We do not use vulnerability scanning and/or scanning to Payment Card Industry (“PCI”) standards;</li>
+            <li>We only provide articles and information. <span class="underline">We never ask for credit card
+                numbers;</span></li>
+            <li>We use regular Malware Scanning;</li>
+            <li>Your personal information is contained behind secured networks and is only accessible by a limited
+              number of persons who have special access rights to such systems, and are required to keep the information
+              confidential. In addition, all sensitive, credit, and relevant bank information that we are permitted to
+              obtain under banking laws, are all encrypted via Secure Socket Layer (SSL) technology;</li>
+            <li>We implement a variety of security measures when a user enters, submits, or accesses their information
+              to maintain the safety of your personal information;</li>
+            <li>All transactions are processed through a gateway provider and are not stored or processed on our
+              servers.</li>
+          </ul>
+        </div>
+        <br>
+        <p class="bold">Do we use 'cookies'?</p>
+        <br>
+        <p>Yes. Cookies are small files that a site or its service provider transfers to your computer's hard drive
+          through your Web browser (if you allow or accept said Cookies) which enables the site's or service provider's
+          systems to recognize your browser and capture and remember certain information. We use Cookies to:</p>
+        <div class="margin-left-10">
+          <ul>
+            <li>Help us remember and process the loan application or loans you want to fund;</li>
+            <li>Help us understand and save your preferences (for future visits) based on previous or current site
+              activity, which enables us to provide you with improved services;</li>
+            <li>Help us compile aggregate data about site traffic and site interaction so that we can offer better site
+              experiences and tools in the future.</li>
+          </ul>
+        </div>
+        <br>
+        <p>We may also use trusted third-party services that track the information on our behalf. We provide contractual
+          and other reasonable means to ensure a comparable level of protection of the Personal Information captured and
+          transferred for tracking or processing by a third-party service, which include but not limited to credit
+          bureaus, credit information service companies or special accessing entities (SAEs), in compliance with the
+          Data Privacy Act. Should you wish to know the identity of our third-party service provider/s, kindly send an
+          email request to: cs@fundko.com.</p>
+        <br>
+        <p>You can choose to have your computer warn you each time a Cookie is being sent, or you can choose to turn off
+          all Cookies. You can do this through your computer’s browser settings. Since each browser is a little
+          different, look at your browser's Help Menu to learn the correct way to modify your Cookies.</p>
+        <br>
+        <p class="bold">What happens if you disable or turn off Cookies in your browser?</p>
+        <br>
+        <p>If you disable or turn off your Cookies, some of the features that make your site experience more efficient
+          may not function properly.</p>
+        <br>
+        <p class="bold">Third-party Disclosure</p>
+        <br>
+        <p>We do not sell, trade, or otherwise transfer to outside parties your Personally Identifiable Information,
+          unless we provide users with advance notice. This does not include third-party website hosting partners and
+          other parties who assist us in operating our website, conducting our business, or serving our users, so long
+          as those parties agree to keep this information confidential and subject to our accountability over said
+          third-party service providers, which include but not limited to credit bureaus, credit information service
+          companies or special accessing entities (SAEs). Should you wish to know the identity of any of our third-party
+          service provider/s, kindly send an email request to: cs@fundko.com.</p>
+        <br>
+        <p>As provided by the Data Privacy Act, we may also process information, whether directly or through a
+          third-party service provider, when necessary to:</p>
+        <br>
+        <div class="margin-left-10">
+          <ul>
+            <li>Comply with any law, regulation, or court order. We may also transfer information to a third-party
+              service provider to enforce our site policies, or protect ours or others' rights, property or safety;</li>
+            <li>Protect your life and health, or that of another person, or when you are not legally or physically able
+              to express your consent prior to processing;</li>
+            <li>Achieve the lawful and non-commercial objectives of public organizations and their associations,
+              provided the conditions provided in the Data Privacy Act are met;</li>
+            <li>Ensure medical treatment, to be carried out by a medical practitioner or a medical treatment
+              institution, and an adequate level of protection of personal information is ensured; and </li>
+            <li>Protect the lawful rights and interests of natural or legal persons in court proceedings, or the
+              establishment or defense of legal claims, or when provided to government or public authority.</li>
+          </ul>
+        </div>
+        <br>
+        <p>Non-personally identifiable visitor information may be provided to other parties for marketing, advertising,
+          or other uses.</p>
+        <br>
+        <p class="bold">Third-party links</p>
+        <br>
+        <p>Occasionally, at our discretion, we may include or offer third-party products or services on our website
+          and/or app. These third-party sites have separate and independent privacy policies. We therefore have no
+          responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to
+          protect the integrity of our site and welcome any feedback about these third-party sites.</p>
+        <br>
+        <p class="bold">Google</p>
+        <br>
+        <p>Google's advertising requirements can be summed up by Google's Advertising Principles. They are put in place
+          to provide a positive experience for users. https://support.google.com/adwordspolicy/answer/1316548?hl=en </p>
+        <br>
+        <p>We use Google AdSense Advertising on our website.</p>
+        <br>
+        <p>Google, as a third-party vendor, uses Cookies to serve ads on our site. Google's use of the Dynamic
+          Advertising Reporting &amp; Targeting (“DART”) Cookie enables it to serve ads to our users based on previous
+          visits to our site and other sites on the Internet. Users may opt-out of the use of the DART cookie by
+          visiting the Google Ad and Content Network privacy policy in the link provided above.</p>
+        <br>
+        <p class="bold">We have implemented the following:</p>
+        <br>
+        <div class="margin-left-10">
+          <ul>
+            <li>Google Display Network Impression Reporting</li>
+            <li>Demographics and Interests Reporting</li>
+          </ul>
+        </div>
+        <br>
+        <p>We, along with third-party vendors such as Google use first-party Cookies (such as the Google Analytics
+          Cookies) and third-party Cookies (such as the DoubleClick Cookie) or other third-party identifiers together to
+          compile data regarding user interactions with ad impressions and other ad service functions as they relate to
+          our website and/or app.</p>
+        <br>
+        <p class="bold">Opting out:</p>
+        <br>
+        <p>Users can set preferences for how Google advertises to you using the Google Ad Settings page. Alternatively,
+          you can opt out by visiting the Network Advertising Initiative Opt Out page or by using the Google Analytics
+          Opt Out Browser add on.</p>
+        <br>
+        <p class="bold">You will be notified of any Privacy Policy changes:</p>
+        <br>
+        <div class="margin-left-10">
+          <ul>
+            <li>On our Privacy Policy Page</li>
+          </ul>
+        </div>
+        <br>
+        <p class="bold">You can change your Personal Identifiable Information:</p>
+        <br>
+        <div class="margin-left-10">
+          <ul>
+            <li>By logging in to your account</li>
+          </ul>
+        </div>
+        <br>
+        <p class="bold">How does our site handle Do Not Track signals?</p>
+        <br>
+        <p>We honor Do Not Track signals and Do Not Track, plant Cookies, or use advertising when a Do Not Track (DNT)
+          browser mechanism is in place.</p>
+        <br>
+        <p class="bold">If at any time, you would like to unsubscribe from receiving future emails, you can email us at
+          cs@fundko.com and we will promptly remove you from ALL correspondence.</p>
+        <br>
+        <p class="bold">Contacting Us</p>
+        <br>
+        <p>If there are any questions regarding this Privacy Policy, you may contact us using the information below.</p>
+        <br>
+        <p>www.fundko.com</p>
+        <p>Unit 2002 and 2003 Antel Global Corporate Center J. Vargas, San Antonio, Ortigas Center</p>
+        <p>Pasig City, Metro Manila 1605</p>
+        <p>Philippines</p>
+        <p>cs@fundko.com</p>
+        <p>6326330140</p>
+        <br>
+        <p class="bold italic">Last Edited on 2017-__-__</p>
+        <br>
+        <p class="underline">Disclaimer:</p>
+        <br>
+        <p>This message is intended only for the use of the person to whom it is expressly addressed and may contain
+          information that is confidential and legally privileged. If you are not the intended recipient, you are hereby
+          notified that any use, reliance on, reference to, review, disclosure or copying of the message and the
+          information it contains for any purpose is prohibited. If you have received this message in error, please
+          notify the sender by reply e-mail of the incorrect delivery and delete all its contents. Opinions, conclusions
+          and other information in this message that do not relate to the official business of FundKo shall be
+          understood as neither given nor endorsed by it.</p>
+      </div>
+    </section>
+
+    <div id="faq-footer">
+      <style>
+        .newsletter-btn:hover,
+        .newsletter-btn:focus,
+        .newsletter-btn:disabled {
+          background-color: #293f70 !important;
+          color: #fff;
+          border: 0;
+        }
+      </style>
+
+      <section id="footer">
+        <div class="container">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-4 text-left" id="footer-menu">
+              <h5 class="footer-header text-left">Quick links</h5>
+              <ul style="list-style-type: none; padding: 0;">
+                <li><a class="menu" href="">Home</a></li>
+                <li><a class="menu" href="">News</a></li>
+                <li><a class="menu" href="">Register</a></li>
+                <li><a class="menu" href="">FAQ</a></li>
+                <li><a class="menu" href="">About Us</a></li>
+                <li><a class="menu" href="">Contact Us</a></li>
+                <li><a class="menu active" href="">Privacy Policy</a></li>
+              </ul>
+              <script>
+                $(document).ready(function () {
+                  var pgurl = window.location.href.substr(
+                    window.location.href.lastIndexOf("/")
+                  );
+                  console.log(pgurl);
+                  $("a.menu").each(function () {
+                    if ($(this).attr("href") == pgurl || $(this).attr("href") == "")
+                      $(this).addClass("active");
+                  });
+                });
+              </script>
+            </div>
+            <div class="col-md-6 col-sm-8 col-xs-8 text-center margin-bottom1 newsletter">
+              <h5 class="footer-header">address</h5>
+              <p class="">Fintechnology Inc., 3rd Floor Guevent Building, <br>
+                #52 D.M. Guevara St. corner Calbayog St., Mandaluyong City, Philippines
+                <br><br>
+              </p>
+              <h5 class="footer-header">Contact No.</h5>
+              <p class="">534-9185 (local 58) <br>
+                <!-- <br>Enter your email below.</p>
+            <form action="" class="subscribe">
+              <div class="input-group newsletter-input-group hidden-xs hidden-sm">
+                <input type="email" name="email" class="form-control newsletter-input" placeholder="Email address" required>
+                <span class="input-group-btn">
+                  <button class="btn btn-default newsletter-btn btn-subscribe"> Subscribe </button>
+                </span>
+              </div>
+            </form> -->
+
+              </p>
+            </div>
+
+            <form action="" class="subscribe">
+              <div class="input-group newsletter-input-group col-xs-12 hidden-lg hidden-md"
+                style="width: 100% !important;">
+                <input type="email" name="email" class="form-control newsletter-input" placeholder="Email address"
+                  required="">
+                <span class="input-group-btn">
+                  <button class="btn btn-default newsletter-btn btn-subscribe" style="padding: 10px 5px 10px 5px;">
+                    Subscribe </button>
+                </span>
+              </div>
+            </form>
+
+            <div class="col-md-3 col-sm-12 col-xs-12 text-center">
+              <h5 class="footer-header">social links</h5>
+              <!--  <p class="about">FundKo is a subsidiary of Guevent Investments Corporation (GIDC). GIDC is a company that has over 50 years of business
+            in the microlending industry through Radio Wealth Finance. It continues to grow its operations.
+          </p> -->
+              <div class="row text-center social-links">
+                <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <a target="_blank" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <a target="_blank" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-4">
+                    <a target="_blank" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <script type="text/javascript">
+        $(document).ready(function () {
+          var $subscribeForm = $(".subscribe");
+
+          $subscribeForm.submit(function (e) {
+            console.log($(this).serialize());
+            console.log("formspee");
+            e.preventDefault();
+            var $submit = $(".btn-subscribe");
+            var defaultSubmitText = $submit.html();
+
+            $.ajax({
+              url: "//formspree.io/cu.michaels@gmail.com",
+              method: "POST",
+              data: $(this).serialize(),
+              dataType: "json",
+              beforeSend: function () {
+                //$subscribeForm.append('<div class="alert alert--loading">Sending message…</div>');
+                $submit.attr("disabled", true).text("Sending message…");
+              },
+              success: function (data) {
+                //$subscribeForm.append('<div class="alert alert--success">Message sent!</div>');
+                $submit.text("Message sent!");
+                setTimeout(function () {
+                  //$('.alert--success').remove();
+                  $submit.attr("disabled", false).html(defaultSubmitText);
+                }, 5000);
+              },
+              error: function (err) {
+                //$subscribeForm.find('.alert--loading').hide();
+                //$subscribeForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+                $submit.text("Ops, there was an error.");
+                setTimeout(function () {
+                  //$('.alert--error').remove();
+                  $submit.attr("disabled", false).html(defaultSubmitText);
+                }, 5000);
+              }
+            });
+          });
+        });
+      </script>
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Bootstrap Core JavaScript -->
+
+  <script src="./js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="./js/jquery.easing.min.js"></script>
+  <script src="./js/classie.js"></script>
+
+  <script src="./js/matchmedia.js"></script>
+  <script src="./js/fadethis.js"></script>
+  <script src="./js/cbpAnimatedHeader.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="./js/agency.js"></script>
+
+</body>
+
+</html>

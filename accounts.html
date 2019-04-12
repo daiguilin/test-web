@@ -10,8 +10,9 @@
   <link href="./css/agency.css" rel="stylesheet">
   <link href="./css/custom_2.css" rel="stylesheet">
   <link href="./css/landing.css" rel="stylesheet">
-  
+
   <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
   <!-- Custom Fonts -->
   <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="./css/loaders.min.css">
@@ -36,13 +37,13 @@
                     <!-- /react-text --></a><a href="https://fundko.com/logout"><i class="fa fa-sign-out"> </i>
                     <!-- react-text: 18 --> Sign Out
                     <!-- /react-text --></a></div>
-                <div class="mobile-toggle toggle-overlay inline-block float-right"><a>
+                <div class="mobile-toggle toggle-overlay inline-block float-right"><a id="menu-toggle">
                     <!-- react-text: 21 -->MENU
                     <!-- /react-text --><span><i class="fa fa-bars"></i></span><!-- react-text: 24 -->
                     <!-- /react-text --></a></div>
               </div>
             </nav>
-            <div class="menu-overlay">
+            <div class=" menu-overlay">
               <div class="outer-close toggle-overlay"><a class="close"><span></span></a></div>
               <nav class="mobile-links"><span><label class="mobile-switch-active left-label">BORROWER</label><label
                     class="grommetux-check-box grommetux-check-box--toggle"><span><input type="checkbox" tabindex="0"
@@ -294,6 +295,12 @@
       })
       $(".fa-close").click(function () {
         $(".ReactModalPortal").css("display", "none")
+      })
+      $("#menu-toggle").click(function () {
+        $(".menu-overlay").addClass("open");
+      })
+      $(".outer-close").click(function () {
+        $(".menu-overlay").removeClass("open");
       })
     })
   </script>

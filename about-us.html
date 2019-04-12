@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <title>About Us - What is FundKo?</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/agency.css" rel="stylesheet">
+  <link href="./css/custom_2.css" rel="stylesheet">
+  <link href="./css/landing.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- loaders -->
+  <link rel="stylesheet" type="text/css" href="./css/loaders.min.css">
+  <script src="./js/jquery.min.js"></script>
+  <style>
+    .loginn a {
+      color: #185fa4 !important;
+    }
+
+    .signup_modal_header button {
+      margin-top: -9px !important;
+      font-size: 20px;
+    }
+
+    .loginn-label {
+      font-family: 'Equip-light';
+      font-weight: 600;
+      color: #425e78;
+    }
+
+    .newsletter-btn:hover,
+    .newsletter-btn:focus,
+    .newsletter-btn:disabled {
+      background-color: #293f70 !important;
+      color: #fff;
+      border: 0;
+    }
+  </style>
+</head>
+
+<body class="with-new-header">
+  <div id="page-top" class="index">
+    <div class="">
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" id="hideshow" onclick="hidebutton()">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar black-icon"></span>
+              <span class="icon-bar black-icon"></span>
+              <span class="icon-bar black-icon"></span>
+            </button>
+            <a class="" href="https://fundko.com/">
+              <img style="" class="fundx-logo fundx-logo-mobile" src="./about-us_files/logo5.png">
+            </a>
+
+            <!-- <a class="navbar-brand page-scroll" href="#page-top"></a> -->
+
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="hidden active">
+                <a href="#page-top"></a>
+              </li>
+              <li>
+                <a class="page-scroll" href="">BORROW</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="">INVEST</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="">NEWS</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="">FAQ</a>
+              </li>
+              <!-- <li>
+                  <a class="page-scroll" href="/partners-page">PARTNERS</a>
+                </li> -->
+              <li>
+                <a class="page-scroll" href="" data-toggle="">REGISTER</a>
+              </li>
+              <li>
+                <a class="page-scroll" href="" data-toggle="modal" data-target="#modalSignUp">SIGN IN</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+    </div>
+    <!-- MODAL Severity-->
+    <form action="" method="POST">
+      <div class="modal fade signupModal" id="modalSignUp" role="dialog" style="border-radius:10px;">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content signup_modal_content">
+            <div class="modal-header signup_modal_header">
+              <h4 class="modal-title text-center">Welcome to FundKo
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <i class="fa fa-close pull-right" area-hidden="true"></i>
+                </button>
+              </h4>
+            </div>
+            <div class="modal-body" style="padding-top:20px;">
+              <p style="text-align:center;">Sign in to your account.</p>
+              <br>
+              <div class="form-group form-profile col-md-12">
+                <div class="col-md-4">
+                  <label class="label-profile loginn-label">Email Address</label>
+                </div>
+                <div class="col-md-8 form-profile">
+                  <input type="email" name="email" required="required" class="form-control" placeholder="Email Address">
+                </div>
+              </div>
+              <div class="form-group form-profile col-md-12">
+                <div class="col-md-4">
+                  <label class="label-profile loginn-label">Password </label>
+                </div>
+                <div class="col-md-8 form-profile">
+                  <input type="password" name="password" class="form-control" placeholder="Password" value="">
+                </div>
+              </div>
+              <div class="form-group b">
+                <div class="col-xs-12 col-md-12 text-center"
+                  style="padding-top: 10px; padding-left: 15px; margin-bottom:20px;">
+                  <!-- <input type="checkbox" value style="height: auto; margin-bottom: 5px;"> Stay signed in. -->
+                  <!--                   <br> -->
+                  <a data-toggle="modal" role="button" href="" style="color: #185fa4" class="modal-link">Forgot
+                    Password?</a>
+                  <!-- <span><small>Not a FundX member?</small></span><br> --><span> | </span>
+                  <a data-toggle="modal" role="button" href="" style="color: #185fa4" class="modal-link">Create New
+                    Account.</a>
+                  <span> | </span>
+                  <a data-toggle="modal" role="button" href="" style="color: #185fa4" class="modal-link">Resend Email
+                    Verification.</a>
+                </div>
+                <div class="col-xs-12 col-md-offset-4 col-md-4">
+                  <button id="btnSignUp" type="submit" style="width:100%" class="btn btn-default text-center ">LOG
+                    IN</button>
+                </div>
+                <button class="whitebtn2" disabled="">.</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </form>
+  </div>
+
+
+
+  <div class="addTopPad">
+    <section style="padding-top: 2em !important; padding-bottom: 2em !important; ">
+      <div class="container">
+        <div class="col-md-12 col-sm-12 col-xs-12 section-heading">
+          <h3 class="text-center">About Us</h3>
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <img class="img-responsive text-center" src="./img/fundko_logo_02.png">
+            </div>
+          </div>
+
+
+
+          <div class="row text-center">
+            <p> We are a crowdlending platform that connects verified lenders and borrowers. Because we provide a more
+              efficient service than traditional channels, lenders who are looking for investment opportunities will
+              find attractive returns while borrowers get reasonable rates.
+            </p>
+            <p>FundKo is a subsidiary of <a href="">Guevent Investments Development Corporation (GIDC)</a> – a company
+              that has over 50 years of operations with a business footprint that spans across the entire Philippine
+              archipelago.</p>
+
+            <p> Invest for as low as 15,000 pesos or borrow as much as 500,000 pesos through <strong>FundKo</strong>!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+
+
+  <section id="footer">
+    <div class="container">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-4 text-left" id="footer-menu">
+          <h5 class="footer-header text-left">Quick links</h5>
+          <ul style="list-style-type: none; padding: 0;">
+            <li><a class="menu" href="https://fundko.com/">Home</a></li>
+            <li><a class="menu" href="http://blog.fundko.com/">News</a></li>
+            <li><a class="menu" href="https://fundko.com/register">Register</a></li>
+            <li><a class="menu" href="https://fundko.com/frequently-asked-question">FAQ</a></li>
+            <li><a class="menu active" href="https://fundko.com/about-us">About Us</a></li>
+            <li><a class="menu" href="https://fundko.com/contact-us">Contact Us</a></li>
+            <li><a class="menu" href="https://fundko.com/privacy-policy">Privacy Policy</a></li>
+          </ul>
+          <script>
+            $(document).ready(function () {
+              var pgurl = window.location.href.substr(
+                window.location.href.lastIndexOf("/")
+              );
+              console.log(pgurl);
+              $("a.menu").each(function () {
+                if ($(this).attr("href") == pgurl || $(this).attr("href") == "")
+                  $(this).addClass("active");
+              });
+            });
+          </script>
+        </div>
+        <div class="col-md-6 col-sm-8 col-xs-8 text-center margin-bottom1 newsletter">
+          <h5 class="footer-header">address</h5>
+          <p class="">Fintechnology Inc., 3rd Floor Guevent Building, <br>
+            #52 D.M. Guevara St. corner Calbayog St., Mandaluyong City, Philippines
+            <br><br>
+          </p>
+          <h5 class="footer-header">Contact No.</h5>
+          <p class="">534-9185 (local 58) <br>
+          </p>
+        </div>
+
+        <form action="https://fundko.com/about-us" class="subscribe">
+          <div class="input-group newsletter-input-group col-xs-12 hidden-lg hidden-md" style="width: 100% !important;">
+            <input type="email" name="email" class="form-control newsletter-input" placeholder="Email address"
+              required="">
+            <span class="input-group-btn">
+              <button class="btn btn-default newsletter-btn btn-subscribe" style="padding: 10px 5px 10px 5px;">
+                Subscribe </button>
+            </span>
+          </div>
+        </form>
+
+        <div class="col-md-3 col-sm-12 col-xs-12 text-center">
+          <h5 class="footer-header">social links</h5>
+
+          <div class="row text-center social-links">
+            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <a target="_blank" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <a target="_blank" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <a target="_blank" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var $subscribeForm = $(".subscribe");
+
+      $subscribeForm.submit(function (e) {
+        console.log($(this).serialize());
+        console.log("formspee");
+        e.preventDefault();
+        var $submit = $(".btn-subscribe");
+        var defaultSubmitText = $submit.html();
+
+        $.ajax({
+          url: "//formspree.io/cu.michaels@gmail.com",
+          method: "POST",
+          data: $(this).serialize(),
+          dataType: "json",
+          beforeSend: function () {
+            //$subscribeForm.append('<div class="alert alert--loading">Sending message…</div>');
+            $submit.attr("disabled", true).text("Sending message…");
+          },
+          success: function (data) {
+            //$subscribeForm.append('<div class="alert alert--success">Message sent!</div>');
+            $submit.text("Message sent!");
+            setTimeout(function () {
+              //$('.alert--success').remove();
+              $submit.attr("disabled", false).html(defaultSubmitText);
+            }, 5000);
+          },
+          error: function (err) {
+            //$subscribeForm.find('.alert--loading').hide();
+            //$subscribeForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+            $submit.text("Ops, there was an error.");
+            setTimeout(function () {
+              //$('.alert--error').remove();
+              $submit.attr("disabled", false).html(defaultSubmitText);
+            }, 5000);
+          }
+        });
+      });
+    });
+  </script>
+
+
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="./js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="./js/jquery.easing.min.js"></script>
+  <script src="./js/classie.js"></script>
+  <script src="./js/matchmedia.js"></script>
+  <script src="./js/fadethis.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="./js/agency.js"></script>
+</body>
+
+</html>

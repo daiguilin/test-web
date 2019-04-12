@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Fundko Online Loans Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/UITheme.css" rel="stylesheet">
+
+  <link href="./css/mobile.css" rel="stylesheet">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/agency.css" rel="stylesheet">
+  <link href="./css/custom_2.css" rel="stylesheet">
+  <link href="./css/landing.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- loaders -->
+  <link rel="stylesheet" type="text/css" href="./css/loaders.min.css">
+  <link rel="stylesheet" href="./css/all.css">
+  <script src="./js/jquery.min.js"></script>
+</head>
+
+
+<body style="background: #FCFCFC" class="with-new-header">
+  <style>
+    .loginn a {
+      color: #185fa4 !important;
+    }
+
+    .signup_modal_header button {
+      margin-top: -9px !important;
+      font-size: 20px;
+    }
+
+    .loginn-label {
+      font-family: 'Equip-light';
+      font-weight: 600;
+      color: #425e78;
+    }
+  </style>
+
+  <div class="">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            id="hideshow">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar black-icon"></span>
+            <span class="icon-bar black-icon"></span>
+            <span class="icon-bar black-icon"></span>
+          </button>
+          <a class="" href="">
+            <img style="" class="fundx-logo fundx-logo-mobile" src="./img/logo5.png">
+          </a>
+
+          <!-- <a class="navbar-brand page-scroll" href="#page-top"></a> -->
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="">BORROW</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="">INVEST</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="">NEWS</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="">FAQ</a>
+            </li>
+            <!-- <li>
+                  <a class="page-scroll" href="/partners-page">PARTNERS</a>
+                </li> -->
+            <li>
+              <a class="page-scroll" href="" data-toggle="">REGISTER</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#" data-toggle="modal" data-target="#modalSignUp">SIGN IN</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </div>
+  <!-- MODAL Severity-->
+  <form action="" method="POST">
+    <div class="modal fade signupModal" id="modalSignUp" role="dialog" style="border-radius:10px;">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content signup_modal_content">
+          <div class="modal-header signup_modal_header">
+            <h4 class="modal-title text-center">Welcome to FundKo
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="fa fa-close pull-right" area-hidden="true"></i>
+              </button>
+            </h4>
+          </div>
+          <div class="modal-body" style="padding-top:20px;">
+            <p style="text-align:center;">Sign in to your account.</p>
+            <br>
+            <div class="form-group form-profile col-md-12">
+              <div class="col-md-4">
+                <label class="label-profile loginn-label">Email Address</label>
+              </div>
+              <div class="col-md-8 form-profile">
+                <input type="email" name="email" required="required" class="form-control" placeholder="Email Address">
+              </div>
+            </div>
+            <div class="form-group form-profile col-md-12">
+              <div class="col-md-4">
+                <label class="label-profile loginn-label">Password </label>
+              </div>
+              <div class="col-md-8 form-profile">
+                <input type="password" name="password" class="form-control" placeholder="Password" value="">
+              </div>
+            </div>
+            <div class="form-group b">
+              <div class="col-xs-12 col-md-12 text-center"
+                style="padding-top: 10px; padding-left: 15px; margin-bottom:20px;">
+                <!-- <input type="checkbox" value style="height: auto; margin-bottom: 5px;"> Stay signed in. -->
+                <!--                   <br> -->
+                <a data-toggle="modal" role="button" href="https://fundko.com/forgot" style="color: #185fa4"
+                  class="modal-link">Forgot Password?</a>
+                <!-- <span><small>Not a FundX member?</small></span><br> --><span> | </span>
+                <a data-toggle="modal" role="button" href="https://fundko.com/register" style="color: #185fa4"
+                  class="modal-link">Create New Account.</a>
+                <span> | </span>
+                <a data-toggle="modal" role="button" href="https://fundko.com/email-verification" style="color: #185fa4"
+                  class="modal-link">Resend Email Verification.</a>
+              </div>
+              <div class="col-xs-12 col-md-offset-4 col-md-4">
+                <button id="btnSignUp" type="submit" style="width:100%" class="btn btn-default text-center ">LOG
+                  IN</button>
+              </div>
+              <button class="whitebtn2" disabled="">.</button>
+            </div>
+            <!-- <div class="signup-form-fields">
+                <input type="email" name="email" class="form-control" placeholder="Email" value="">
+                <input type="password" name="password" class="form-control" placeholder="Password" value="">
+                <button id="btnSignUp" type="submit" class="btn btn-default text-center col-xs-12">Sign Up</button>
+              </div> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </form>
+
+  <div id="app">
+    <div>
+      <div class="row" style="margin:0">
+        <h1
+          style="margin-top: 75px; background-color: rgb(62, 118, 169); color: rgb(243, 243, 243); padding: 30px 120px; font-weight: bold;">
+          <!-- react-text: 4 -->FUNDKO
+          <!-- /react-text -->
+          <!-- react-text: 5 --> Loan Application Form
+          <!-- /react-text -->
+        </h1>
+      </div>
+      <div>
+        <div class="row" style="padding: 0% 0% 1%; margin-left: 6%; text-align: center;">
+          <div class="col-md-4" style="float: left; width: 33.33%; padding: 10px;">
+            <div class="row" style="margin:0">
+              <div class="col-md-2">
+                <div class="circle"
+                  style="width: 70px; height: 70px; border-radius: 250px; font-size: 13px; color: rgb(255, 255, 255); text-align: center; background: rgb(62, 118, 169);">
+                  <h3 style="padding-top: 30%;">1</h3>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="">
+                  <h5 style="padding-top: 15%;">Personal Information</h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class=""><i class="fas fa-arrow-right"
+                    style="margin-left: -95%; font-size: 2.5em; margin-top: 36%; color: rgb(168, 168, 168);"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" style="float: left; width: 33.33%; padding: 10px;">
+            <div class="row" style="margin:0">
+              <div class="col-md-2">
+                <div class="circle"
+                  style="width: 70px; height: 70px; border-radius: 250px; font-size: 13px; color: rgb(255, 255, 255); text-align: center; background: rgb(168, 168, 168);">
+                  <h3 style="padding-top: 30%;">2</h3>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="">
+                  <h5 style="padding-top: 15%;">Upload Documents</h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class=""><i class="fas fa-arrow-right"
+                    style="margin-left: -95%; font-size: 2.5em; margin-top: 36%; color: rgb(168, 168, 168);"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" style="float: left; width: 33.33%; padding: 10px;">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="circle"
+                  style="width: 70px; height: 70px; border-radius: 250px; font-size: 13px; color: rgb(255, 255, 255); text-align: center; background: rgb(168, 168, 168);">
+                  <h3 style="padding-top: 30%;">3</h3>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="">
+                  <h5 style="padding-top: 15%;">Set A Password</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-bottom: 2px solid rgb(200, 200, 200);"></div>
+      <div class="row" style="padding: 50px;margin: 0;">
+        <div></div>
+        <div class="col-md-8">
+          <div>
+            <div class="row">
+              <h2 style="margin-top: 0px; color: rgb(31, 119, 168);">Step 1: Personal Information</h2>
+            </div>
+            <div class="row">
+              <div>
+                <div class="form-group"><label class="col-md-12" style="font-size: 1.2em;">
+                    <!-- react-text: 65 -->Email Address
+                    <!-- /react-text -->
+                    <!-- react-text: 66 -->
+                    <!-- /react-text --><span class="text-danger">*</span></label>
+                  <div class="col-md-8" style="margin-bottom: 1.5em;"><input type="text" id="email" value=""
+                      class="form-control"></div>
+                </div>
+                <div class="form-group"><label class="col-md-12" style="font-size: 1.2em;">
+                    <!-- react-text: 72 -->First Name
+                    <!-- /react-text -->
+                    <!-- react-text: 73 -->
+                    <!-- /react-text --><span class="text-danger">*</span></label>
+                  <div class="col-md-8" style="margin-bottom: 1.5em;"><input type="text" id="firstName" value=""
+                      class="form-control"></div>
+                </div>
+                <div class="form-group"><label class="col-md-12" style="font-size: 1.2em;">
+                    <!-- react-text: 79 -->Middle Name
+                    <!-- /react-text -->
+                    <!-- react-text: 80 -->
+                    <!-- /react-text --><span class="text-danger">*</span></label>
+                  <div class="col-md-8" style="margin-bottom: 1.5em;"><input type="text" id="middleName" value=""
+                      class="form-control"></div>
+                </div>
+                <div class="form-group"><label class="col-md-12" style="font-size: 1.2em;">
+                    <!-- react-text: 86 -->Last Name
+                    <!-- /react-text -->
+                    <!-- react-text: 87 -->
+                    <!-- /react-text --><span class="text-danger">*</span></label>
+                  <div class="col-md-8" style="margin-bottom: 1.5em;"><input type="text" id="lastName" value=""
+                      class="form-control"></div>
+                </div>
+                <div class="form-group"><label class="col-md-12" style="font-size: 1.2em;">
+                    <!-- react-text: 93 -->Mobile Number
+                    <!-- /react-text -->
+                    <!-- react-text: 94 -->
+                    <!-- /react-text --><span class="text-danger">*</span></label>
+                  <div class="col-md-8" style="margin-bottom: 1.5em;"><input type="text" id="mobilenumber" value=""
+                      class="form-control"></div>
+                </div>
+                <div class="form-group"><label class="col-md-12" style="font-size: 1.2em;">
+                    <!-- react-text: 100 -->Street Address
+                    <!-- /react-text -->
+                    <!-- react-text: 101 -->
+                    <!-- /react-text --><span class="text-danger">*</span></label>
+                  <div class="col-md-8" style="margin-bottom: 1.5em;"><input type="text" id="street" value=""
+                      class="form-control"></div>
+                </div>
+                <div class="form-group"><label class="col-md-12" style="font-size: 1.2em;">
+                    <!-- react-text: 107 -->City
+                    <!-- /react-text -->
+                    <!-- react-text: 108 -->
+                    <!-- /react-text --><span class="text-danger">*</span></label>
+                  <div class="col-md-8" style="margin-bottom: 1.5em;"><select id="city" class="form-control">
+                      <option value=""> </option>
+                      <option value="Alaminos"> Alaminos </option>
+                      <option value="Angeles"> Angeles </option>
+                      <option value="Antipolo"> Antipolo </option>
+                      <option value="Bacolod"> Bacolod </option>
+                      <option value="Bacoor"> Bacoor </option>
+                      <option value="Bago"> Bago </option>
+                      <option value="Baguio"> Baguio </option>
+                      <option value="Bais"> Bais </option>
+                      <option value="Balanga"> Balanga </option>
+                      <option value="Batac"> Batac </option>
+                      <option value="Batangas City"> Batangas City </option>
+                      <option value="Bayawan"> Bayawan </option>
+                      <option value="Baybay"> Baybay </option>
+                      <option value="Bayugan"> Bayugan </option>
+                      <option value="Biñan"> Biñan </option>
+                      <option value="Bislig"> Bislig </option>
+                      <option value="Bogo"> Bogo </option>
+                      <option value="Butuan"> Butuan </option>
+                      <option value="Cabadbaran"> Cabadbaran </option>
+                      <option value="Cabanatuan"> Cabanatuan </option>
+                      <option value="Cabuyao"> Cabuyao </option>
+                      <option value="Cadiz"> Cadiz </option>
+                      <option value="Cagayan de Oro"> Cagayan de Oro </option>
+                      <option value="Calamba"> Calamba </option>
+                      <option value="Calapan"> Calapan </option>
+                      <option value="Calbayog"> Calbayog </option>
+                      <option value="Caloocan"> Caloocan </option>
+                      <option value="Candon"> Candon </option>
+                      <option value="Canlaon"> Canlaon </option>
+                      <option value="Carcar"> Carcar </option>
+                      <option value="Catbalogan"> Catbalogan </option>
+                      <option value="Cauayan"> Cauayan </option>
+                      <option value="Cavite City"> Cavite City </option>
+                      <option value="Cebu City"> Cebu City </option>
+                      <option value="Cotabato City"> Cotabato City </option>
+                      <option value="Dagupan"> Dagupan </option>
+                      <option value="Danao"> Danao </option>
+                      <option value="Dapitan"> Dapitan </option>
+                      <option value="Dasmariñas"> Dasmariñas </option>
+                      <option value="Davao City"> Davao City </option>
+                      <option value="Digos"> Digos </option>
+                      <option value="Dipolog"> Dipolog </option>
+                      <option value="Dumaguete"> Dumaguete </option>
+                      <option value="El Salvador"> El Salvador </option>
+                      <option value="Escalante"> Escalante </option>
+                      <option value="Gapan"> Gapan </option>
+                      <option value="General Santos"> General Santos </option>
+                      <option value="General Trias"> General Trias </option>
+                      <option value="Gingoog"> Gingoog </option>
+                      <option value="Guihulngan"> Guihulngan </option>
+                      <option value="Himamaylan"> Himamaylan </option>
+                      <option value="Ilagan"> Ilagan </option>
+                      <option value="Iligan"> Iligan </option>
+                      <option value="Iloilo City"> Iloilo City </option>
+                      <option value="Imus"> Imus </option>
+                      <option value="Iriga"> Iriga </option>
+                      <option value="Isabela"> Isabela </option>
+                      <option value="Kabankalan"> Kabankalan </option>
+                      <option value="Kidapawan"> Kidapawan </option>
+                      <option value="Koronadal"> Koronadal </option>
+                      <option value="La Carlota"> La Carlota </option>
+                      <option value="Lamitan"> Lamitan </option>
+                      <option value="Laoag"> Laoag </option>
+                      <option value="Lapu‑Lapu"> Lapu‑Lapu </option>
+                      <option value="Las Piñas"> Las Piñas </option>
+                      <option value="Legazpi"> Legazpi </option>
+                      <option value="Ligao"> Ligao </option>
+                      <option value="Lipa"> Lipa </option>
+                      <option value="Lucena"> Lucena </option>
+                      <option value="Maasin"> Maasin </option>
+                      <option value="Mabalacat"> Mabalacat </option>
+                      <option value="Makati"> Makati </option>
+                      <option value="Malabon"> Malabon </option>
+                      <option value="Malaybalay"> Malaybalay </option>
+                      <option value="Malolos"> Malolos </option>
+                      <option value="Mandaluyong"> Mandaluyong </option>
+                      <option value="Mandaue"> Mandaue </option>
+                      <option value="Manila"> Manila </option>
+                      <option value="Marawi"> Marawi </option>
+                      <option value="Marikina"> Marikina </option>
+                      <option value="Masbate City"> Masbate City </option>
+                      <option value="Mati"> Mati </option>
+                      <option value="Meycauayan"> Meycauayan </option>
+                      <option value="Muñoz"> Muñoz </option>
+                      <option value="Muntinlupa"> Muntinlupa </option>
+                      <option value="Naga"> Naga </option>
+                      <option value="Navotas"> Navotas </option>
+                      <option value="Olongapo"> Olongapo </option>
+                      <option value="Ormoc"> Ormoc </option>
+                      <option value="Oroquieta"> Oroquieta </option>
+                      <option value="Ozamiz"> Ozamiz </option>
+                      <option value="Pagadian"> Pagadian </option>
+                      <option value="Palayan"> Palayan </option>
+                      <option value="Panabo"> Panabo </option>
+                      <option value="Parañaque"> Parañaque </option>
+                      <option value="Pasay"> Pasay </option>
+                      <option value="Pasig"> Pasig </option>
+                      <option value="Passi"> Passi </option>
+                      <option value="Puerto Princesa"> Puerto Princesa </option>
+                      <option value="Quezon City"> Quezon City </option>
+                      <option value="Roxas"> Roxas </option>
+                      <option value="Sagay"> Sagay </option>
+                      <option value="Samal"> Samal </option>
+                      <option value="San Carlos"> San Carlos </option>
+                      <option value="San Fernando"> San Fernando </option>
+                      <option value="San Jose"> San Jose </option>
+                      <option value="San Jose del Monte"> San Jose del Monte </option>
+                      <option value="San Juan"> San Juan </option>
+                      <option value="San Pablo"> San Pablo </option>
+                      <option value="San Pedro"> San Pedro </option>
+                      <option value="Santa Rosa"> Santa Rosa </option>
+                      <option value="Santiago"> Santiago </option>
+                      <option value="Silay"> Silay </option>
+                      <option value="Sipalay"> Sipalay </option>
+                      <option value="Sorsogon City"> Sorsogon City </option>
+                      <option value="Surigao City"> Surigao City </option>
+                      <option value="Tabaco"> Tabaco </option>
+                      <option value="Tabuk"> Tabuk </option>
+                      <option value="Tacloban"> Tacloban </option>
+                      <option value="Tacurong"> Tacurong </option>
+                      <option value="Tagaytay"> Tagaytay </option>
+                      <option value="Tagbilaran"> Tagbilaran </option>
+                      <option value="Taguig"> Taguig </option>
+                      <option value="Tagum"> Tagum </option>
+                      <option value="Talisay"> Talisay </option>
+                      <option value="Tanauan"> Tanauan </option>
+                      <option value="Tandag"> Tandag </option>
+                      <option value="Tangub"> Tangub </option>
+                      <option value="Tanjay"> Tanjay </option>
+                      <option value="Tarlac City"> Tarlac City </option>
+                      <option value="Tayabas"> Tayabas </option>
+                      <option value="Toledo"> Toledo </option>
+                      <option value="Trece Martires"> Trece Martires </option>
+                      <option value="Tuguegarao"> Tuguegarao </option>
+                      <option value="Urdaneta"> Urdaneta </option>
+                      <option value="Valencia"> Valencia </option>
+                      <option value="Valenzuela"> Valenzuela </option>
+                      <option value="Victorias"> Victorias </option>
+                      <option value="Vigan"> Vigan </option>
+                      <option value="Zamboanga City"> Zamboanga City </option>
+                    </select></div>
+                </div>
+                <div class="form-group"><label class="col-md-12" style="font-size: 1.2em;">
+                    <!-- react-text: 255 -->Barangay
+                    <!-- /react-text -->
+                    <!-- react-text: 256 -->
+                    <!-- /react-text --><span class="text-danger">*</span></label>
+                  <div class="col-md-8" style="margin-bottom: 1.5em;"><input type="text" id="baranggay" value=""
+                      class="form-control"></div>
+                </div>
+                <div class="form-group"><label class="col-md-12" style="font-size: 1.2em;">
+                    <!-- react-text: 262 -->State
+                    <!-- /react-text -->
+                    <!-- react-text: 263 -->
+                    <!-- /react-text --><span class="text-danger">*</span></label>
+                  <div class="col-md-8" style="margin-bottom: 1.5em;"><input type="text" id="state" value=""
+                      class="form-control"></div>
+                </div>
+                <div class="form-group"><label class="col-md-12" style="font-size: 1.2em;">
+                    <!-- react-text: 269 -->Civil Status
+                    <!-- /react-text -->
+                    <!-- react-text: 270 -->
+                    <!-- /react-text --><span class="text-danger">*</span></label>
+                  <div class="col-md-8" style="margin-bottom: 1.5em;"><select id="civilstatus" class="form-control">
+                      <option value=""> </option>
+                      <option value="Single"> Single </option>
+                      <option value="Married - Dual Income household"> Married - Dual Income household </option>
+                      <option value="Married"> Married </option>
+                      <option value="Separated"> Separated </option>
+                      <option value="Widowed"> Widowed </option>
+                      <option value="Cohabitating"> Cohabitating </option>
+                    </select></div>
+                </div>
+                <div class="form-group"><label class="col-md-12" style="font-size: 1.2em;">
+                    <!-- react-text: 283 -->Gender
+                    <!-- /react-text -->
+                    <!-- react-text: 284 -->
+                    <!-- /react-text --><span class="text-danger">*</span></label>
+                  <div class="col-md-8" style="margin-bottom: 1.5em;">
+                    <div><label><input type="radio" class="" value="Male" style="margin-right: 10px;">
+                        <!-- react-text: 290 -->Male
+                        <!-- /react-text --></label></div>
+                    <div><label><input type="radio" class="" value="Female" style="margin-right: 10px;">
+                        <!-- react-text: 294 -->Female
+                        <!-- /react-text --></label></div>
+                  </div>
+                </div>
+                <div class="form-group"><label class="col-md-12" style="font-size: 1.2em;">
+                    <!-- react-text: 297 -->Gross Salary
+                    <!-- /react-text -->
+                    <!-- react-text: 298 -->
+                    <!-- /react-text --><span class="text-danger">*</span></label>
+                  <div class="col-md-8" style="margin-bottom: 1.5em;"><input type="number" id="monthlyincome" value=""
+                      class="form-control"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class=" col-md-4 col-md-offset-4"><button class="btn btn-success btn-block" disabled=""
+                  style="height: auto; font-size: 1.2em;">
+                  <!-- react-text: 305 -->Next
+                  <!-- /react-text --><i class="fa fa-arrow-right"></i></button></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 hidden-xs">
+          <div>
+            <div class="row">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h2 class="text-center" style="margin: 0px;">You are applying for:</h2>
+                </div>
+                <div class="panel-body text-center">
+                  <h5 style="color: rgb(168, 168, 168); margin-bottom: 0px;">Loan Type</h5>
+                  <h3 style="color: rgb(31, 119, 168); margin-top: 0.3em; margin-bottom: 1em;">Personal Loan</h3>
+                  <h5 style="color: rgb(168, 168, 168); margin-bottom: 0px;">Loan Amount</h5>
+                  <h3 style="color: rgb(31, 119, 168); margin-top: 0.3em; margin-bottom: 1em;">₱ 10,000.00</h3>
+                  <h5 style="color: rgb(168, 168, 168); margin-bottom: 0px;">Loan Term</h5>
+                  <h3 style="color: rgb(31, 119, 168); margin-top: 0.3em; margin-bottom: 1em;">12 months</h3>
+                  <hr>
+                  <h5 style="color: rgb(168, 168, 168); margin-bottom: 0px;">Estimated Interest</h5>
+                  <h5 style="color: rgb(168, 168, 168); margin-bottom: 1.5em;">36%</h5>
+                  <h5 style="color: rgb(168, 168, 168); margin-bottom: 0px;">Monthly Payments</h5>
+                  <h5 style="color: rgb(168, 168, 168); margin-bottom: 1.5em;">₱ 1,133.33</h5>
+                  <h5 style="color: rgb(168, 168, 168); margin-bottom: 0px;">Recommended Monthly Income</h5>
+                  <h5 style="color: rgb(168, 168, 168); margin-bottom: 1.5em;">₱ 7,555.56</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .newsletter-btn:hover,
+    .newsletter-btn:focus,
+    .newsletter-btn:disabled {
+      background-color: #293f70 !important;
+      color: #fff;
+      border: 0;
+    }
+  </style>
+
+  <section id="footer">
+    <div class="container">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-4 text-left" id="footer-menu">
+          <h5 class="footer-header text-left">Quick links</h5>
+          <ul style="list-style-type: none; padding: 0;">
+            <li><a class="menu" href="">Home</a></li>
+            <li><a class="menu" href="">News</a></li>
+            <li><a class="menu" href="">Register</a></li>
+            <li><a class="menu" href="">FAQ</a></li>
+            <li><a class="menu" href="">About Us</a></li>
+            <li><a class="menu" href="">Contact Us</a></li>
+            <li><a class="menu" href="">Privacy Policy</a></li>
+          </ul>
+          <script>
+            $(document).ready(function () {
+              var pgurl = window.location.href.substr(
+                window.location.href.lastIndexOf("/")
+              );
+              console.log(pgurl);
+              $("a.menu").each(function () {
+                if ($(this).attr("href") == pgurl || $(this).attr("href") == "")
+                  $(this).addClass("active");
+              });
+            });
+          </script>
+        </div>
+        <div class="col-md-6 col-sm-8 col-xs-8 text-center margin-bottom1 newsletter">
+          <h5 class="footer-header">address</h5>
+          <p class="">Fintechnology Inc., 3rd Floor Guevent Building, <br>
+            #52 D.M. Guevara St. corner Calbayog St., Mandaluyong City, Philippines
+            <br><br>
+          </p>
+          <h5 class="footer-header">Contact No.</h5>
+          <p class="">534-9185 (local 58) <br>
+            <!-- <br>Enter your email below.</p>
+            <form action="" class="subscribe">
+              <div class="input-group newsletter-input-group hidden-xs hidden-sm">
+                <input type="email" name="email" class="form-control newsletter-input" placeholder="Email address" required>
+                <span class="input-group-btn">
+                  <button class="btn btn-default newsletter-btn btn-subscribe"> Subscribe </button>
+                </span>
+              </div>
+            </form> -->
+
+          </p>
+        </div>
+
+        <form action="" class="subscribe">
+          <div class="input-group newsletter-input-group col-xs-12 hidden-lg hidden-md" style="width: 100% !important;">
+            <input type="email" name="email" class="form-control newsletter-input" placeholder="Email address"
+              required="">
+            <span class="input-group-btn">
+              <button class="btn btn-default newsletter-btn btn-subscribe" style="padding: 10px 5px 10px 5px;">
+                Subscribe </button>
+            </span>
+          </div>
+        </form>
+
+        <div class="col-md-3 col-sm-12 col-xs-12 text-center">
+          <h5 class="footer-header">social links</h5>
+          <!--  <p class="about">FundKo is a subsidiary of Guevent Investments Corporation (GIDC). GIDC is a company that has over 50 years of business
+            in the microlending industry through Radio Wealth Finance. It continues to grow its operations.
+          </p> -->
+          <div class="row text-center social-links">
+            <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <a target="_blank" href="https://www.facebook.com/fundko"><i class="fab fa-facebook-f"
+                    aria-hidden="true"></i></a>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <a target="_blank" href="https://twitter.com/fundkoph"><i class="fab fa-twitter"
+                    aria-hidden="true"></i></a>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <a target="_blank" href="https://www.instagram.com/fundko/"><i class="fab fa-instagram"
+                    aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var $subscribeForm = $(".subscribe");
+
+      $subscribeForm.submit(function (e) {
+        console.log($(this).serialize());
+        console.log("formspee");
+        e.preventDefault();
+        var $submit = $(".btn-subscribe");
+        var defaultSubmitText = $submit.html();
+
+        $.ajax({
+          url: "//formspree.io/cu.michaels@gmail.com",
+          method: "POST",
+          data: $(this).serialize(),
+          dataType: "json",
+          beforeSend: function () {
+            //$subscribeForm.append('<div class="alert alert--loading">Sending message…</div>');
+            $submit.attr("disabled", true).text("Sending message…");
+          },
+          success: function (data) {
+            //$subscribeForm.append('<div class="alert alert--success">Message sent!</div>');
+            $submit.text("Message sent!");
+            setTimeout(function () {
+              //$('.alert--success').remove();
+              $submit.attr("disabled", false).html(defaultSubmitText);
+            }, 5000);
+          },
+          error: function (err) {
+            //$subscribeForm.find('.alert--loading').hide();
+            //$subscribeForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+            $submit.text("Ops, there was an error.");
+            setTimeout(function () {
+              //$('.alert--error').remove();
+              $submit.attr("disabled", false).html(defaultSubmitText);
+            }, 5000);
+          }
+        });
+      });
+    });
+  </script>
+
+
+
+  <script>
+    $(document).ready(function () {
+      var source = "";
+      localStorage.setItem("borrowerSource", source);
+    });
+  </script>
+  <!--//scrolling js-->
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

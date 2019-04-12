@@ -1,756 +1,554 @@
 <!DOCTYPE html>
 <html class="uk-notouch">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-        <title>11111</title>
-        <link href="./css/bootstrap.min.css" rel="stylesheet" />
-        <link href="./css/agency.css" rel="stylesheet" />
-        <link href="./css/custom_2.css" rel="stylesheet" />
-        <link href="./css/landing.css" rel="stylesheet" />
-        <script src="./js/jquery.js"></script>
-        <!-- Custom Fonts -->
-        <link
-            href="./css/font-awesome.min.css"
-            rel="stylesheet"
-            type="text/css"
-        />
-        <link rel="stylesheet" type="text/css" href="./css/loaders.min.css" />
-        <link href="./css/uikit.scrollspy.css" rel="stylesheet" />
-        <link href="./css/uikit.css" rel="stylesheet" />
-        <script src="./js/uikit.scrollspy.js"></script>
-        <script src="./js/uikit.js"></script>
-        <link href="./css/landing-index4.css" rel="stylesheet" />
-        <link href="./css/new-invest.css" rel="stylesheet" />
-        <link href="./css/mobile.css" rel="stylesheet" />
-    </head>
 
-    <body class="with-new-header">
-        <div id="page-top" class="index index4">
-            <style>
-                .loginn a {
-                    color: #185fa4 !important;
-                }
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <title>11111</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/agency.css" rel="stylesheet" />
+    <link href="./css/custom_2.css" rel="stylesheet" />
+    <link href="./css/landing.css" rel="stylesheet" />
+    <script src="./js/jquery.js"></script>
+    <!-- Custom Fonts -->
+    <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="./css/loaders.min.css" />
+    <link href="./css/uikit.scrollspy.css" rel="stylesheet" />
+    <link href="./css/uikit.css" rel="stylesheet" />
+    <script src="./js/uikit.scrollspy.js"></script>
+    <script src="./js/uikit.js"></script>
+    <link href="./css/landing-index4.css" rel="stylesheet" />
+    <link href="./css/new-invest.css" rel="stylesheet" />
+    <link href="./css/mobile.css" rel="stylesheet" />
+</head>
 
-                .signup_modal_header button {
-                    margin-top: -9px !important;
-                    font-size: 20px;
-                }
+<body class="with-new-header">
+    <div id="page-top" class="index index4">
+        <style>
+            .loginn a {
+                color: #185fa4 !important;
+            }
 
-                .loginn-label {
-                    font-family: "Equip-light";
-                    font-weight: 600;
-                    color: #425e78;
-                }
-            </style>
+            .signup_modal_header button {
+                margin-top: -9px !important;
+                font-size: 20px;
+            }
 
-            <div class="">
-                <nav class="navbar navbar-default navbar-fixed-top">
-                    <div class="container">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header page-scroll">
-                            <button
-                                type="button"
-                                class="navbar-toggle"
-                                data-toggle="collapse"
-                                data-target="#bs-example-navbar-collapse-1"
-                                id="hideshow"
-                                onclick="hidebutton()"
-                            >
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar black-icon"></span>
-                                <span class="icon-bar black-icon"></span>
-                                <span class="icon-bar black-icon"></span>
-                            </button>
-                            <a class="" href="https://fundko.com/">
-                                <img
-                                    style=""
-                                    class="fundx-logo fundx-logo-mobile"
-                                    src="./img/logo5.png"
-                                />
-                            </a>
+            .loginn-label {
+                font-family: "Equip-light";
+                font-weight: 600;
+                color: #425e78;
+            }
+        </style>
 
-                            <!-- <a class="navbar-brand page-scroll" href="#page-top"></a> -->
-                        </div>
+        <div class="">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" id="hideshow">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar black-icon"></span>
+                            <span class="icon-bar black-icon"></span>
+                            <span class="icon-bar black-icon"></span>
+                        </button>
+                        <a class="" href="https://fundko.com/">
+                            <img style="" class="fundx-logo fundx-logo-mobile" src="./img/logo5.png" />
+                        </a>
 
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div
-                            class="collapse navbar-collapse"
-                            id="bs-example-navbar-collapse-1"
-                        >
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="hidden active">
-                                    <a href="#page-top"></a>
-                                </li>
-                                <li>
-                                    <a
-                                        class="page-scroll"
-                                        href=""
-                                        >BORROW</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        class="page-scroll"
-                                        href=""
-                                        >INVEST</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        class="page-scroll"
-                                        href=""
-                                        >NEWS</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        class="page-scroll"
-                                        href=""
-                                        >FAQ</a
-                                    >
-                                </li>
-                                <!-- <li>
+                        <!-- <a class="navbar-brand page-scroll" href="#page-top"></a> -->
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="hidden active">
+                                <a href="#page-top"></a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="">BORROW</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="">INVEST</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="">NEWS</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="">FAQ</a>
+                            </li>
+                            <!-- <li>
                   <a class="page-scroll" href="/partners-page">PARTNERS</a>
                 </li> -->
-                                <li>
-                                    <a
-                                        class="page-scroll"
-                                        href=""
-                                        data-toggle=""
-                                        >REGISTER</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        class="page-scroll"
-                                        href=""
-                                        data-toggle="modal"
-                                        data-target="#modalSignUp"
-                                        >SIGN IN</a
-                                    >
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /.navbar-collapse -->
-                    </div>
-                    <!-- /.container-fluid -->
-                </nav>
-            </div>
-            <!-- MODAL Severity-->
-            <form action="" method="POST">
-                <div
-                    class="modal fade signupModal"
-                    id="modalSignUp"
-                    role="dialog"
-                    style="border-radius:10px;"
-                >
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content signup_modal_content">
-                            <div class="modal-header signup_modal_header">
-                                <h4 class="modal-title text-center">
-                                    Welcome to FundKo
-                                    <button
-                                        type="button"
-                                        class="close"
-                                        data-dismiss="modal"
-                                        aria-label="Close"
-                                    >
-                                        <i
-                                            class="fa fa-close pull-right"
-                                            area-hidden="true"
-                                        ></i>
-                                    </button>
-                                </h4>
-                            </div>
-                            <div class="modal-body" style="padding-top:20px;">
-                                <p style="text-align:center;">
-                                    Sign in to your account.
-                                </p>
-                                <br />
-                                <div class="form-group form-profile col-md-12">
-                                    <div class="col-md-4">
-                                        <label
-                                            class="label-profile loginn-label"
-                                            >Email Address</label
-                                        >
-                                    </div>
-                                    <div class="col-md-8 form-profile">
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            required="required"
-                                            class="form-control"
-                                            placeholder="Email Address"
-                                        />
-                                    </div>
-                                </div>
-                                <div class="form-group form-profile col-md-12">
-                                    <div class="col-md-4">
-                                        <label
-                                            class="label-profile loginn-label"
-                                            >Password
-                                        </label>
-                                    </div>
-                                    <div class="col-md-8 form-profile">
-                                        <input
-                                            type="password"
-                                            name="password"
-                                            class="form-control"
-                                            placeholder="Password"
-                                            value=""
-                                        />
-                                    </div>
-                                </div>
-                                <div class="form-group b">
-                                    <div
-                                        class="col-xs-12 col-md-12 text-center"
-                                        style="padding-top: 10px; padding-left: 15px; margin-bottom:20px;"
-                                    >
-                                        <!-- <input type="checkbox" value style="height: auto; margin-bottom: 5px;"> Stay signed in. -->
-                                        <!--                   <br> -->
-                                        <a
-                                            data-toggle="modal"
-                                            role="button"
-                                            href=""
-                                            style="color: #185fa4"
-                                            class="modal-link"
-                                            >Forgot Password?</a
-                                        >
-                                        <!-- <span><small>Not a FundX member?</small></span><br> --><span>
-                                            |
-                                        </span>
-                                        <a
-                                            data-toggle="modal"
-                                            role="button"
-                                            href=""
-                                            style="color: #185fa4"
-                                            class="modal-link"
-                                            >Create New Account.</a
-                                        >
-                                        <span> | </span>
-                                        <a
-                                            data-toggle="modal"
-                                            role="button"
-                                            href=""
-                                            style="color: #185fa4"
-                                            class="modal-link"
-                                            >Resend Email Verification.</a
-                                        >
-                                    </div>
-                                    <div
-                                        class="col-xs-12 col-md-offset-4 col-md-4"
-                                    >
-                                        <button
-                                            id="btnSignUp"
-                                            type="submit"
-                                            style="width:100%"
-                                            class="btn btn-default text-center "
-                                        >
-                                            LOG IN
-                                        </button>
-                                    </div>
-                                    <button class="whitebtn2" disabled="">
-                                        .
-                                    </button>
-                                </div>
-                    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-
-        <style>
-            /* new on mobile */
-            @media only screen and (min-width: 320px) and (max-width: 480px) {
-                .investBanner-heading {
-                    margin-right: 4% !important;
-                }
-
-                #investBannerHead {
-                    font-size: 8vw !important;
-                }
-
-                .landingj2 {
-                    background-image: url("./img/fundko_landing_01.jpg") !important;
-                    background-repeat: no-repeat !important;
-                    background-position: 0px 100px !important;
-                    background-size: contain !important;
-                    position: relative !important;
-                    padding-bottom: 0px !important;
-                }
-
-                .banner-title {
-                    font-family: "Equip-light", serif !important;
-                    letter-spacing: 3px !important;
-                    margin-top: 35% !important;
-                    text-shadow: 1px 0 black !important;
-                    color: #fefefe !important;
-                }
-
-                .banner-text2 {
-                    font-family: "Equip-light", serif !important;
-                    color: #3e76a9 !important;
-                    padding: 10% 0 0 0;
-                    text-align: center;
-                    /*width:360px !important;*/
-                    font-size: 22px !important;
-                    /*padding-bottom: 15px !important;*/
-                }
-
-                .investBtnMoney2 {
-                    font-weight: bold !important;
-                    /*width:350px !important;*/
-                    margin-top: 0px !important;
-                    border: 2px solid #3371ae40 !important;
-                    color: #4279ab;
-                }
-
-                .investBtnMoney3 {
-                    font-weight: bold !important;
-                    /*width:350px !important;*/
-                    margin-top: 10px !important;
-                    border: 2px solid #3371ae40 !important;
-                    color: #4279ab;
-                }
-
-                .banner-title2 {
-                    font-family: "Equip-light", serif !important;
-                    margin-top: 80px !important;
-                }
-
-                .landingj3 {
-                    background-repeat: no-repeat !important;
-                    background-position: 0px 86px !important;
-                    background-size: contain !important;
-                    position: relative !important;
-                    padding-bottom: 0px !important;
-                }
-
-                .banner-text3 {
-                    font-family: "Equip-light", serif !important;
-                    color: #3e76a9 !important;
-                    padding-top: 60px !important;
-                    text-align: center;
-                    /*width:360px !important;*/
-                    font-size: 24px !important;
-                    padding-bottom: 2px !important;
-                }
-
-                .banner-title3 {
-                    font-family: "Equip-light", serif !important;
-                    text-align: center !important;
-                    color: #00264d !important;
-                    margin-left: 5px !important;
-                }
-
-                .banner-text4 {
-                    font-family: "Equip-light", serif !important;
-                    color: #3e76a9 !important;
-                    padding-top: 10px !important;
-                    /*width:360px !important;*/
-                    font-size: 18px !important;
-                    margin-left: 15px;
-                }
-
-                .banner-text5 {
-                    font-family: "Equip-light", serif !important;
-                    color: #3e76a9 !important;
-                    font-size: 18px !important;
-                    margin-top: 5px !important;
-                    /*width:340px !important;*/
-                    margin-left: 23px;
-                }
-
-                .item {
-                    margin-top: -55px !important;
-                    color: #3e76a9 !important;
-                }
-            }
-        </style>
-
-        <header>
-            <div id="homeCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Wrapper for slides -->
-                <div class="" role="listbox">
-                    <div class="item active">
-                        <section id="banner" class="landingj landingj2">
-                            <div class="">
-                                <div
-                                    class="col-md-7 section-heading text-left investBanner-heading"
-                                >
-                                    <h1
-                                        class="banner-title"
-                                        style="margin-bottom: 10px;"
-                                        id="investBannerHead"
-                                    >
-                                        Meaningful<br />
-                                        Investments
-                                    </h1>
-
-                                    <p class="banner-text banner-text2">
-                                        By funding portions of multiple loans,
-                                        <br class="hidden-xs" />
-                                        you help more people while getting solid
-                                        monthly returns.<br />
-                                    </p>
-
-                                    <div class="row">
-                                        <br />
-                                        <div
-                                            class="col-md-6 col-xs-12 investBannerBtn"
-                                        >
-                                            <a
-                                                href=""
-                                                class="col-md-3 btn btn-block investBtnMoney investBtnMoney2"
-                                                style="margin-top : 0px !important"
-                                                ><span>Learn More </span
-                                                ><i
-                                                    class="fa fa-angle-right"
-                                                    aria-hidden="true"
-                                                ></i
-                                            ></a>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div
-                                            class="col-md-6 col-xs-12 investBannerBtn"
-                                        >
-                                            <a
-                                                href="https://fundko.com/register"
-                                                class="btn btn-block col-md-3 investBtnMoney investBtnMoney3"
-                                                ><span>Register </span
-                                                ><i
-                                                    class="fa fa-angle-right"
-                                                    aria-hidden="true"
-                                                ></i
-                                            ></a>
-                                        </div>
-                                    </div>
-                                    <br />
-                                </div>
-
-                                
-            </div>
-        </header>
-
-        <section id="learnMore" class="colour2">
-            <div class="fullwidth clearfix">
-                <div
-                    id="maincont"
-                    class="bodycontainer clearfix uk-scrollspy-init-inview"
-                    data-uk-scrollspy="{cls:&#39;uk-animation-fade&#39;, delay: 200, repeat: true}"
-                >
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3">
-                            <img
-                                class="img-responsive text-center"
-                                src="./img/fundko_logo_02.png"
-                            />
-                            <!-- <img class="img-responsive text-center" src="https://s3-ap-southeast-1.amazonaws.com/fundko-assets/img/jlandingwhite/fundko_logo_02.png"> -->
-                        </div>
-                    </div>
-
-                    <div class="row col-m-">
-                        <p>
-                            We are a crowdlending platform that connects
-                            verified lenders and borrowers. Because we provide a
-                            more efficient service than traditional channels,
-                            lenders who are looking for investment opportunities
-                            will find attractive returns while borrowers get
-                            reasonable rates.
-                        </p>
-                        <p>
-                            FundKo is a subsidiary of
-                            <a href="http://www.guevent.com/"
-                                >Guevent Investments Development Corporation
-                                (GIDC)</a
-                            >
-                            – a company that has over 50 years of operations
-                            with a business footprint that spans across the
-                            entire Philippine archipelago.
-                        </p>
-
-                        <p>
-                            Invest for as low as 15,000 pesos or borrow as much
-                            as 500,000 pesos through <strong>FundKo</strong>!
-                        </p>
-                    </div>
-
-                    <hr />
-                </div>
-            </div>
-        </section>
-        <!-- <div class="arrow-separator arrow-white"></div> -->
-
-        <section
-            id="howItWorks"
-            class="colorBG"
-            style="position: relative !important;"
-        >
-            <div
-                class="container uk-scrollspy-init-inview"
-                data-uk-scrollspy="{cls:&#39;uk-animation-fade&#39;, delay: 200, repeat: true}"
-            >
-                <div
-                    style=""
-                    class=" col-md-12 col-sm-12 col-xs-12 section-heading text-center"
-                >
-                    <h3 class="howtopeer">How Peer-to-Peer Works</h3>
-                    <div
-                        class="col-md-6 col-sm-12 col-xs-12 uk-scrollspy-init-inview"
-                        data-uk-scrollspy="{cls:&#39;uk-animation-scale-up&#39;, delay: 300, repeat: true}"
-                    >
-                        <img class="monitor" src="./img/monitor.png" />
-                    </div>
-                    <div
-                        style="padding-top: 2em;"
-                        class="col-md-6 col-sm-12 col-xs-12 text-left"
-                    >
-                        <div
-                            class="col-md-12 col-sm-12 col-xs-12 uk-scrollspy-init-inview"
-                            data-uk-scrollspy="{cls:&#39;uk-animation-scale-up&#39;, delay: 300, repeat: true}"
-                        >
-                            <div class="col-md-1 col-sm-1 col-xs-2 icon">
-                                <h3 class="section-subheading active">
-                                    <img
-                                        src="./img/text-document_318-48568.png"
-                                        class="img-responsive"
-                                    />
-                                </h3>
-                            </div>
-                            <div class="col-md-9 col-sm-11 col-xs-10">
-                                <h3 class="section-subheading active">
-                                    Borrower Applies
-                                </h3>
-                                <p>
-                                    We validate the borrower, assess the loan
-                                    and assign a rate.
-                                </p>
-                            </div>
-                        </div>
-                        <div
-                            class="col-md-12 col-sm-12 col-xs-12"
-                            data-uk-scrollspy="{cls:&#39;uk-animation-scale-up&#39;, delay: 500, repeat: true}"
-                        >
-                            <div class="col-md-1 col-sm-1 col-xs-2 icon">
-                                <h3 class="section-subheading active">
-                                    <!-- <i class="fa fa-pie-chart" aria-hidden="true"></i> -->
-                                    <img
-                                        src="./img/pie-chart-2.png"
-                                        class="img-responsive"
-                                    />
-                                </h3>
-                            </div>
-                            <div class="col-md-9 col-sm-11 col-xs-10">
-                                <h3 class="section-subheading active">
-                                    Lenders Fund Portions of Loans
-                                </h3>
-                                <p>
-                                    Lenders choose from a variety of approved
-                                    loans in our marketplace.
-                                </p>
-                            </div>
-                        </div>
-                        <div
-                            class="col-md-12 col-sm-12 col-xs-12"
-                            data-uk-scrollspy="{cls:&#39;uk-animation-scale-up&#39;, delay: 700, repeat: true}"
-                        >
-                            <div class="col-md-1 col-sm-1 col-xs-2 icon">
-                                <h3 class="section-subheading active">
-                                    <!-- <i class="fa fa-line-chart" aria-hidden="true"></i> -->
-                                    <img
-                                        src="./img/ascendant-bars-graphic_318-49919.png.png"
-                                        class="img-responsive"
-                                    />
-                                </h3>
-                            </div>
-                            <div class="col-md-9 col-sm-11 col-xs-10">
-                                <h3 class="section-subheading active">
-                                    FundKo Collects and Disburses
-                                </h3>
-                                <p>
-                                    FundKo collects repayments from borrowers
-                                    and distributes returns to lenders
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- <div class="arrow-separator arrow-lightgray"></div> -->
-
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-
-        <link href="./css/landing-index4(1).css" rel="stylesheet" />
-
-        <section
-            id="features2"
-            class="colorBG"
-            style="position: relative !important;"
-        >
-            <div
-                class="container features2"
-                data-uk-scrollspy="{cls:&#39;uk-animation-fade&#39;, delay: 200, repeat: true}"
-            >
-                <!-- <h3 class="features2h3" style="color : #fff !important">Features</h3> -->
-                <div class="col-md-4 ">
-                    <div class="primary feature-block">
-                        <div class="feature-content">
-                            <img
-                                class="img-responsive"
-                                src="./img/better_rates.png"
-                            />
-                            <h4>Better Rates</h4>
-                            <p>
-                                As a lender, you enjoy better rates than banks
-                                and safer returns than stocks. Borrowers enjoy
-                                similar cost advantages.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="contrast feature-block">
-                        <div class="feature-content">
-                            <img
-                                class="img-responsive"
-                                src="./img/safety_in_numbers.png"
-                            />
-                            <h4>Safety in Numbers</h4>
-                            <p>
-                                Choose from hundreds of loans. Join other
-                                lenders and invest your money in as many loans
-                                to diversify risk.
-                            </p>
-                            <br />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="primary feature-block">
-                        <div class="feature-content">
-                            <img
-                                class="img-responsive"
-                                src="./img/effective_borrower.png"
-                            />
-                            <h4>Effective Borrower Validation</h4>
-                            <p>
-                                New borrowers are approved every week based on
-                                stringent credit criteria designed to focus on
-                                creditworthiness.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <style>
-            .newsletter-btn:hover,
-            .newsletter-btn:focus,
-            .newsletter-btn:disabled {
-                background-color: #293f70 !important;
-                color: #fff;
-                border: 0;
-            }
-        </style>
-
-        <section id="footer">
-            <div class="container">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div
-                        class="col-md-2 col-md-offset-1 col-sm-4 col-xs-4 text-left"
-                        id="footer-menu"
-                    >
-                        <h5 class="footer-header text-left">Quick links</h5>
-                        <ul style="list-style-type: none; padding: 0;">
                             <li>
-                                <a
-                                    class="menu active"
-                                    href="https://fundko.com/"
-                                    >Home</a
-                                >
+                                <a class="page-scroll" href="" data-toggle="">REGISTER</a>
                             </li>
                             <li>
-                                <a class="menu" href="http://blog.fundko.com/"
-                                    >News</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    class="menu"
-                                    href="https://fundko.com/register"
-                                    >Register</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    class="menu"
-                                    href="https://fundko.com/frequently-asked-question"
-                                    >FAQ</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    class="menu"
-                                    href="https://fundko.com/about-us"
-                                    >About Us</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    class="menu"
-                                    href="https://fundko.com/contact-us"
-                                    >Contact Us</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                    class="menu"
-                                    href="https://fundko.com/privacy-policy"
-                                    >Privacy Policy</a
-                                >
+                                <a class="page-scroll" href="" data-toggle="modal" data-target="#modalSignUp">SIGN
+                                    IN</a>
                             </li>
                         </ul>
-                        <script>
-                            $(document).ready(function() {
-                                var pgurl = window.location.href.substr(
-                                    window.location.href.lastIndexOf("/")
-                                );
-                                console.log(pgurl);
-                                $("a.menu").each(function() {
-                                    if (
-                                        $(this).attr("href") == pgurl ||
-                                        $(this).attr("href") == ""
-                                    )
-                                        $(this).addClass("active");
-                                });
-                            });
-                        </script>
                     </div>
-                    <div
-                        class="col-md-6 col-sm-8 col-xs-8 text-center margin-bottom1 newsletter"
-                    >
-                        <h5 class="footer-header">address</h5>
-                        <p class="">
-                            Fintechnology Inc., 3rd Floor Guevent Building,
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+        <!-- MODAL Severity-->
+        <form action="" method="POST">
+            <div class="modal fade signupModal" id="modalSignUp" role="dialog" style="border-radius:10px;">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content signup_modal_content">
+                        <div class="modal-header signup_modal_header">
+                            <h4 class="modal-title text-center">
+                                Welcome to FundKo
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i class="fa fa-close pull-right" area-hidden="true"></i>
+                                </button>
+                            </h4>
+                        </div>
+                        <div class="modal-body" style="padding-top:20px;">
+                            <p style="text-align:center;">
+                                Sign in to your account.
+                            </p>
                             <br />
-                            #52 D.M. Guevara St. corner Calbayog St.,
-                            Mandaluyong City, Philippines
-                            <br /><br />
+                            <div class="form-group form-profile col-md-12">
+                                <div class="col-md-4">
+                                    <label class="label-profile loginn-label">Email Address</label>
+                                </div>
+                                <div class="col-md-8 form-profile">
+                                    <input type="email" name="email" required="required" class="form-control"
+                                        placeholder="Email Address" />
+                                </div>
+                            </div>
+                            <div class="form-group form-profile col-md-12">
+                                <div class="col-md-4">
+                                    <label class="label-profile loginn-label">Password
+                                    </label>
+                                </div>
+                                <div class="col-md-8 form-profile">
+                                    <input type="password" name="password" class="form-control" placeholder="Password"
+                                        value="" />
+                                </div>
+                            </div>
+                            <div class="form-group b">
+                                <div class="col-xs-12 col-md-12 text-center"
+                                    style="padding-top: 10px; padding-left: 15px; margin-bottom:20px;">
+                                    <!-- <input type="checkbox" value style="height: auto; margin-bottom: 5px;"> Stay signed in. -->
+                                    <!--                   <br> -->
+                                    <a data-toggle="modal" role="button" href="" style="color: #185fa4"
+                                        class="modal-link">Forgot Password?</a>
+                                    <!-- <span><small>Not a FundX member?</small></span><br> --><span>
+                                        |
+                                    </span>
+                                    <a data-toggle="modal" role="button" href="" style="color: #185fa4"
+                                        class="modal-link">Create New Account.</a>
+                                    <span> | </span>
+                                    <a data-toggle="modal" role="button" href="" style="color: #185fa4"
+                                        class="modal-link">Resend Email Verification.</a>
+                                </div>
+                                <div class="col-xs-12 col-md-offset-4 col-md-4">
+                                    <button id="btnSignUp" type="submit" style="width:100%"
+                                        class="btn btn-default text-center ">
+                                        LOG IN
+                                    </button>
+                                </div>
+                                <button class="whitebtn2" disabled="">
+                                    .
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <style>
+        /* new on mobile */
+        @media only screen and (min-width: 320px) and (max-width: 480px) {
+            .investBanner-heading {
+                margin-right: 4% !important;
+            }
+
+            #investBannerHead {
+                font-size: 8vw !important;
+            }
+
+            .landingj2 {
+                background-image: url("./img/fundko_landing_01.jpg") !important;
+                background-repeat: no-repeat !important;
+                background-position: 0px 100px !important;
+                background-size: contain !important;
+                position: relative !important;
+                padding-bottom: 0px !important;
+            }
+
+            .banner-title {
+                font-family: "Equip-light", serif !important;
+                letter-spacing: 3px !important;
+                margin-top: 35% !important;
+                text-shadow: 1px 0 black !important;
+                color: #fefefe !important;
+            }
+
+            .banner-text2 {
+                font-family: "Equip-light", serif !important;
+                color: #3e76a9 !important;
+                padding: 10% 0 0 0;
+                text-align: center;
+                /*width:360px !important;*/
+                font-size: 22px !important;
+                /*padding-bottom: 15px !important;*/
+            }
+
+            .investBtnMoney2 {
+                font-weight: bold !important;
+                /*width:350px !important;*/
+                margin-top: 0px !important;
+                border: 2px solid #3371ae40 !important;
+                color: #4279ab;
+            }
+
+            .investBtnMoney3 {
+                font-weight: bold !important;
+                /*width:350px !important;*/
+                margin-top: 10px !important;
+                border: 2px solid #3371ae40 !important;
+                color: #4279ab;
+            }
+
+            .banner-title2 {
+                font-family: "Equip-light", serif !important;
+                margin-top: 80px !important;
+            }
+
+            .landingj3 {
+                background-repeat: no-repeat !important;
+                background-position: 0px 86px !important;
+                background-size: contain !important;
+                position: relative !important;
+                padding-bottom: 0px !important;
+            }
+
+            .banner-text3 {
+                font-family: "Equip-light", serif !important;
+                color: #3e76a9 !important;
+                padding-top: 60px !important;
+                text-align: center;
+                /*width:360px !important;*/
+                font-size: 24px !important;
+                padding-bottom: 2px !important;
+            }
+
+            .banner-title3 {
+                font-family: "Equip-light", serif !important;
+                text-align: center !important;
+                color: #00264d !important;
+                margin-left: 5px !important;
+            }
+
+            .banner-text4 {
+                font-family: "Equip-light", serif !important;
+                color: #3e76a9 !important;
+                padding-top: 10px !important;
+                /*width:360px !important;*/
+                font-size: 18px !important;
+                margin-left: 15px;
+            }
+
+            .banner-text5 {
+                font-family: "Equip-light", serif !important;
+                color: #3e76a9 !important;
+                font-size: 18px !important;
+                margin-top: 5px !important;
+                /*width:340px !important;*/
+                margin-left: 23px;
+            }
+
+            .item {
+                margin-top: -55px !important;
+                color: #3e76a9 !important;
+            }
+        }
+    </style>
+
+    <header>
+        <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="" role="listbox">
+                <div class="item active">
+                    <section id="banner" class="landingj landingj2">
+                        <div class="">
+                            <div class="col-md-7 section-heading text-left investBanner-heading">
+                                <h1 class="banner-title" style="margin-bottom: 10px;" id="investBannerHead">
+                                    Meaningful<br />
+                                    Investments
+                                </h1>
+
+                                <p class="banner-text banner-text2">
+                                    By funding portions of multiple loans,
+                                    <br class="hidden-xs" />
+                                    you help more people while getting solid
+                                    monthly returns.<br />
+                                </p>
+
+                                <div class="row">
+                                    <br />
+                                    <div class="col-md-6 col-xs-12 investBannerBtn">
+                                        <a href="" class="col-md-3 btn btn-block investBtnMoney investBtnMoney2"
+                                            style="margin-top : 0px !important"><span>Learn More </span><i
+                                                class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-12 investBannerBtn">
+                                        <a href="https://fundko.com/register"
+                                            class="btn btn-block col-md-3 investBtnMoney investBtnMoney3"><span>Register
+                                            </span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <br />
+                            </div>
+
+
+                        </div>
+    </header>
+
+    <section id="learnMore" class="colour2">
+        <div class="fullwidth clearfix">
+            <div id="maincont" class="bodycontainer clearfix uk-scrollspy-init-inview"
+                data-uk-scrollspy="{cls:&#39;uk-animation-fade&#39;, delay: 200, repeat: true}">
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <img class="img-responsive text-center" src="./img/fundko_logo_02.png" />
+                        <!-- <img class="img-responsive text-center" src="https://s3-ap-southeast-1.amazonaws.com/fundko-assets/img/jlandingwhite/fundko_logo_02.png"> -->
+                    </div>
+                </div>
+
+                <div class="row col-m-">
+                    <p>
+                        We are a crowdlending platform that connects
+                        verified lenders and borrowers. Because we provide a
+                        more efficient service than traditional channels,
+                        lenders who are looking for investment opportunities
+                        will find attractive returns while borrowers get
+                        reasonable rates.
+                    </p>
+                    <p>
+                        FundKo is a subsidiary of
+                        <a href="http://www.guevent.com/">Guevent Investments Development Corporation
+                            (GIDC)</a>
+                        – a company that has over 50 years of operations
+                        with a business footprint that spans across the
+                        entire Philippine archipelago.
+                    </p>
+
+                    <p>
+                        Invest for as low as 15,000 pesos or borrow as much
+                        as 500,000 pesos through <strong>FundKo</strong>!
+                    </p>
+                </div>
+
+                <hr />
+            </div>
+        </div>
+    </section>
+    <!-- <div class="arrow-separator arrow-white"></div> -->
+
+    <section id="howItWorks" class="colorBG" style="position: relative !important;">
+        <div class="container uk-scrollspy-init-inview"
+            data-uk-scrollspy="{cls:&#39;uk-animation-fade&#39;, delay: 200, repeat: true}">
+            <div style="" class=" col-md-12 col-sm-12 col-xs-12 section-heading text-center">
+                <h3 class="howtopeer">How Peer-to-Peer Works</h3>
+                <div class="col-md-6 col-sm-12 col-xs-12 uk-scrollspy-init-inview"
+                    data-uk-scrollspy="{cls:&#39;uk-animation-scale-up&#39;, delay: 300, repeat: true}">
+                    <img class="monitor" src="./img/monitor.png" />
+                </div>
+                <div style="padding-top: 2em;" class="col-md-6 col-sm-12 col-xs-12 text-left">
+                    <div class="col-md-12 col-sm-12 col-xs-12 uk-scrollspy-init-inview"
+                        data-uk-scrollspy="{cls:&#39;uk-animation-scale-up&#39;, delay: 300, repeat: true}">
+                        <div class="col-md-1 col-sm-1 col-xs-2 icon">
+                            <h3 class="section-subheading active">
+                                <img src="./img/text-document_318-48568.png" class="img-responsive" />
+                            </h3>
+                        </div>
+                        <div class="col-md-9 col-sm-11 col-xs-10">
+                            <h3 class="section-subheading active">
+                                Borrower Applies
+                            </h3>
+                            <p>
+                                We validate the borrower, assess the loan
+                                and assign a rate.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12"
+                        data-uk-scrollspy="{cls:&#39;uk-animation-scale-up&#39;, delay: 500, repeat: true}">
+                        <div class="col-md-1 col-sm-1 col-xs-2 icon">
+                            <h3 class="section-subheading active">
+                                <!-- <i class="fa fa-pie-chart" aria-hidden="true"></i> -->
+                                <img src="./img/pie-chart-2.png" class="img-responsive" />
+                            </h3>
+                        </div>
+                        <div class="col-md-9 col-sm-11 col-xs-10">
+                            <h3 class="section-subheading active">
+                                Lenders Fund Portions of Loans
+                            </h3>
+                            <p>
+                                Lenders choose from a variety of approved
+                                loans in our marketplace.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12"
+                        data-uk-scrollspy="{cls:&#39;uk-animation-scale-up&#39;, delay: 700, repeat: true}">
+                        <div class="col-md-1 col-sm-1 col-xs-2 icon">
+                            <h3 class="section-subheading active">
+                                <!-- <i class="fa fa-line-chart" aria-hidden="true"></i> -->
+                                <img src="./img/ascendant-bars-graphic_318-49919.png.png" class="img-responsive" />
+                            </h3>
+                        </div>
+                        <div class="col-md-9 col-sm-11 col-xs-10">
+                            <h3 class="section-subheading active">
+                                FundKo Collects and Disburses
+                            </h3>
+                            <p>
+                                FundKo collects repayments from borrowers
+                                and distributes returns to lenders
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <div class="arrow-separator arrow-lightgray"></div> -->
+
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+
+    <link href="./css/landing-index4(1).css" rel="stylesheet" />
+
+    <section id="features2" class="colorBG" style="position: relative !important;">
+        <div class="container features2"
+            data-uk-scrollspy="{cls:&#39;uk-animation-fade&#39;, delay: 200, repeat: true}">
+            <!-- <h3 class="features2h3" style="color : #fff !important">Features</h3> -->
+            <div class="col-md-4 ">
+                <div class="primary feature-block">
+                    <div class="feature-content">
+                        <img class="img-responsive" src="./img/better_rates.png" />
+                        <h4>Better Rates</h4>
+                        <p>
+                            As a lender, you enjoy better rates than banks
+                            and safer returns than stocks. Borrowers enjoy
+                            similar cost advantages.
                         </p>
-                        <h5 class="footer-header">Contact No.</h5>
-                        <p class="">
-                            534-9185 (local 58) <br />
-                            <!-- <br>Enter your email below.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="contrast feature-block">
+                    <div class="feature-content">
+                        <img class="img-responsive" src="./img/safety_in_numbers.png" />
+                        <h4>Safety in Numbers</h4>
+                        <p>
+                            Choose from hundreds of loans. Join other
+                            lenders and invest your money in as many loans
+                            to diversify risk.
+                        </p>
+                        <br />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="primary feature-block">
+                    <div class="feature-content">
+                        <img class="img-responsive" src="./img/effective_borrower.png" />
+                        <h4>Effective Borrower Validation</h4>
+                        <p>
+                            New borrowers are approved every week based on
+                            stringent credit criteria designed to focus on
+                            creditworthiness.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .newsletter-btn:hover,
+        .newsletter-btn:focus,
+        .newsletter-btn:disabled {
+            background-color: #293f70 !important;
+            color: #fff;
+            border: 0;
+        }
+    </style>
+
+    <section id="footer">
+        <div class="container">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-4 text-left" id="footer-menu">
+                    <h5 class="footer-header text-left">Quick links</h5>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li>
+                            <a class="menu active" href="https://fundko.com/">Home</a>
+                        </li>
+                        <li>
+                            <a class="menu" href="http://blog.fundko.com/">News</a>
+                        </li>
+                        <li>
+                            <a class="menu" href="https://fundko.com/register">Register</a>
+                        </li>
+                        <li>
+                            <a class="menu" href="https://fundko.com/frequently-asked-question">FAQ</a>
+                        </li>
+                        <li>
+                            <a class="menu" href="https://fundko.com/about-us">About Us</a>
+                        </li>
+                        <li>
+                            <a class="menu" href="https://fundko.com/contact-us">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="menu" href="https://fundko.com/privacy-policy">Privacy Policy</a>
+                        </li>
+                    </ul>
+                    <script>
+                        $(document).ready(function () {
+                            var pgurl = window.location.href.substr(
+                                window.location.href.lastIndexOf("/")
+                            );
+                            console.log(pgurl);
+                            $("a.menu").each(function () {
+                                if (
+                                    $(this).attr("href") == pgurl ||
+                                    $(this).attr("href") == ""
+                                )
+                                    $(this).addClass("active");
+                            });
+                        });
+                    </script>
+                </div>
+                <div class="col-md-6 col-sm-8 col-xs-8 text-center margin-bottom1 newsletter">
+                    <h5 class="footer-header">address</h5>
+                    <p class="">
+                        Fintechnology Inc., 3rd Floor Guevent Building,
+                        <br />
+                        #52 D.M. Guevara St. corner Calbayog St.,
+                        Mandaluyong City, Philippines
+                        <br /><br />
+                    </p>
+                    <h5 class="footer-header">Contact No.</h5>
+                    <p class="">
+                        534-9185 (local 58) <br />
+                        <!-- <br>Enter your email below.</p>
             <form action="" class="subscribe">
               <div class="input-group newsletter-input-group hidden-xs hidden-sm">
                 <input type="email" name="email" class="form-control newsletter-input" placeholder="Email address" required>
@@ -759,144 +557,119 @@
                 </span>
               </div>
             </form> -->
-                        </p>
+                    </p>
+                </div>
+
+                <form action="" class="subscribe">
+                    <div class="input-group newsletter-input-group col-xs-12 hidden-lg hidden-md"
+                        style="width: 100% !important;">
+                        <input type="email" name="email" class="form-control newsletter-input"
+                            placeholder="Email address" required="" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default newsletter-btn btn-subscribe"
+                                style="padding: 10px 5px 10px 5px;">
+                                Subscribe
+                            </button>
+                        </span>
                     </div>
+                </form>
 
-                    <form action="" class="subscribe">
-                        <div
-                            class="input-group newsletter-input-group col-xs-12 hidden-lg hidden-md"
-                            style="width: 100% !important;"
-                        >
-                            <input
-                                type="email"
-                                name="email"
-                                class="form-control newsletter-input"
-                                placeholder="Email address"
-                                required=""
-                            />
-                            <span class="input-group-btn">
-                                <button
-                                    class="btn btn-default newsletter-btn btn-subscribe"
-                                    style="padding: 10px 5px 10px 5px;"
-                                >
-                                    Subscribe
-                                </button>
-                            </span>
-                        </div>
-                    </form>
-
-                    <div class="col-md-3 col-sm-12 col-xs-12 text-center">
-                        <h5 class="footer-header">social links</h5>
-                        <!--  <p class="about">FundKo is a subsidiary of Guevent Investments Corporation (GIDC). GIDC is a company that has over 50 years of business
+                <div class="col-md-3 col-sm-12 col-xs-12 text-center">
+                    <h5 class="footer-header">social links</h5>
+                    <!--  <p class="about">FundKo is a subsidiary of Guevent Investments Corporation (GIDC). GIDC is a company that has over 50 years of business
             in the microlending industry through Radio Wealth Finance. It continues to grow its operations.
           </p> -->
-                        <div class="row text-center social-links">
-                            <div
-                                class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12"
-                            >
-                                <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <a target="_blank" href=""
-                                        ><i
-                                            class="fa fa-facebook"
-                                            aria-hidden="true"
-                                        ></i
-                                    ></a>
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <a target="_blank" href=""
-                                        ><i
-                                            class="fa fa-twitter"
-                                            aria-hidden="true"
-                                        ></i
-                                    ></a>
-                                </div>
-                                <div class="col-md-4 col-sm-4 col-xs-4">
-                                    <a target="_blank" href=""
-                                        ><i
-                                            class="fa fa-instagram"
-                                            aria-hidden="true"
-                                        ></i
-                                    ></a>
-                                </div>
+                    <div class="row text-center social-links">
+                        <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <a target="_blank" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <a target="_blank" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <a target="_blank" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <script type="text/javascript">
-            $(document).ready(function() {
-                var $subscribeForm = $(".subscribe");
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var $subscribeForm = $(".subscribe");
 
-                $subscribeForm.submit(function(e) {
-                    console.log($(this).serialize());
-                    console.log("formspee");
-                    e.preventDefault();
-                    var $submit = $(".btn-subscribe");
-                    var defaultSubmitText = $submit.html();
+            $subscribeForm.submit(function (e) {
+                console.log($(this).serialize());
+                console.log("formspee");
+                e.preventDefault();
+                var $submit = $(".btn-subscribe");
+                var defaultSubmitText = $submit.html();
 
-                    $.ajax({
-                        url: "//formspree.io/cu.michaels@gmail.com",
-                        method: "POST",
-                        data: $(this).serialize(),
-                        dataType: "json",
-                        beforeSend: function() {
-                            //$subscribeForm.append('<div class="alert alert--loading">Sending message…</div>');
+                $.ajax({
+                    url: "//formspree.io/cu.michaels@gmail.com",
+                    method: "POST",
+                    data: $(this).serialize(),
+                    dataType: "json",
+                    beforeSend: function () {
+                        //$subscribeForm.append('<div class="alert alert--loading">Sending message…</div>');
+                        $submit
+                            .attr("disabled", true)
+                            .text("Sending message…");
+                    },
+                    success: function (data) {
+                        //$subscribeForm.append('<div class="alert alert--success">Message sent!</div>');
+                        $submit.text("Message sent!");
+                        setTimeout(function () {
+                            //$('.alert--success').remove();
                             $submit
-                                .attr("disabled", true)
-                                .text("Sending message…");
-                        },
-                        success: function(data) {
-                            //$subscribeForm.append('<div class="alert alert--success">Message sent!</div>');
-                            $submit.text("Message sent!");
-                            setTimeout(function() {
-                                //$('.alert--success').remove();
-                                $submit
-                                    .attr("disabled", false)
-                                    .html(defaultSubmitText);
-                            }, 5000);
-                        },
-                        error: function(err) {
-                            //$subscribeForm.find('.alert--loading').hide();
-                            //$subscribeForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
-                            $submit.text("Ops, there was an error.");
-                            setTimeout(function() {
-                                //$('.alert--error').remove();
-                                $submit
-                                    .attr("disabled", false)
-                                    .html(defaultSubmitText);
-                            }, 5000);
-                        }
-                    });
+                                .attr("disabled", false)
+                                .html(defaultSubmitText);
+                        }, 5000);
+                    },
+                    error: function (err) {
+                        //$subscribeForm.find('.alert--loading').hide();
+                        //$subscribeForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+                        $submit.text("Ops, there was an error.");
+                        setTimeout(function () {
+                            //$('.alert--error').remove();
+                            $submit
+                                .attr("disabled", false)
+                                .html(defaultSubmitText);
+                        }, 5000);
+                    }
                 });
             });
-        </script>
+        });
+    </script>
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="./js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./js/bootstrap.min.js"></script>
 
-        <!-- Plugin JavaScript -->
-        <script src="./js/jquery.easing.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="./js/jquery.easing.min.js"></script>
 
-        <!-- Custom Theme JavaScript -->
+    <!-- Custom Theme JavaScript -->
 
-        <script type="text/javascript">
-            if (
-                /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-                    navigator.userAgent
-                )
-            ) {
-                $("#homeCarousel").carousel({
-                    interval: 10000
-                });
-            } else {
-                $("#homeCarousel").carousel({
-                    interval: 10000
-                });
-            }
-        </script>
+    <script type="text/javascript">
+        if (
+            /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                navigator.userAgent
+            )
+        ) {
+            $("#homeCarousel").carousel({
+                interval: 10000
+            });
+        } else {
+            $("#homeCarousel").carousel({
+                interval: 10000
+            });
+        }
+    </script>
 
-        <div class="uk-tooltip"></div>
-    </body>
+    <div class="uk-tooltip"></div>
+</body>
+
 </html>

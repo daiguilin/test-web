@@ -16,6 +16,7 @@
   <link rel="stylesheet" type="text/css" href="./css/loaders.min.css">
   <link href="./css/Theme.css" rel="stylesheet">
 </head>
+
 <body>
   <div id="wrapper">
     <div id="app">
@@ -24,16 +25,16 @@
           <div>
             <nav class="dt-nav">
               <div class="new-container">
-                <div class="inline-block"><a href="" class="brand"><img
-                      src="./img/logo5.png" style="width: 12em;"></a></div>
-                <div class="links inline-block float-right"><a href=""><i
-                      class="fa fa-money"> </i><!-- react-text: 12 --> My Wallet
-                    <!-- /react-text --></a><a id="profile" href=""
-                    class="active"><i class="fa fa-user"> </i><!-- react-text: 15 --> My Profile
+                <div class="inline-block"><a href="" class="brand"><img src="./img/logo5.png" style="width: 12em;"></a>
+                </div>
+                <div class="links inline-block float-right"><a href=""><i class="fa fa-money"> </i>
+                    <!-- react-text: 12 --> My Wallet
+                    <!-- /react-text --></a><a id="profile" href="" class="active"><i class="fa fa-user"> </i>
+                    <!-- react-text: 15 --> My Profile
                     <!-- /react-text --></a><a href=""><i class="fa fa-sign-out"> </i>
                     <!-- react-text: 18 --> Sign Out
                     <!-- /react-text --></a></div>
-                <div class="mobile-toggle toggle-overlay inline-block float-right"><a>
+                <div class="mobile-toggle toggle-overlay inline-block float-right"><a id="menu-toggle">
                     <!-- react-text: 21 -->MENU
                     <!-- /react-text --><span><i class="fa fa-bars"></i></span><!-- react-text: 24 -->
                     <!-- /react-text --></a></div>
@@ -65,8 +66,8 @@
                   </li>
                   <li>
                     <!-- react-text: 50 -->
-                    <!-- /react-text --><a id="profile" href=""
-                      class="active"><i class="fa fa-user"> </i><!-- react-text: 53 --> My Profile
+                    <!-- /react-text --><a id="profile" href="" class="active"><i class="fa fa-user"> </i>
+                      <!-- react-text: 53 --> My Profile
                       <!-- /react-text --></a><!-- react-text: 54 -->
                     <!-- /react-text -->
                   </li>
@@ -152,8 +153,7 @@
                           </div>
                         </a><a href="">
                           <div class="text-center tile col-md-3">
-                            <div class="upper"><img class="tileImgIcon"
-                                src="./img/my_profile_password.png">
+                            <div class="upper"><img class="tileImgIcon" src="./img/my_profile_password.png">
                               <h5>Change Password</h5>
                             </div>
                             <div class="tileDesc">
@@ -163,8 +163,7 @@
                           </div>
                         </a><a href="">
                           <div class="text-center tile col-md-3">
-                            <div class="upper"><img class="tileImgIcon"
-                                src="./img/my_profile_documents.png">
+                            <div class="upper"><img class="tileImgIcon" src="./img/my_profile_documents.png">
                               <h5>Personal Documents</h5>
                             </div>
                             <div class="tileDesc">
@@ -183,9 +182,20 @@
       </div>
     </div>
   </div>
+
+  </div>
   <script src="./js/jquery.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
-  </div>
+  <script>
+    $(function () {
+      $("#menu-toggle").click(function () {
+        $(".menu-overlay").addClass("open");
+      })
+      $(".outer-close").click(function () {
+        $(".menu-overlay").removeClass("open");
+      })
+    })
+  </script>
 </body>
 
 </html>

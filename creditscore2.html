@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Dashboard</title>
@@ -14,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="./css/loaders.min.css">
   <link href="./css/Theme.css" rel="stylesheet">
 </head>
+
 <body>
   <div id="wrapper">
     <div id="app">
@@ -22,16 +24,16 @@
           <div>
             <nav class="dt-nav">
               <div class="new-container">
-                <div class="inline-block"><a href="" class="brand"><img
-                      src="./img/logo5.png" style="width: 12em;"></a></div>
-                <div class="links inline-block float-right"><a href=""><i
-                      class="fa fa-money"> </i><!-- react-text: 25 --> My Wallet
-                    <!-- /react-text --></a><a id="profile" href=""><i
-                      class="fa fa-user"> </i><!-- react-text: 28 --> My Profile
+                <div class="inline-block"><a href="" class="brand"><img src="./img/logo5.png" style="width: 12em;"></a>
+                </div>
+                <div class="links inline-block float-right"><a href=""><i class="fa fa-money"> </i>
+                    <!-- react-text: 25 --> My Wallet
+                    <!-- /react-text --></a><a id="profile" href=""><i class="fa fa-user"> </i><!-- react-text: 28 -->
+                    My Profile
                     <!-- /react-text --></a><a href=""><i class="fa fa-sign-out"> </i>
                     <!-- react-text: 31 --> Sign Out
                     <!-- /react-text --></a></div>
-                <div class="mobile-toggle toggle-overlay inline-block float-right"><a>
+                <div class="mobile-toggle toggle-overlay inline-block float-right"><a id="menu-toggle">
                     <!-- react-text: 34 -->MENU
                     <!-- /react-text --><span><i class="fa fa-bars"></i></span><!-- react-text: 37 -->
                     <!-- /react-text --></a></div>
@@ -63,8 +65,8 @@
                   </li>
                   <li>
                     <!-- react-text: 76 -->
-                    <!-- /react-text --><a id="profile" href=""><i
-                        class="fa fa-user"> </i><!-- react-text: 79 --> My Profile
+                    <!-- /react-text --><a id="profile" href=""><i class="fa fa-user"> </i><!-- react-text: 79 --> My
+                      Profile
                       <!-- /react-text --></a><!-- react-text: 80 -->
                     <!-- /react-text -->
                   </li>
@@ -96,24 +98,22 @@
               </div>
               <div class="navbar-collapse collapse in" style="">
                 <ul class="nav navbar-nav">
-                  <li role="presentation" class=""><a action="push" href=""><i
-                        class="fa fa-tachometer"></i><!-- react-text: 105 -->&nbsp;
+                  <li role="presentation" class=""><a action="push" href=""><i class="fa fa-tachometer"></i>
+                      <!-- react-text: 105 -->&nbsp;
                       <!-- /react-text -->
                       <!-- react-text: 106 -->Dashboard
                       <!-- /react-text --></a></li>
-                  <li role="presentation" class=""><a action="push"
-                      href=""><i class="fa fa-bank"></i>
+                  <li role="presentation" class=""><a action="push" href=""><i class="fa fa-bank"></i>
                       <!-- react-text: 110 -->&nbsp;
                       <!-- /react-text -->
                       <!-- react-text: 111 -->Investment Details
                       <!-- /react-text --></a></li>
-                  <li role="presentation" class=""><a action="push" href=""><i
-                        class="fa fa-book"></i><!-- react-text: 115 -->&nbsp;
+                  <li role="presentation" class=""><a action="push" href=""><i class="fa fa-book"></i>
+                      <!-- react-text: 115 -->&nbsp;
                       <!-- /react-text -->
                       <!-- react-text: 116 -->Check My Loanbook
                       <!-- /react-text --></a></li>
-                  <li role="presentation" class="active"><a action="push"
-                      href=""><i class="fa fa-bar-chart"></i>
+                  <li role="presentation" class="active"><a action="push" href=""><i class="fa fa-bar-chart"></i>
                       <!-- react-text: 120 -->&nbsp;
                       <!-- /react-text -->
                       <!-- react-text: 121 -->Investor Resources
@@ -368,6 +368,16 @@
   </div>
   <!---->
   <script src="./js/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("#menu-toggle").click(function () {
+        $(".menu-overlay").addClass("open");
+      })
+      $(".outer-close").click(function () {
+        $(".menu-overlay").removeClass("open");
+      })
+    })
+  </script>
 </body>
 
 </html>
