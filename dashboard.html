@@ -14,6 +14,58 @@
     <!-- Custom Fonts -->
     <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="./css/Theme.css" rel="stylesheet" />
+    <style>
+        .progress {
+            position: relative;
+            width: 100%;
+            height: 30px;
+            background: #fff;
+            overflow: visible;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        .progress_bg {
+            height: 5px;
+            border: 1px solid #ddd;
+            border-radius: 2.5px;
+            overflow: hidden;
+            background-color: #f2f2f2;
+        }
+
+        .progress_bar {
+            background: #abe2fb;
+            width: 0;
+            height: 5px;
+            border-radius: 2.5px;
+        }
+
+        .progress_btn {
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            position: absolute;
+            background: #fff;
+            left: 0px;
+            margin-left: -10px;
+            top: -7.5px;
+            cursor: pointer;
+            border: 1px #ddd solid;
+            box-sizing: border-box;
+        }
+
+        .progress_btn:hover {
+            border-color: #F7B824;
+        }
+
+        .text {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -1425,35 +1477,22 @@
                                                                         </div>
                                                                     </div>
                                                                     <br />
-                                                                    <div class="RcSlider">
-                                                                        <div class="col-sm-12 col-xs-7 RcSlider1"
-                                                                            style="padding-left: 12px; padding-right: 22px;">
+                                                                    <div class="RcSlider"
+                                                                        style="padding-left: 12px; padding-right: 22px;">
+                                                                        <div class="col-sm-12 col-xs-7">
                                                                             <h6>
                                                                                 Loan
                                                                                 Amount
                                                                             </h6>
-                                                                            <div class="rc-slider">
-                                                                                <div
-                                                                                    style="left: 100.01%; position: absolute; transform: translate(-50%, -50%); cursor: pointer; padding: 2px; border: 1px solid rgb(66, 91, 124); border-radius: 3px; background: rgb(255, 255, 255); font-size: 10px; text-align: center; z-index: 3;">
-                                                                                    <!-- react-text: 265 -->₱
-                                                                                    10,001,000.00
-                                                                                    <!-- /react-text -->
-                                                                                    <!-- react-text: 266 -->
-                                                                                    <!-- /react-text -->
+                                                                            <div class="progress">
+                                                                                <div class="progress_bg"
+                                                                                    style="padding:0;">
+                                                                                    <div class="progress_bar"
+                                                                                        style="padding:0;"></div>
                                                                                 </div>
-                                                                                <div
-                                                                                    style="left: 0%; position: absolute; transform: translate(-50%, -50%); cursor: pointer; padding: 2px; border: 1px solid rgb(66, 91, 124); border-radius: 3px; background: rgb(255, 255, 255); font-size: 10px; text-align: center; z-index: 3;">
-                                                                                    <!-- react-text: 268 -->₱
-                                                                                    1,000.00
-                                                                                    <!-- /react-text -->
-                                                                                    <!-- react-text: 269 -->
-                                                                                    <!-- /react-text -->
-                                                                                </div>
-                                                                                <div class="rc-slider-track"
-                                                                                    style="visibility: visible; left: 0%; width: 100.01%;">
-                                                                                </div>
-                                                                                <div class="rc-slider-step"></div>
-                                                                                <div class="rc-slider-mark"></div>
+                                                                                <div class="progress_btn"
+                                                                                    style="padding:0;"></div>
+                                                                                <div class="text">1000.00</div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-sm-12 col-xs-7 RcSlider1">
@@ -1461,34 +1500,15 @@
                                                                                 Funding
                                                                                 Percentage
                                                                             </h6>
-                                                                            <div class="rc-slider">
-                                                                                <div
-                                                                                    style="left: 100%; position: absolute; transform: translate(-50%, -50%); cursor: pointer; padding: 2px; border: 1px solid rgb(66, 91, 124); border-radius: 3px; background: rgb(255, 255, 255); font-size: 10px; text-align: center; z-index: 3;">
-                                                                                    <!-- react-text: 277 -->100
-                                                                                    <!-- /react-text -->
-                                                                                    <!-- react-text: 278 -->
-                                                                                    <!-- /react-text -->
-                                                                                    <!-- react-text: 279 -->%
-                                                                                    <!-- /react-text -->
-                                                                                    <!-- react-text: 280 -->
-                                                                                    <!-- /react-text -->
+                                                                            <div class="progress">
+                                                                                <div class="progress_bg"
+                                                                                    style="padding:0;">
+                                                                                    <div class="progress_bar"
+                                                                                        style="padding:0;"></div>
                                                                                 </div>
-                                                                                <div
-                                                                                    style="left: 0%; position: absolute; transform: translate(-50%, -50%); cursor: pointer; padding: 2px; border: 1px solid rgb(66, 91, 124); border-radius: 3px; background: rgb(255, 255, 255); font-size: 10px; text-align: center; z-index: 3;">
-                                                                                    <!-- react-text: 282 -->0
-                                                                                    <!-- /react-text -->
-                                                                                    <!-- react-text: 283 -->
-                                                                                    <!-- /react-text -->
-                                                                                    <!-- react-text: 284 -->%
-                                                                                    <!-- /react-text -->
-                                                                                    <!-- react-text: 285 -->
-                                                                                    <!-- /react-text -->
-                                                                                </div>
-                                                                                <div class="rc-slider-track"
-                                                                                    style="visibility: visible; left: 0%; width: 100%;">
-                                                                                </div>
-                                                                                <div class="rc-slider-step"></div>
-                                                                                <div class="rc-slider-mark"></div>
+                                                                                <div class="progress_btn"
+                                                                                    style="padding:0;"></div>
+                                                                                <div class="text">0%</div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-sm-12 col-xs-7 RcSliderLast">
@@ -1496,34 +1516,15 @@
                                                                                 Monthly
                                                                                 Rate
                                                                             </h6>
-                                                                            <div class="rc-slider">
-                                                                                <div
-                                                                                    style="left: 100%; position: absolute; transform: translate(-50%, -50%); cursor: pointer; padding: 2px; border: 1px solid rgb(66, 91, 124); border-radius: 3px; background: rgb(255, 255, 255); font-size: 10px; text-align: center; z-index: 3;">
-                                                                                    <!-- react-text: 293 -->30
-                                                                                    <!-- /react-text -->
-                                                                                    <!-- react-text: 294 -->
-                                                                                    <!-- /react-text -->
-                                                                                    <!-- react-text: 295 -->%
-                                                                                    <!-- /react-text -->
-                                                                                    <!-- react-text: 296 -->
-                                                                                    <!-- /react-text -->
+                                                                            <div class="progress">
+                                                                                <div class="progress_bg"
+                                                                                    style="padding:0;">
+                                                                                    <div class="progress_bar"
+                                                                                        style="padding:0;"></div>
                                                                                 </div>
-                                                                                <div
-                                                                                    style="left: 0%; position: absolute; transform: translate(-50%, -50%); cursor: pointer; padding: 2px; border: 1px solid rgb(66, 91, 124); border-radius: 3px; background: rgb(255, 255, 255); font-size: 10px; text-align: center; z-index: 3;">
-                                                                                    <!-- react-text: 298 -->0.01
-                                                                                    <!-- /react-text -->
-                                                                                    <!-- react-text: 299 -->
-                                                                                    <!-- /react-text -->
-                                                                                    <!-- react-text: 300 -->%
-                                                                                    <!-- /react-text -->
-                                                                                    <!-- react-text: 301 -->
-                                                                                    <!-- /react-text -->
-                                                                                </div>
-                                                                                <div class="rc-slider-track"
-                                                                                    style="visibility: visible; left: 0%; width: 100%;">
-                                                                                </div>
-                                                                                <div class="rc-slider-step"></div>
-                                                                                <div class="rc-slider-mark"></div>
+                                                                                <div class="progress_btn"
+                                                                                    style="padding:0;"></div>
+                                                                                <div class="text">0%</div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1581,6 +1582,72 @@
                 $(".menu-overlay").removeClass("open");
             })
         })
+    </script>
+    <script>
+
+        function toThousands(num) {
+            var num = (num || 0).toString(), result = '';
+            while (num.length > 3) {
+                result = ',' + num.slice(-3) + result;
+                num = num.slice(0, num.length - 3);
+            }
+            if (num) { result = num + result + ".00"; }
+            return result;
+        }
+
+        $(function () {
+            let slidingDistance = $(".progress").width();
+            let btns = $('.progress_btn');
+            for (let i = 0; i < btns.length; i++) {
+                let initNum = 1000, multiplier = 1000;
+                let tag = false, ox = 0, left = 0, bgleft = 0;
+                $('.progress_btn').eq(i).mousedown(function (e) {
+                    ox = e.pageX - left;
+                    tag = true;
+                });
+                $(document).mouseup(function () {
+                    tag = false;
+                });
+                $('.progress').eq(i).mousemove(function (e) {//鼠标移动
+                    if (tag) {
+                        left = e.pageX - ox;
+                        if (left <= 0) {
+                            left = 0;
+                        } else if (left > slidingDistance) {
+                            left = slidingDistance;
+                        }
+                        $('.progress_btn').eq(i).css('left', left);
+                        $('.progress_bar').eq(i).width(left);
+                        if (i == 0) {
+                            $('.text').eq(i).html(toThousands((parseInt((left / slidingDistance) * 100) - 0) * multiplier + initNum));
+                        } else {
+                            $('.text').eq(i).html((parseInt((left / slidingDistance) * 100)) + "%");
+                        }
+
+                    }
+                });
+                $('.progress_bg').eq(i).click(function (e) {//鼠标点击
+                    if (!tag) {
+                        bgleft = $('.progress_bg').eq(i).offset().left;
+                        left = e.pageX - bgleft;
+                        if (left <= 0) {
+                            left = 0;
+                        } else if (left > slidingDistance) {
+                            left = slidingDistance;
+                        }
+                        $('.progress_btn').eq(i).css('left', left);
+                        $('.progress_bar').eq(i).animate({ width: left }, slidingDistance);
+                        // console.log(parseInt((left / 300) * 100).toString().substring(0, 1))
+                        if (i == 0) {
+                            $('.text').eq(i).html(toThousands((parseInt((left / slidingDistance) * 100) - 0) * multiplier + initNum));
+                        } else {
+                            $('.text').eq(i).html((parseInt((left / slidingDistance) * 100)) + "%");
+                        }
+                    }
+                });
+            }
+
+        });
     </script>
 </body>
 

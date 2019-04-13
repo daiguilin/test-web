@@ -21,6 +21,57 @@
   <link rel="stylesheet" type="text/css" href="./css/borrow2.css">
   <link rel="stylesheet" type="text/css" href="./css/slick.min.css">
   <link rel="stylesheet" type="text/css" href="./css/slick-theme.min.css">
+  <style>
+    .progress {
+      position: relative;
+      width: 100%;
+      height: 30px;
+      overflow: visible;
+      border-radius: 0;
+      box-shadow: none;
+      background: none;
+    }
+
+    .progress_bg {
+      height: 5px;
+      border-radius: 2.5px;
+      overflow: hidden;
+      background-color: #f2f2f2;
+    }
+
+    .progress_bar {
+      background: #3e76a9;
+      width: 0;
+      height: 5px;
+      border-radius: 2.5px;
+    }
+
+    .progress_btn {
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+      position: absolute;
+      background: #fff;
+      left: 0px;
+      margin-left: -10px;
+      top: -7.5px;
+      cursor: pointer;
+      border: 1px #ddd solid;
+      box-sizing: border-box;
+    }
+
+    .progress_btn:hover {
+      border-color: #F7B824;
+    }
+
+    .text {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 
 <body class="with-new-header">
@@ -207,56 +258,12 @@
                     <div class="loanApplicationSection">
                       <h5 class="loanStepSectionHeader loanSliderHeader text-center">Loan Amount</h5>
                       <div class="loanApplicationSlider">
-                        <div class="rc-slider">
-                          <div
-                            style="left: 100%; position: absolute; transform: translate(-50%, -50%); cursor: pointer; padding: 5px; border: 1px solid rgb(171, 226, 251); border-radius: 3px; background: rgb(255, 255, 255); font-size: 10px; text-align: center; margin-top: 2px; width: 100px; z-index: 3;">
-                            <!-- react-text: 59 -->₱ 200,000.00
-                            <!-- /react-text -->
-                            <!-- react-text: 60 -->
-                            <!-- /react-text -->
+                        <div class="progress">
+                          <div class="progress_bg" style="padding:0;box-sizing:border-box;">
+                            <div class="progress_bar" style="padding:0;"></div>
                           </div>
-                          <div class="rc-slider-track" style="visibility: visible; left: 0%; width: 100%;"></div>
-                          <div class="rc-slider-step"><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 0%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 2.63158%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 5.26316%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 7.89474%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 10.5263%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 13.1579%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 15.7895%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 18.4211%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 21.0526%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 23.6842%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 26.3158%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 28.9474%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 31.5789%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 34.2105%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 36.8421%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 39.4737%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 42.1053%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 44.7368%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 47.3684%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 50%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 52.6316%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 55.2632%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 57.8947%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 60.5263%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 63.1579%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 65.7895%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 68.4211%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 71.0526%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 73.6842%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 76.3158%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 78.9474%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 81.5789%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 84.2105%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 86.8421%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 89.4737%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 92.1053%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 94.7368%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 97.3684%;"></span><span class="rc-slider-dot rc-slider-dot-active"
-                              style="left: 100%;"></span></div>
-                          <div class="rc-slider-mark"></div>
+                          <div class="progress_btn" style="padding:0;"></div>
+                          <div class="text">1000.00</div>
                         </div>
                       </div>
                     </div>
@@ -652,6 +659,72 @@
           }
         });
       }
+    });
+  </script>
+  <script>
+
+    function toThousands(num) {
+      var num = (num || 0).toString(), result = '';
+      while (num.length > 3) {
+        result = ',' + num.slice(-3) + result;
+        num = num.slice(0, num.length - 3);
+      }
+      if (num) { result = num + result + ".00"; }
+      return result;
+    }
+
+    $(function () {
+      let slidingDistance = $(".progress").width();
+      let btns = $('.progress_btn');
+      for (let i = 0; i < btns.length; i++) {
+        let initNum = 1000, multiplier = 1000;
+        let tag = false, ox = 0, left = 0, bgleft = 0;
+        $('.progress_btn').eq(i).mousedown(function (e) {
+          ox = e.pageX - left;
+          tag = true;
+        });
+        $(document).mouseup(function () {
+          tag = false;
+        });
+        $('.progress').eq(i).mousemove(function (e) {//鼠标移动
+          if (tag) {
+            left = e.pageX - ox;
+            if (left <= 0) {
+              left = 0;
+            } else if (left > slidingDistance) {
+              left = slidingDistance;
+            }
+            $('.progress_btn').eq(i).css('left', left);
+            $('.progress_bar').eq(i).width(left);
+            if (i == 0) {
+              $('.text').eq(i).html(toThousands((parseInt((left / slidingDistance) * 100) - 0) * multiplier + initNum));
+            } else {
+              $('.text').eq(i).html((parseInt((left / slidingDistance) * 100)) + "%");
+            }
+
+          }
+        });
+        $('.progress_bg').eq(i).click(function (e) {//鼠标点击
+          if (!tag) {
+            bgleft = $('.progress_bg').eq(i).offset().left;
+            left = e.pageX - bgleft;
+            if (left <= 0) {
+              left = 0;
+            } else if (left > slidingDistance) {
+              left = slidingDistance;
+            }
+            $('.progress_btn').eq(i).css('left', left);
+            $('.progress_bar').eq(i).animate({ width: left }, slidingDistance);
+            // console.log(parseInt((left / 300) * 100).toString().substring(0, 1))
+            if (i == 0) {
+              $('.text').eq(i).html(toThousands((parseInt((left / slidingDistance) * 100) - 0) * multiplier + initNum));
+            } else {
+              $('.text').eq(i).html((parseInt((left / slidingDistance) * 100)) + "%");
+            }
+          }
+        });
+      }
+
     });
   </script>
 </body>
